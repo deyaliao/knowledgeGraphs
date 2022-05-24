@@ -1,0 +1,100 @@
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Bilateria"@en ; 
+	 kgo:taxonRank 	 kgo:subkingdom ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Deuterostomia"@en ; 
+	 kgo:taxonRank 	 kgo:infrakingdom ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Chordata"@en ; 
+	 kgo:taxonRank 	 kgo:phylum ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Vertebrata"@en ; 
+	 kgo:taxonRank 	 kgo:subphylum ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Caudiverbera Laurenti, 1768"@en ; 
+	 kgo:taxonRank 	 kgo:genus ; 
+	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Myers & Stothers (2006) assert that the type species of Caudiverbera Laurenti 1768 is mythical, 'belonging neither to the Amphibia nor Reptilia.' There appears to be nowhere particularly useful to attach this name in ITIS, other than Vertebrata. About all that can be said of it is that it is a quadriped" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Craniata"@en ; 
+	 kgo:taxonRank 	 kgo:subphylum ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Gnathostomata"@en ; 
+	 kgo:taxonRank 	 kgo:infraphylum ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Gnathostomata"@en ; 
+	 kgo:taxonRank 	 kgo:superclass ; 
+	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Ruggiero et al. (2013) treat the gnathostomes as a vertebrate infraphylum rather than as a superclass" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Osteichthyes"@en ; 
+	 kgo:taxonRank 	 kgo:superclass ; 
+	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Superclass Osteichthyes was formerly used for classes Sarcopterygii and Actinopterygii. Those two are now elevated as superclasses, and Osteichthyes is not used in this classification (Ruggiero et al., 2015), although it is still used by some sources for the group containing Sarcopterygii & Actinopterygii, in contrast to the fossil group Acanthodii" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Tetrapoda"@en ; 
+	 kgo:taxonRank 	 kgo:superclass ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Reptilia Laurenti, 1768"@en ; 
+	 kgo:taxonRank 	 kgo:class ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Anapsida"@en ; 
+	 kgo:taxonRank 	 kgo:subclass ; 
+	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Diapsida and Anapsida have been used to divide Reptilia, particularly when including fossils in the classification; ITIS is following a somewhat different classification" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Lepidosauria"@en ; 
+	 kgo:taxonRank 	 kgo:superorder ; 
+	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Lepidosauria has been used to refer to non-archosaurian reptiles (i.e. to rhynchocepalians and squamates), but ITIS is following a somewhat different classification" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Archosauria"@en ; 
+	 kgo:taxonRank 	 kgo:superorder ; 
+	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Archosauria has been used to refer to non-lepidosaurian reptiles (i.e. to crocodiles, dinosaurs and birds), but ITIS is following a somewhat different classification" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Diapsida"@en ; 
+	 kgo:taxonRank 	 kgo:subclass ; 
+	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Diapsida and Anapsida have been used to divide Reptilia, particularly when including fossils in the classification; ITIS is following a somewhat different classification" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Crocodilia"@en ; 
+	 kgo:taxonRank 	 kgo:order ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Crocodylia"@en ; 
+	 kgo:taxonRank 	 kgo:order ; 
+	 kgo:taxonRemark 	"David F. Mitchell, ITIS Data Development Specialist: CITES: Appendix II except the species included in Appendix I, adopted at the 15th meeting of the Conference of the Parties (Doha, 2010)" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Alligatoridae"@en ; 
+	 kgo:taxonRank 	 kgo:family ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Alligator Cuvier, 1807"@en ; 
+	 kgo:taxonRank 	 kgo:genus ; 
+	 kgo:taxonRemark 	"" . 
+boltz: a kgo:Taxon ; 
+	 kgo:subTaxonOf boltz: ; 
+	 kgo:taxonName 	"Alligator sinensis Fauvel, 1879"@en ; 
+	 kgo:taxonRank 	 kgo:species ; 
+	 kgo:taxonRemark 	"David F. Mitchell, ITIS Data Development Specialist: CITES: Appendix I adopted at the 15th meeting of the Conference of the Parties (Doha, 2010).David F. Mitchell, ITIS Data Development Specialist: US ESA: Listed Endangered, as published in Federal Register Volume 41, Number 115, Pages 21062 - 24067, June 14, 1976" . 
