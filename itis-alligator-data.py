@@ -53,6 +53,7 @@ def parent_ID(parent_taxon):
             parent_taxon = url[n:]
             n -= 1
         print(parent_taxon)
+    return parent_taxon
 
 
 # Get taxon rank property
@@ -75,7 +76,7 @@ def taxon_rank(rank):
             taxon_rank = url[n:]
             n -= 1
         print(taxon_rank)    
-
+    return taxon_rank
 
 # Print taxonomic hierarchy
 
