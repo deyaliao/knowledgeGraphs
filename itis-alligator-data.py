@@ -18,7 +18,7 @@ def get_results(endpoint_url, query):
 
 # Get alligator id
 def animal_id(animal):
-    query = "SELECT ?item WHERE {?item rdfs:label \"" + animal + "\"@en. }"
+    query = "SELECT ?item WHERE {?item rdfs:label " + animal + "@en. }"
     results = get_results(endpoint_url, query)
     print('result1:')
 
@@ -37,7 +37,7 @@ def animal_id(animal):
 
 def parent_ID(parent_taxon):
     query = "SELECT ?x ?p ?wdt WHERE { \
-        ?x rdfs:label \"" + parent_taxon + "\"@en; \
+        ?x rdfs:label " + parent_taxon + "@en; \
         wikibase:claim ?p; \
         wikibase:directClaim ?wdt. \
         }" 
@@ -59,7 +59,7 @@ def parent_ID(parent_taxon):
 
 def taxon_rank(rank):
     query = "SELECT ?x ?p ?wdt WHERE { \
-        ?x rdfs:label \"" + rank + "\"@en;  \
+        ?x rdfs:label " + rank + "@en;  \
         wikibase:claim ?p; \
         wikibase:directClaim ?wdt. \
         }" 
