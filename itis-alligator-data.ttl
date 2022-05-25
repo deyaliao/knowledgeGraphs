@@ -1,83 +1,95 @@
-boltz:Q2916354 a kgo:Taxon ; 
+@prefix boltz: <http://solid.boltz.cs.cmu.edu:3030/data/> . 
+@prefix kgo:   <http://solid.boltz.cs.cmu.edu:3030/ontology/> . 
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix owl:   <http://www.w3.org/2002/07/owl#> . 
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> . 
+@prefix qudt:  <http://qudt.org/schema/qudt/> . 
+@prefix unit:  <http://qudt.org/vocab/unit/> . 
+@prefix qkdv:  <http://qudt.org/vocab/dimensionvector/> . 
+@prefix sou: <http://qudt.org/vocab/sou/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+boltz:Q729 a kgo:Taxon ; 
 	kgo:taxonName 	"Animalia"@en ; 
 	kgo:taxonRank	kgo:Kingdom ; 
-	skos:definition	"TV series"@en ;
-	skos:prefLabel	"Animalia"@en .
+	skos:definition	"Kingdom of multicellular eukaryotic organisms"@en ;
+	skos:prefLabel	"Animal"@en .
 
 boltz:Q5173 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2916354 ; 
+	kgo:subTaxonOf	boltz:Q729 ; 
 	kgo:taxonName 	"Bilateria"@en ; 
 	kgo:taxonRank	kgo:Subkingdom ; 
-	skos:definition	"clade containing all animals having a bilateral symmetry as an embryo"@en ;
+	skos:definition	"Clade containing all animals having a bilateral symmetry as an embryo"@en ;
 	skos:prefLabel	"Bilateria"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q150866 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q5173 ; 
 	kgo:taxonName 	"Deuterostomia"@en ; 
 	kgo:taxonRank	kgo:Infrakingdom ; 
-	skos:definition	""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"Superphylum of bilateral animals"@en ;
+	skos:prefLabel	"Deuterostome"@en .
 
 boltz:Q10915 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz: ; 
+	kgo:subTaxonOf	boltz:Q150866 ; 
 	kgo:taxonName 	"Chordata"@en ; 
 	kgo:taxonRank	kgo:Phylum ; 
-	skos:definition	"phylum of animals"@en ;
+	skos:definition	"Phylum of animals"@en ;
 	skos:prefLabel	"Chordata"@en .
 
 boltz:Q25241 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q10915 ; 
 	kgo:taxonName 	"Vertebrata"@en ; 
 	kgo:taxonRank	kgo:Subphylum ; 
-	skos:definition	"subphylum of chordates"@en ;
+	skos:definition	"Subphylum of chordates"@en ;
 	skos:prefLabel	"Vertebrata"@en .
 
 boltz:Q26214 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25241 ; 
 	kgo:taxonName 	"Gnathostomata"@en ; 
 	kgo:taxonRank	kgo:Infraphylum ; 
-	skos:definition	"infraphylum of jawed vertebrates"@en ;
+	skos:definition	"Infraphylum of jawed vertebrates"@en ;
 	skos:prefLabel	"Gnathostomata"@en .
 
 boltz:Q19159 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q26214 ; 
 	kgo:taxonName 	"Tetrapoda"@en ; 
 	kgo:taxonRank	kgo:Superclass ; 
-	skos:definition	"superclass of the first four-limbed vertebrates and their descendants"@en ;
+	skos:definition	"Superclass of the first four-limbed vertebrates and their descendants"@en ;
 	skos:prefLabel	"Tetrapoda"@en .
 
 boltz:Q10811 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q19159 ; 
 	kgo:taxonName 	"Reptilia"@en ; 
 	kgo:taxonRank	kgo:Class ; 
-	skos:definition	"group (class or clade) of tetrapod animals"@en ;
+	skos:definition	"Group (class or clade) of tetrapod animals"@en ;
 	skos:prefLabel	"Reptilia"@en .
 
 boltz:Q25363 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q10811 ; 
 	kgo:taxonName 	"Crocodilia"@en ; 
 	kgo:taxonRank	kgo:Order ; 
-	skos:definition	"order of large reptiles"@en ;
+	skos:definition	"Order of large reptiles"@en ;
 	skos:prefLabel	"Crocodilia"@en .
 
 boltz:Q6184764 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25363 ; 
 	kgo:taxonName 	"Alligatoridae"@en ; 
 	kgo:taxonRank	kgo:Family ; 
-	skos:definition	"family of large reptiles"@en ;
+	skos:definition	"Family of large reptiles"@en ;
 	skos:prefLabel	"Alligatoridae"@en .
 
-boltz:Q259937 a kgo:Taxon ; 
+boltz:Q530397 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q6184764 ; 
 	kgo:taxonName 	"Alligator"@en ; 
 	kgo:taxonRank	kgo:Genus ; 
-	skos:definition	"1980 film by Lewis Teague"@en ;
+	skos:definition	"Genus of large reptiles"@en ;
 	skos:prefLabel	"Alligator"@en .
 
-boltz: a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q259937 ; 
+boltz:Q194422 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q530397 ; 
 	kgo:taxonName 	"Alligator sinensis"@en ; 
 	kgo:taxonRank	kgo:Species ; 
-	skos:definition	""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"Species of reptile"@en ;
+	skos:prefLabel	"Chinese alligator"@en .
 
