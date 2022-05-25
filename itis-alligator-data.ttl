@@ -1,100 +1,83 @@
+boltz:Q2916354 a kgo:Taxon ; 
+	kgo:taxonName 	"Animalia"@en ; 
+	kgo:taxonRank	kgo:Kingdom ; 
+	skos:definition	"TV series"@en ;
+	skos:prefLabel	"Animalia"@en .
+
+boltz:Q5173 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2916354 ; 
+	kgo:taxonName 	"Bilateria"@en ; 
+	kgo:taxonRank	kgo:Subkingdom ; 
+	skos:definition	"clade containing all animals having a bilateral symmetry as an embryo"@en ;
+	skos:prefLabel	"Bilateria"@en .
+
 boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Bilateria"@en ; 
-	 kgo:taxonRank 	 kgo:subkingdom ; 
-	 kgo:taxonRemark 	"" . 
+	kgo:subTaxonOf	boltz:Q5173 ; 
+	kgo:taxonName 	"Deuterostomia"@en ; 
+	kgo:taxonRank	kgo:Infrakingdom ; 
+	skos:definition	""@en ;
+	skos:prefLabel	""@en .
+
+boltz:Q10915 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz: ; 
+	kgo:taxonName 	"Chordata"@en ; 
+	kgo:taxonRank	kgo:Phylum ; 
+	skos:definition	"phylum of animals"@en ;
+	skos:prefLabel	"Chordata"@en .
+
+boltz:Q25241 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10915 ; 
+	kgo:taxonName 	"Vertebrata"@en ; 
+	kgo:taxonRank	kgo:Subphylum ; 
+	skos:definition	"subphylum of chordates"@en ;
+	skos:prefLabel	"Vertebrata"@en .
+
+boltz:Q26214 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q25241 ; 
+	kgo:taxonName 	"Gnathostomata"@en ; 
+	kgo:taxonRank	kgo:Infraphylum ; 
+	skos:definition	"infraphylum of jawed vertebrates"@en ;
+	skos:prefLabel	"Gnathostomata"@en .
+
+boltz:Q19159 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q26214 ; 
+	kgo:taxonName 	"Tetrapoda"@en ; 
+	kgo:taxonRank	kgo:Superclass ; 
+	skos:definition	"superclass of the first four-limbed vertebrates and their descendants"@en ;
+	skos:prefLabel	"Tetrapoda"@en .
+
+boltz:Q10811 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q19159 ; 
+	kgo:taxonName 	"Reptilia"@en ; 
+	kgo:taxonRank	kgo:Class ; 
+	skos:definition	"group (class or clade) of tetrapod animals"@en ;
+	skos:prefLabel	"Reptilia"@en .
+
+boltz:Q25363 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10811 ; 
+	kgo:taxonName 	"Crocodilia"@en ; 
+	kgo:taxonRank	kgo:Order ; 
+	skos:definition	"order of large reptiles"@en ;
+	skos:prefLabel	"Crocodilia"@en .
+
+boltz:Q6184764 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q25363 ; 
+	kgo:taxonName 	"Alligatoridae"@en ; 
+	kgo:taxonRank	kgo:Family ; 
+	skos:definition	"family of large reptiles"@en ;
+	skos:prefLabel	"Alligatoridae"@en .
+
+boltz:Q259937 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q6184764 ; 
+	kgo:taxonName 	"Alligator"@en ; 
+	kgo:taxonRank	kgo:Genus ; 
+	skos:definition	"1980 film by Lewis Teague"@en ;
+	skos:prefLabel	"Alligator"@en .
+
 boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Deuterostomia"@en ; 
-	 kgo:taxonRank 	 kgo:infrakingdom ; 
-	 kgo:taxonRemark 	"" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Chordata"@en ; 
-	 kgo:taxonRank 	 kgo:phylum ; 
-	 kgo:taxonRemark 	"" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Vertebrata"@en ; 
-	 kgo:taxonRank 	 kgo:subphylum ; 
-	 kgo:taxonRemark 	"" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Caudiverbera Laurenti, 1768"@en ; 
-	 kgo:taxonRank 	 kgo:genus ; 
-	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Myers & Stothers (2006) assert that the type species of Caudiverbera Laurenti 1768 is mythical, 'belonging neither to the Amphibia nor Reptilia.' There appears to be nowhere particularly useful to attach this name in ITIS, other than Vertebrata. About all that can be said of it is that it is a quadriped" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Craniata"@en ; 
-	 kgo:taxonRank 	 kgo:subphylum ; 
-	 kgo:taxonRemark 	"" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Gnathostomata"@en ; 
-	 kgo:taxonRank 	 kgo:infraphylum ; 
-	 kgo:taxonRemark 	"" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Gnathostomata"@en ; 
-	 kgo:taxonRank 	 kgo:superclass ; 
-	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Ruggiero et al. (2013) treat the gnathostomes as a vertebrate infraphylum rather than as a superclass" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Osteichthyes"@en ; 
-	 kgo:taxonRank 	 kgo:superclass ; 
-	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Superclass Osteichthyes was formerly used for classes Sarcopterygii and Actinopterygii. Those two are now elevated as superclasses, and Osteichthyes is not used in this classification (Ruggiero et al., 2015), although it is still used by some sources for the group containing Sarcopterygii & Actinopterygii, in contrast to the fossil group Acanthodii" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Tetrapoda"@en ; 
-	 kgo:taxonRank 	 kgo:superclass ; 
-	 kgo:taxonRemark 	"" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Reptilia Laurenti, 1768"@en ; 
-	 kgo:taxonRank 	 kgo:class ; 
-	 kgo:taxonRemark 	"" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Anapsida"@en ; 
-	 kgo:taxonRank 	 kgo:subclass ; 
-	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Diapsida and Anapsida have been used to divide Reptilia, particularly when including fossils in the classification; ITIS is following a somewhat different classification" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Lepidosauria"@en ; 
-	 kgo:taxonRank 	 kgo:superorder ; 
-	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Lepidosauria has been used to refer to non-archosaurian reptiles (i.e. to rhynchocepalians and squamates), but ITIS is following a somewhat different classification" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Archosauria"@en ; 
-	 kgo:taxonRank 	 kgo:superorder ; 
-	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Archosauria has been used to refer to non-lepidosaurian reptiles (i.e. to crocodiles, dinosaurs and birds), but ITIS is following a somewhat different classification" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Diapsida"@en ; 
-	 kgo:taxonRank 	 kgo:subclass ; 
-	 kgo:taxonRemark 	"David Nicolson - ITIS Data Development Coordinator: Diapsida and Anapsida have been used to divide Reptilia, particularly when including fossils in the classification; ITIS is following a somewhat different classification" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Crocodilia"@en ; 
-	 kgo:taxonRank 	 kgo:order ; 
-	 kgo:taxonRemark 	"" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Crocodylia"@en ; 
-	 kgo:taxonRank 	 kgo:order ; 
-	 kgo:taxonRemark 	"David F. Mitchell, ITIS Data Development Specialist: CITES: Appendix II except the species included in Appendix I, adopted at the 15th meeting of the Conference of the Parties (Doha, 2010)" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Alligatoridae"@en ; 
-	 kgo:taxonRank 	 kgo:family ; 
-	 kgo:taxonRemark 	"" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Alligator Cuvier, 1807"@en ; 
-	 kgo:taxonRank 	 kgo:genus ; 
-	 kgo:taxonRemark 	"" . 
-boltz: a kgo:Taxon ; 
-	 kgo:subTaxonOf boltz: ; 
-	 kgo:taxonName 	"Alligator sinensis Fauvel, 1879"@en ; 
-	 kgo:taxonRank 	 kgo:species ; 
-	 kgo:taxonRemark 	"David F. Mitchell, ITIS Data Development Specialist: CITES: Appendix I adopted at the 15th meeting of the Conference of the Parties (Doha, 2010).David F. Mitchell, ITIS Data Development Specialist: US ESA: Listed Endangered, as published in Federal Register Volume 41, Number 115, Pages 21062 - 24067, June 14, 1976" . 
+	kgo:subTaxonOf	boltz:Q259937 ; 
+	kgo:taxonName 	"Alligator sinensis"@en ; 
+	kgo:taxonRank	kgo:Species ; 
+	skos:definition	""@en ;
+	skos:prefLabel	""@en .
+
