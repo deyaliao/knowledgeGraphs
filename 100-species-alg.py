@@ -18,68 +18,80 @@ def get_results(endpoint_url, query):
     sparql.setReturnFormat(JSON)
     return sparql.query().convert()
 
-# Get Q-value, definition, prelabel (use with triple style code)
-def animal_id(animal):
-    query = "SELECT ?item ?itemLabel ?itemDescription  \
+# Extract ID, label, and description 
+def extract(results):
+    result = results["results"]["bindings"][0]
+    url = result['item']['value']
+    label = result['itemLabel']['value']
+    try:
+        description = result['itemDescription']['value']
+    except: #in the case of no description 
+        description = ""
+    n = -1
+    id = ""    
+    while url[n] != "/":
+        id = url[n:]
+        n -= 1
+    print(id + "  " + label + "  " + description)
+    return id, label.capitalize(), description.capitalize()
+
+def run_q1(animal):
+    query1 = "SELECT ?item ?itemLabel ?itemDescription  \
         WHERE \
             {?item wdt:P225 \"" + animal + "\" . \
             SERVICE wikibase:label \
             {bd:serviceParam wikibase:language \"en\" . } \
         }"
-
-    results = get_results(endpoint_url, query)
+    results = get_results(endpoint_url, query1)
     print('result1:')
     print(results)
-    # query may conjure up multiple results, we choose the first one. question: should we assume all queries only return one?
-    try:
-        result = results["results"]["bindings"][0]
-        url = result['item']['value']
-        label = result['itemLabel']['value']
-        try:
-            description = result['itemDescription']['value']
-        except: #in the case of no description 
-            description = ""
-        n = -1
-        id = ""    
-        while url[n] != "/":
-            id = url[n:]
-            n -= 1
-        print(id + "  " + label + "  " + description)
-        return id, label.capitalize(), description.capitalize()
-    except:
-        return "", "", ""
-
-# Query with subgenus, more accuracy as utilizes parent ID
-def animal_id2(animal, parent):
-    query = "SELECT ?item ?itemLabel ?itemDescription  \
+    return results
+    
+# use of alt label, sometimes the taxonomic name is the alias
+def run_q2(animal):
+    query2 = "SELECT ?item ?itemLabel ?itemDescription  \
         WHERE \
-            {?item wdt:P171 wd:" + parent + ";\
-                   wdt:P225 \"" + animal + "\" . \
+            {?item skos:altLabel \"" + animal + "\"@en . \
             SERVICE wikibase:label \
             {bd:serviceParam wikibase:language \"en\" . } \
         }"
-
-    results = get_results(endpoint_url, query)
+    results = get_results(endpoint_url, query2)
     print('result1:')
     print(results)
-    # query may conjure up multiple results, we choose the first one. question: should we assume all queries only return one?
+    return results
+
+# use of regex – three letter difference maximum
+def run_q3(animal, parent):
+    n = 0
+    while n < 4:
+        new_animal = animal[:0-n]
+        query3 = "SELECT ?item  ?itemLabel ?itemDescription WHERE \
+            { \
+             ?item wdt:P171* wd:" + parent + "; \
+                   rdfs:label ?itemLabel. \
+            filter(regex(str(?itemLabel), \"" + new_animal + "\" )) . \
+            SERVICE wikibase:label  \
+            {bd:serviceParam wikibase:language \"en\"  . } \
+            }" 
+        results = get_results(endpoint_url, query3)
+        # check if query yielded a valid result
+        if len(results["results"]["bindings"]) != 0:
+            return extract(results)
+        n += 1
+    return "", "", ""
+
+# Get Q-value, definition, prelabel (use with triple style code)
+def animal_id(animal, parent):
+    # is there a more efficient way to check if a query yields no results? 
     try:
-        result = results["results"]["bindings"][0]
-        url = result['item']['value']
-        label = result['itemLabel']['value']
-        try:
-            description = result['itemDescription']['value']
-        except: #in the case of no description 
-            description = ""
-        n = -1
-        id = ""    
-        while url[n] != "/":
-            id = url[n:]
-            n -= 1
-        print(id + "  " + label + "  " + description)
-        return id, label.capitalize(), description.capitalize()
+        return extract(run_q1(animal))
     except:
-        return "", "", ""
+        try:
+            return extract(run_q2(animal))
+        except:
+            # take for granted that taxons with no parents will never reach the last query? might be bad style 
+            return run_q3(animal, parent)
+    
 
 
 # Print taxonomic hierarchy
@@ -152,19 +164,17 @@ for i in range(1,len(file_list)):
             parent_id = q_values[int(row["parentNameUsageID"])]
             full_parent_ID = "kgo:subTaxonOf\tboltz:" + parent_id + " ; \n\t"
         else:
+            parent_id = ""
             full_parent_ID = ""
-
 
         # if sub-genus, actual name is the one in the parenthesis. for example: Cicindela (Cicindelidia) means that Cicindelidia is the sub-genus in hand, where Cicindela is its parent. cannot directly use entire term in serach query, as that generates no results. also generate a more precise search query which uses the parentID: 
         if row['taxonRank'] == "subgenus":
             x = scientificName.split(" (")
             y = x[1].split(")")
             scientificName = y[0]
-            ID, label, definition = animal_id2(scientificName, parent_id)
-        else:
-            ID, label, definition = animal_id(scientificName)
+        
+        ID, label, definition = animal_id(scientificName, parent_id)
 
-            
         full_name = "kgo:taxonName \t" + "\"" + scientificName + "\"@en ; \n\t"
         full_ID = "boltz:" + ID + " a kgo:Taxon ; \n\t" #ID
         full_rank = "kgo:taxonRank\tboltz:" + ranks[row['taxonRank']] + " ; \n\t" #rank
