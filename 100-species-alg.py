@@ -65,6 +65,7 @@ def run_q3(animal, parent):
     n = 0
     while n < 4:
         new_animal = animal[:0-n]
+        # might not be EXACT parentLabel but the PATH matches, intentional because some discrepancies between WikiData and ITIS parentTaxons
         query3 = "SELECT ?item  ?itemLabel ?itemDescription WHERE \
             { \
              ?item wdt:P171* wd:" + parent + "; \
