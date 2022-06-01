@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:d="eml://ecoinformatics.org/dataset-2.1.1" xmlns:dc="http://purl.org/dc/terms/" xmlns:md="eml://ecoinformatics.org/methods-2.1.1" xmlns:proj="eml://ecoinformatics.org/project-2.1.1" xmlns:res="eml://ecoinformatics.org/resource-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packageId="6139399/2022-05-31T22:05:04Z+0000" system="http://www.itis.gov" xml:lang="en" xsi:schemaLocation="eml_uri">
+  <dataset id="6139399">
+    <title>ITIS DwCA Download</title>
+    <intellectualRights>This ITIS dataset in DwCA format is released to the public and may be freely distributed without restriction. To cite ITIS please see www.itis.gov/citation.html</intellectualRights>
+    <creator id="1" scope="document">
+      <organizationName>Integrated Taxonomic Information System</organizationName>
+      <electronicMailAddress>itiswebmaster@itis.gov</electronicMailAddress>
+    </creator>
+    <metadataProvider>
+      <organizationName>Integrated Taxonomic Information System</organizationName>
+      <electronicMailAddress>itiswebmaster@itis.gov</electronicMailAddress>
+    </metadataProvider>
+    <pubDate>2022-05-31T22:05:04Z+0000</pubDate>
+    <abstract>
+      <para>The Integrated Taxonomic Information System (ITIS, www.itis.gov) was proposed in 1993 and established through a Memorandum of Understanding in 1996. ITIS partners with U.S. Federal agencies, other government agencies and organizations from the United States, Canada and Mexico, and with data stewards and experts from around the world to maintain an authoritative reference of scientific and common names of all seven Kingdoms of Life (Archaea, Bacteria, Protozoa, Chromista, Fungi, Plantae, and Animalia). For news and information about recent ITIS updates see www.itis.gov/whatsnew.html</para>
+    </abstract>
+    <language>en-US</language>
+  </dataset>
+  <additionalMetadata>
+    <additionalInfo>Created Using Wallace, the ITIS-to-DwCA generator (ITIS Download version: 2.5.10)</additionalInfo>
+  </additionalMetadata>
+</eml:eml>

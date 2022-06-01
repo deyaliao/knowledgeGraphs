@@ -111,14 +111,17 @@ def taxonomic_hierarchy():
         item = result['itemlabel']['value']
         print(taxonrank, 'is', item)
 
+
             
-df = pd.read_csv("itis/taxa_9796598.txt", sep='\t')
+df = pd.read_csv("animal-species/Chinese Alligator/taxa_9796598.txt", sep="\t")
+print(df)
 
 # extraneous information
 type = df.dtypes
 print(type)
 num_rows = len(df.count(axis=1))
 num_columns = len(df.count(axis=0))
+
 
 # open ttl file
 outfile = open('itis-alligator-data.ttl', 'w')

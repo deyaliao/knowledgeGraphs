@@ -1,0 +1,13 @@
+taxonID	acceptedNameUsageID	parentNameUsageID	scientificName	scientificNameAuthorship	kingdom	phylum	class	order	superfamily	family	genus	subgenus	specificEpithet	infraspecificEpithet	taxonRank	taxonomicStatus	modified	namePublishedIn	scientificNameID	verbatimTaxonRank	taxonRemarks	higherClassification
+202423			Animalia												kingdom	valid	1999-10-27		202423			
+914154		202423	Bilateria		Animalia										subkingdom	valid	2017-06-28		914154			Animalia
+914155		914154	Protostomia		Animalia										infrakingdom	valid	2017-06-28		914155			Animalia|Bilateria
+914159		914155	Lophozoa		Animalia										superphylum	valid	2017-06-28		914159			Animalia|Bilateria|Protostomia
+69458		914159	Mollusca		Animalia										phylum	valid	2013-11-04		69458			Animalia|Bilateria|Protostomia|Lophozoa
+69459		69458	Gastropoda Cuvier, 1797	Cuvier, 1797	Animalia	Mollusca									class	valid	2013-11-04		69459			Animalia|Bilateria|Protostomia|Lophozoa|Mollusca
+566851		69459	Neotaenioglossa		Animalia	Mollusca	Gastropoda								order	valid	2005-09-23		566851			Animalia|Bilateria|Protostomia|Lophozoa|Mollusca|Gastropoda
+685633	566851		Cerithioidea Férussac, 1819	Férussac, 1819	Animalia	Mollusca	Gastropoda								superfamily	synonym	2005-09-23		685633		T.M. Orrell, ITIS Taxonomic expert: ITIS has not yet adopted a classification of the Gastropoda that includes the cladistic work of Ponder and Lindberg, 1997 (and others), so the superfamily Cerithioidea Férussac 1819, while used as valid in such systems, is here placed in synonymy until such time as a full re-assessment of the classification can be undertaken	Animalia|Bilateria|Protostomia|Lophozoa|Mollusca|Gastropoda
+72741		566851	Cypraeidae Rafinesque, 1815	Rafinesque, 1815	Animalia	Mollusca	Gastropoda	Neotaenioglossa							family	valid	2000-03-31		72741			Animalia|Bilateria|Protostomia|Lophozoa|Mollusca|Gastropoda|Neotaenioglossa
+566985		72741	Erosaria Troschel, 1863	Troschel, 1863	Animalia	Mollusca	Gastropoda	Neotaenioglossa		Cypraeidae					genus	valid	2000-03-31		566985			Animalia|Bilateria|Protostomia|Lophozoa|Mollusca|Gastropoda|Neotaenioglossa|Cypraeidae
+567551		566985	Erosaria acicularis (Gmelin, 1791)	(Gmelin, 1791)	Animalia	Mollusca	Gastropoda	Neotaenioglossa		Cypraeidae	Erosaria		acicularis		species	valid	2001-10-17		567551			Animalia|Bilateria|Protostomia|Lophozoa|Mollusca|Gastropoda|Neotaenioglossa|Cypraeidae|Erosaria
+72747	567551		Cypraea spurca acicularis Gmelin, 1791	Gmelin, 1791	Animalia	Mollusca	Gastropoda	Neotaenioglossa		Cypraeidae	Cypraea		spurca	acicularis	subspecies	homotypicSynonym	2003-04-03		72747			Animalia|Bilateria|Protostomia|Lophozoa|Mollusca|Gastropoda|Neotaenioglossa|Cypraeidae|Erosaria
