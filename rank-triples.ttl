@@ -1,0 +1,96 @@
+boltz:Q36732 a kgo:taxonRank ;
+    rdfs:label	"Kingdom" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q2752679 a kgo:taxonRank ;
+    rdfs:label	"Subkingdom" ;
+    skos:definition	"Taxonomic rank in biological classification" .
+
+boltz:Q3150876 a kgo:taxonRank ;
+    rdfs:label	"Infrakingdom" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q3978005 a kgo:taxonRank ;
+    rdfs:label	"Superphylum" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q38348 a kgo:taxonRank ;
+    rdfs:label	"Phylum" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q1153785 a kgo:taxonRank ;
+    rdfs:label	"Subphylum" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q2361851 a kgo:taxonRank ;
+    rdfs:label	"Infraphylum" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q3504061 a kgo:taxonRank ;
+    rdfs:label	"Superclass" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q2007442 a kgo:taxonRank ;
+    rdfs:label	"Infraclass" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q37517 a kgo:taxonRank ;
+    rdfs:label	"Class" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q5867051 a kgo:taxonRank ;
+    rdfs:label	"Subclass" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q5868144 a kgo:taxonRank ;
+    rdfs:label	"Superorder" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q2889003 a kgo:taxonRank ;
+    rdfs:label	"Infraorder" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q36602 a kgo:taxonRank ;
+    rdfs:label	"Order" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q5867959 a kgo:taxonRank ;
+    rdfs:label	"Suborder" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q2136103 a kgo:taxonRank ;
+    rdfs:label	"Superfamily" ;
+    skos:definition	"Taxonomic rank above family and below order" .
+
+boltz:Q35409 a kgo:taxonRank ;
+    rdfs:label	"Family" ;
+    skos:definition	"Taxonomic rank (or a taxon at that rank) between order and genus" .
+
+boltz:Q164280 a kgo:taxonRank ;
+    rdfs:label	"Subfamily" ;
+    skos:definition	"Taxonomic rank below family" .
+
+boltz:Q227936 a kgo:taxonRank ;
+    rdfs:label	"Tribe" ;
+    skos:definition	"Taxonomic rank between family and genus" .
+
+boltz:Q3965313 a kgo:taxonRank ;
+    rdfs:label	"Subtribe" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q34740 a kgo:taxonRank ;
+    rdfs:label	"Genus" ;
+    skos:definition	"Taxonomic rank used in the biological classification of living and fossil organisms, and viruses" .
+
+boltz:Q3238261 a kgo:taxonRank ;
+    rdfs:label	"Subgenus" ;
+    skos:definition	"Taxonomic rank" .
+
+boltz:Q7432 a kgo:taxonRank ;
+    rdfs:label	"Species" ;
+    skos:definition	"One of the basic units of biological classification and a taxonomic rank" .
+
+boltz:Q68947 a kgo:taxonRank ;
+    rdfs:label	"Subspecies" ;
+    skos:definition	"Taxonomic rank subordinate to species" .
+
