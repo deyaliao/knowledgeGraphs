@@ -10,6 +10,25 @@ from os import sep
 
 endpoint_url = "https://query.wikidata.org/sparql"
 
+# TAXA that didn't initially match: need to manually check again
+to_confirm = {}
+
+# IMPORTED DATA 
+# Q-values for ranks
+ranks = {"kingdom": "Q36732", "subkingdom": "Q2752679", "infrakingdom": "Q3150876", "superphylum":"Q3978005", "phylum": "Q38348", "subphylum": "Q1153785", "infraphylum": "Q2361851", "superclass": "Q3504061", "infraclass": "Q2007442", "class": "Q37517", "subclass": "Q5867051", "superorder":"Q5868144", "infraorder": "Q2889003", "order" :"Q36602", "suborder": "Q5867959", "superfamily" : "Q2136103", "family": "Q35409", "subfamily": "Q164280", "tribe":"Q227936","subtribe": "Q3965313", "genus": "Q34740", "subgenus":"Q3238261", "species": "Q7432", "subspecies": "Q68947"}
+
+
+# MANUALLY CREATED TAXA: taxa that we manually added, no entry WikiData
+all_taxa =  {
+    1157319: {"Q": "Q3427090", "Def": "Genus of insects", "Label": "Cnephasia", "WikiData": True},
+    729890: {"Q": "Q27636553", "Def": "Subspecies of bird", "Label": "Molothrus oryzivorus impacifus", "WikiData": True },
+    949898: {"Q": "Q500000000", "Def": "Subspecies of reptile", "Label": "Psammobates tentorius tentorius", "WikiData": False},
+    1084534: {"Q": "Q500000001", "Def": "Subspecies of reptile", "Label": "Telescopus dhara somalicus", "WikiData": False},
+    1084130: {"Q": "Q500000002", "Def": "Subspecies of reptile", "Label": "Duberria lutrix atriventris", "WikiData": False},
+    1084132: {"Q": "Q500000003", "Def": "Subspecies of reptile", "Label": "Duberria lutrix lutrix", "WikiData": False},
+    1157483: {"Q": "Q500000004", "Def": "Subspecies of mammal", "Label": "Eptesicus serotinus mirza", "WikiData": False}
+}
+
 def get_results(endpoint_url, query):
     user_agent = "WDQS-example Python/%s.%s" % (sys.version_info[0], sys.version_info[1])
     # TODO adjust user agent; see https://w.wiki/CX6
@@ -34,6 +53,9 @@ def extract(results):
         n -= 1
     print(id + "  " + label + "  " + description)
     return id, label.capitalize(), description.capitalize()
+
+def valid_search(results):
+    return len(results["results"]["bindings"]) != 0
 
 def run_q1(animal):
     query1 = "SELECT ?item ?itemLabel ?itemDescription  \
@@ -64,7 +86,7 @@ def run_q2(animal):
 def run_q3(animal, parent):
     n = 0
     while n < 4:
-        new_animal = animal[:0-n]
+        new_animal = animal[:0-1]
         # might not be EXACT parentLabel but the PATH matches, intentional because some discrepancies between WikiData and ITIS parentTaxons
         query3 = "SELECT ?item  ?itemLabel ?itemDescription WHERE \
             { \
@@ -76,24 +98,25 @@ def run_q3(animal, parent):
             }" 
         results = get_results(endpoint_url, query3)
         # check if query yielded a valid result
-        if len(results["results"]["bindings"]) != 0:
-            return extract(results)
+        if valid_search(results):
+            return results
         n += 1
-    return "", "", ""
+    return results
 
 # Get Q-value, definition, prelabel (use with triple style code)
-def animal_id(animal, parent):
-    # is there a more efficient way to check if a query yields no results? 
-    try:
-        return extract(run_q1(animal))
-    except:
-        try:
-            return extract(run_q2(animal))
-        except:
-            # take for granted that taxons with no parents will never reach the last query? might be bad style 
-            return run_q3(animal, parent)
+def taxa(animal, ID, parent):
+    results1 = run_q1(animal)
+    if valid_search(results1): #way to check if search yields results
+        return extract(results1)
+    else:
+        results2 = run_q2(animal)
     
-
+    if valid_search(results2):
+        return extract(results2)
+    else:
+        to_confirm[ID] = animal
+        return extract(run_q3(animal, parent))
+    
 
 # Print taxonomic hierarchy
 def taxonomic_hierarchy():
@@ -132,41 +155,27 @@ outfile.write("@prefix boltz: <http://solid.boltz.cs.cmu.edu:3030/data/> . \n\
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . \n\n\
 ")
 
-# Q-values for ranks
-ranks = {"kingdom": "Q36732", "subkingdom": "Q2752679", "infrakingdom": "Q3150876", "superphylum":"Q3978005", "phylum": "Q38348", "subphylum": "Q1153785", "infraphylum": "Q2361851", "superclass": "Q3504061", "infraclass": "Q2007442", "class": "Q37517", "subclass": "Q5867051", "superorder":"Q5868144", "infraorder": "Q2889003", "order" :"Q36602", "suborder": "Q5867959", "superfamily" : "Q2136103", "family": "Q35409", "subfamily": "Q164280", "tribe":"Q227936","subtribe": "Q3965313", "genus": "Q34740", "subgenus":"Q3238261", "species": "Q7432", "subspecies": "Q68947"}
-
 # open species files
 folder_path = 'species'
 file_list = glob.glob(folder_path + "/*.txt")
 
-for i in range(1,len(file_list)):
-    #keep track of prev ID, used for subParentID
-    q_values = {}
-
+# For every file in directory:
+for i in range(0,len(file_list)):
     data = pd.read_table(file_list[i])
     df = pd.DataFrame(data)
     
     outfile.write("#-----TAXON------\n")
-    # convert data to triples here 
+    # For every taxa in file: 
     for index, row in df.iterrows():
-        # check row: already looked up OR not valid
-        if row["taxonID"] in q_values or not row['taxonomicStatus'] == "valid":
+        # Only run valid taxa
+        if not row['taxonomicStatus'] == "valid":
             continue
 
         scientificName = row["scientificName"]
-
-        # change scientificName, some have author appended onto it
+        #----- CLEAN DATA -----
+        # Change scientificName, some have author appended onto it
         if not pd.isna(row["scientificNameAuthorship"]) and row["scientificNameAuthorship"]in row["scientificName"]:
             scientificName = row["scientificName"].replace(" " + row["scientificNameAuthorship"], "")
-        
-
-        # subTaxon dictionary lookup + INFO lookup: usage of parentID in query IF parentID exists
-        if not pd.isna(row["parentNameUsageID"]) and int(row["parentNameUsageID"]) in q_values: 
-            parent_id = q_values[int(row["parentNameUsageID"])]
-            full_parent_ID = "kgo:subTaxonOf\tboltz:" + parent_id + " ; \n\t"
-        else:
-            parent_id = ""
-            full_parent_ID = ""
 
         # if sub-genus, actual name is the one in the parenthesis. for example: Cicindela (Cicindelidia) means that Cicindelidia is the sub-genus in hand, where Cicindela is its parent. cannot directly use entire term in serach query, as that generates no results. also generate a more precise search query which uses the parentID: 
         if row['taxonRank'] == "subgenus":
@@ -174,21 +183,36 @@ for i in range(1,len(file_list)):
             y = x[1].split(")")
             scientificName = y[0]
         
-        ID, label, definition = animal_id(scientificName, parent_id)
+        # ----- RETRIEVE INFORMATION ----
+        # Search parentTaxon information
+        if not pd.isna(row["parentNameUsageID"]) and int(row["parentNameUsageID"]) in all_taxa: 
+            parent_Q = all_taxa[int(row["parentNameUsageID"])]["Q"]
+            full_parent_Q = "kgo:subTaxonOf\tboltz:" + parent_Q + " ; \n\t"
+        else:
+            parent_Q = ""
+            full_parent_Q = ""
+        
+        # Everything else: either quick dictionary access, or search query 
+        taxonID = row["taxonID"]
+        if taxonID in all_taxa:
+            Q, label, definition =  all_taxa[taxonID]["Q"], all_taxa[taxonID]["Label"], all_taxa[taxonID]["Def"]
+        else:
+            Q, label, definition = taxa(scientificName, taxonID, parent_Q)
+            all_taxa[taxonID] = {}
+            all_taxa[taxonID]["Q"] = Q
+            all_taxa[taxonID]["Label"] = label
+            all_taxa[taxonID]["Def"] = definition
+            all_taxa[taxonID]["WikiData"] = True
 
         full_name = "kgo:taxonName \t" + "\"" + scientificName + "\"@en ; \n\t"
-        full_ID = "boltz:" + ID + " a kgo:Taxon ; \n\t" #ID
+        full_ID = "boltz:" + Q + " a kgo:Taxon ; \n\t" #Q-ID
         full_rank = "kgo:taxonRank\tboltz:" + ranks[row['taxonRank']] + " ; \n\t" #rank
-        full_definition = "skos:definition\t\"\"\"" + definition + "\"\"\"@en ;\n\t"
+        full_definition = "skos:definition\t\"\"\"" + definition + "\"\"\"@en ;\n\t" #definition
+        full_label = "skos:prefLabel\t\"" + label + "\"@en .\n\n"    #preflabel – common name
 
-        # preflabel – common name
-        full_label = "skos:prefLabel\t\"" + label + "\"@en .\n\n"
-        
-        # update dict
-        q_values[row["taxonID"]] = ID
-            
-        d =  full_ID + full_parent_ID + full_name + full_rank + full_definition + full_label 
+        d =  full_ID + full_parent_Q + full_name + full_rank + full_definition + full_label 
         outfile.write(d)
     outfile.write("\n")
 
+print(to_confirm)
 outfile.close()

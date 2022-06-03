@@ -17,6 +17,126 @@ boltz:Q729 a kgo:Taxon ;
 	skos:definition	"""Kingdom of multicellular eukaryotic organisms"""@en ;
 	skos:prefLabel	"Animal"@en .
 
+boltz:Q5173 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q729 ; 
+	kgo:taxonName 	"Bilateria"@en ; 
+	kgo:taxonRank	boltz:Q2752679 ; 
+	skos:definition	"""Clade containing all animals having a bilateral symmetry as an embryo"""@en ;
+	skos:prefLabel	"Bilateria"@en .
+
+boltz:Q150866 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5173 ; 
+	kgo:taxonName 	"Deuterostomia"@en ; 
+	kgo:taxonRank	boltz:Q3150876 ; 
+	skos:definition	"""Superphylum of bilateral animals"""@en ;
+	skos:prefLabel	"Deuterostome"@en .
+
+boltz:Q10915 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q150866 ; 
+	kgo:taxonName 	"Chordata"@en ; 
+	kgo:taxonRank	boltz:Q38348 ; 
+	skos:definition	"""Phylum of animals"""@en ;
+	skos:prefLabel	"Chordata"@en .
+
+boltz:Q25241 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10915 ; 
+	kgo:taxonName 	"Vertebrata"@en ; 
+	kgo:taxonRank	boltz:Q1153785 ; 
+	skos:definition	"""Subphylum of chordates"""@en ;
+	skos:prefLabel	"Vertebrata"@en .
+
+boltz:Q26214 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q25241 ; 
+	kgo:taxonName 	"Gnathostomata"@en ; 
+	kgo:taxonRank	boltz:Q2361851 ; 
+	skos:definition	"""Infraphylum of jawed vertebrates"""@en ;
+	skos:prefLabel	"Gnathostomata"@en .
+
+boltz:Q19159 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q26214 ; 
+	kgo:taxonName 	"Tetrapoda"@en ; 
+	kgo:taxonRank	boltz:Q3504061 ; 
+	skos:definition	"""Superclass of the first four-limbed vertebrates and their descendants"""@en ;
+	skos:prefLabel	"Tetrapoda"@en .
+
+boltz:Q7377 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q19159 ; 
+	kgo:taxonName 	"Mammalia"@en ; 
+	kgo:taxonRank	boltz:Q37517 ; 
+	skos:definition	"""Class of tetrapods"""@en ;
+	skos:prefLabel	"Mammal"@en .
+
+boltz:Q130942 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q7377 ; 
+	kgo:taxonName 	"Theria"@en ; 
+	kgo:taxonRank	boltz:Q5867051 ; 
+	skos:definition	"""Subclass of mammals"""@en ;
+	skos:prefLabel	"Theria"@en .
+
+boltz:Q2156282 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q130942 ; 
+	kgo:taxonName 	"Eutheria"@en ; 
+	kgo:taxonRank	boltz:Q2007442 ; 
+	skos:definition	"""Genus of tortoise beetles"""@en ;
+	skos:prefLabel	"Eutheria"@en .
+
+boltz:Q10850 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:taxonName 	"Rodentia"@en ; 
+	kgo:taxonRank	boltz:Q36602 ; 
+	skos:definition	"""Order of mammals"""@en ;
+	skos:prefLabel	"Rodentia"@en .
+
+boltz:Q212242 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10850 ; 
+	kgo:taxonName 	"Myomorpha"@en ; 
+	kgo:taxonRank	boltz:Q5867959 ; 
+	skos:definition	"""Suborder of mammals"""@en ;
+	skos:prefLabel	"Myomorpha"@en .
+
+boltz:Q58949 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q212242 ; 
+	kgo:taxonName 	"Muroidea"@en ; 
+	kgo:taxonRank	boltz:Q2136103 ; 
+	skos:definition	"""Superfamily of mammals"""@en ;
+	skos:prefLabel	"Muroidea"@en .
+
+boltz:Q133021 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q58949 ; 
+	kgo:taxonName 	"Nesomyidae"@en ; 
+	kgo:taxonRank	boltz:Q35409 ; 
+	skos:definition	"""Family of mammals"""@en ;
+	skos:prefLabel	"Nesomyidae"@en .
+
+boltz:Q222439 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q133021 ; 
+	kgo:taxonName 	"Dendromurinae"@en ; 
+	kgo:taxonRank	boltz:Q164280 ; 
+	skos:definition	"""Subfamily of mammals"""@en ;
+	skos:prefLabel	"Dendromurinae"@en .
+
+boltz:Q2742139 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q222439 ; 
+	kgo:taxonName 	"Malacothrix"@en ; 
+	kgo:taxonRank	boltz:Q34740 ; 
+	skos:definition	"""Genus of plants"""@en ;
+	skos:prefLabel	"Malacothrix"@en .
+
+boltz:Q1767957 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2742139 ; 
+	kgo:taxonName 	"Malacothrix typica"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Gerbil mouse"@en .
+
+
+#-----TAXON------
+boltz:Q729 a kgo:Taxon ; 
+	kgo:taxonName 	"Animalia"@en ; 
+	kgo:taxonRank	boltz:Q36732 ; 
+	skos:definition	"""Kingdom of multicellular eukaryotic organisms"""@en ;
+	skos:prefLabel	"Animal"@en .
+
 boltz:Q719268 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q729 ; 
 	kgo:taxonName 	"Radiata"@en ; 
@@ -1118,12 +1238,12 @@ boltz:Q301930 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Brazilian brown bat"@en .
 
-boltz:Q20906553 a kgo:Taxon ; 
+boltz:Q20906552 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q301930 ; 
 	kgo:taxonName 	"Eptesicus brasiliensis arge"@en ; 
 	kgo:taxonRank	boltz:Q68947 ; 
 	skos:definition	"""Subspecies of mammal"""@en ;
-	skos:prefLabel	"Eptesicus brasiliensis melanopterus"@en .
+	skos:prefLabel	"Eptesicus brasiliensis argentinus"@en .
 
 boltz:Q20906551 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q301930 ; 
@@ -3390,12 +3510,12 @@ boltz:Q2104559 a kgo:Taxon ;
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Tent tortoise"@en .
 
-boltz:Q2104559 a kgo:Taxon ; 
+boltz:Q500000000 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q2104559 ; 
 	kgo:taxonName 	"Psammobates tentorius tentorius"@en ; 
 	kgo:taxonRank	boltz:Q68947 ; 
-	skos:definition	"""Species of reptile"""@en ;
-	skos:prefLabel	"سلحفاة الخيمة"@en .
+	skos:definition	"""Subspecies of reptile"""@en ;
+	skos:prefLabel	"Psammobates tentorius tentorius"@en .
 
 
 #-----TAXON------
@@ -4194,12 +4314,12 @@ boltz:Q49411211 a kgo:Taxon ;
 	skos:definition	"""Subspecies of reptile"""@en ;
 	skos:prefLabel	"Telescopus dhara dhara"@en .
 
-boltz:Q1408445 a kgo:Taxon ; 
+boltz:Q500000001 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1408445 ; 
 	kgo:taxonName 	"Telescopus dhara somalicus"@en ; 
 	kgo:taxonRank	boltz:Q68947 ; 
-	skos:definition	"""Species of reptile"""@en ;
-	skos:prefLabel	"Telescopus dhara"@en .
+	skos:definition	"""Subspecies of reptile"""@en ;
+	skos:prefLabel	"Telescopus dhara somalicus"@en .
 
 
 #-----TAXON------
@@ -6320,12 +6440,12 @@ boltz:Q49499046 a kgo:Taxon ;
 	skos:definition	"""Subspecies of reptile"""@en ;
 	skos:prefLabel	"Duberria lutrix abyssinica"@en .
 
-boltz:Q49499041 a kgo:Taxon ; 
+boltz:Q500000002 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q3040516 ; 
 	kgo:taxonName 	"Duberria lutrix atriventris"@en ; 
 	kgo:taxonRank	boltz:Q68947 ; 
 	skos:definition	"""Subspecies of reptile"""@en ;
-	skos:prefLabel	"Duberria lutrix rhodesiana"@en .
+	skos:prefLabel	"Duberria lutrix atriventris"@en .
 
 boltz:Q49499037 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q3040516 ; 
@@ -6334,12 +6454,12 @@ boltz:Q49499037 a kgo:Taxon ;
 	skos:definition	"""Subspecies of reptile"""@en ;
 	skos:prefLabel	"Duberria lutrix basilewskyi"@en .
 
-boltz:Q49499041 a kgo:Taxon ; 
+boltz:Q500000003 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q3040516 ; 
 	kgo:taxonName 	"Duberria lutrix lutrix"@en ; 
 	kgo:taxonRank	boltz:Q68947 ; 
 	skos:definition	"""Subspecies of reptile"""@en ;
-	skos:prefLabel	"Duberria lutrix rhodesiana"@en .
+	skos:prefLabel	"Duberria lutrix lutrix"@en .
 
 boltz:Q49410488 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q3040516 ; 
@@ -7845,12 +7965,12 @@ boltz:Q29995 a kgo:Taxon ;
 	skos:definition	"""Species of otter"""@en ;
 	skos:prefLabel	"European otter"@en .
 
-boltz:Q29995 a kgo:Taxon ; 
+boltz:Q20907650 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q29995 ; 
 	kgo:taxonName 	"Lutra lutra aurobrunnea"@en ; 
 	kgo:taxonRank	boltz:Q68947 ; 
-	skos:definition	"""Species of otter"""@en ;
-	skos:prefLabel	"Otter"@en .
+	skos:definition	"""Subspecies of otter"""@en ;
+	skos:prefLabel	"Lutra lutra aurobrunneus"@en .
 
 boltz:Q2122042 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q29995 ; 
@@ -7859,12 +7979,12 @@ boltz:Q2122042 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Japanese otter"@en .
 
-boltz:Q29995 a kgo:Taxon ; 
+boltz:Q20907656 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q29995 ; 
 	kgo:taxonName 	"Lutra lutra monticola"@en ; 
 	kgo:taxonRank	boltz:Q68947 ; 
-	skos:definition	"""Species of otter"""@en ;
-	skos:prefLabel	"Otter"@en .
+	skos:definition	"""Subspecies of otter"""@en ;
+	skos:prefLabel	"Lutra lutra monticolus"@en .
 
 boltz:Q20907648 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q29995 ; 
@@ -11000,12 +11120,12 @@ boltz:Q5125411 a kgo:Taxon ;
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Sphenomorphus scutatus"@en .
 
-boltz:Q610725 a kgo:Taxon ; 
+boltz:Q5084008 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1758486 ; 
 	kgo:taxonName 	"Sphenomorphus assatum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	skos:definition	"""Species of reptile"""@en ;
-	skos:prefLabel	"Sphenomorphus indicus"@en .
+	skos:prefLabel	"Sphenomorphus assatus"@en .
 
 boltz:Q5087140 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1758486 ; 
@@ -11014,12 +11134,12 @@ boltz:Q5087140 a kgo:Taxon ;
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Sphenomorphus cherriei"@en .
 
-boltz:Q610725 a kgo:Taxon ; 
+boltz:Q5094509 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1758486 ; 
 	kgo:taxonName 	"Sphenomorphus incertum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	skos:definition	"""Species of reptile"""@en ;
-	skos:prefLabel	"Sphenomorphus indicus"@en .
+	skos:prefLabel	"Sphenomorphus incertus"@en .
 
 
 #-----TAXON------
@@ -11360,26 +11480,26 @@ boltz:Q736473 a kgo:Taxon ;
 	skos:definition	"""Genus of mammals"""@en ;
 	skos:prefLabel	"Eptesicus"@en .
 
-boltz:Q300941 a kgo:Taxon ; 
+boltz:Q3427090 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q736473 ; 
 	kgo:taxonName 	"Cnephaeus"@en ; 
 	kgo:taxonRank	boltz:Q3238261 ; 
-	skos:definition	"""Species of mammal"""@en ;
-	skos:prefLabel	"Northern bat"@en .
+	skos:definition	"""Genus of insects"""@en ;
+	skos:prefLabel	"Cnephasia"@en .
 
 boltz:Q214869 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q300941 ; 
+	kgo:subTaxonOf	boltz:Q3427090 ; 
 	kgo:taxonName 	"Eptesicus serotinus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Serotine bat"@en .
 
-boltz:Q20906593 a kgo:Taxon ; 
+boltz:Q500000004 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q214869 ; 
 	kgo:taxonName 	"Eptesicus serotinus mirza"@en ; 
 	kgo:taxonRank	boltz:Q68947 ; 
 	skos:definition	"""Subspecies of mammal"""@en ;
-	skos:prefLabel	"Eptesicus serotinus isabellinus"@en .
+	skos:prefLabel	"Eptesicus serotinus mirza"@en .
 
 boltz:Q20906589 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q214869 ; 
@@ -11868,15 +11988,15 @@ boltz:Q794596 a kgo:Taxon ;
 	skos:definition	"""Subfamily of insects"""@en ;
 	skos:prefLabel	"Biblidinae"@en .
 
-boltz:Q574645 a kgo:Taxon ; 
+boltz:Q21360195 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q794596 ; 
 	kgo:taxonName 	"Eurytelini"@en ; 
 	kgo:taxonRank	boltz:Q227936 ; 
-	skos:definition	"""Species of butterfly"""@en ;
-	skos:prefLabel	"Diaethria clymena"@en .
+	skos:definition	"""Subtribe of insects"""@en ;
+	skos:prefLabel	"Eurytelina"@en .
 
 boltz:Q13861951 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q574645 ; 
+	kgo:subTaxonOf	boltz:Q21360195 ; 
 	kgo:taxonName 	"Mestra"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	skos:definition	"""Butterfly"""@en ;
