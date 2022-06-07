@@ -1,155 +1,99 @@
 boltz:Q36732 a kgo:TaxonRank ;
     rdfs:label	"Kingdom"@en ;
-    kgo:nextLowerRank   boltz:Q2752679 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q2752679 a kgo:TaxonRank ;
     rdfs:label	"Subkingdom"@en ;
-    kgo:nextHigherRank  boltz:Q36732 ;
-    kgo:nextLowerRank   boltz:Q3150876 ;
     skos:definition	"Taxonomic rank in biological classification"@en .
 
 boltz:Q3150876 a kgo:TaxonRank ;
     rdfs:label	"Infrakingdom"@en ;
-    kgo:nextHigherRank  boltz:Q2752679 ;
-    kgo:nextLowerRank   boltz:Q3978005 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q3978005 a kgo:TaxonRank ;
     rdfs:label	"Superphylum"@en ;
-    kgo:nextHigherRank  boltz:Q3150876 ;
-    kgo:nextLowerRank   boltz:Q38348 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q38348 a kgo:TaxonRank ;
     rdfs:label	"Phylum"@en ;
-    kgo:nextHigherRank  boltz:Q3978005 ;
-    kgo:nextLowerRank   boltz:Q1153785 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q1153785 a kgo:TaxonRank ;
     rdfs:label	"Subphylum"@en ;
-    kgo:nextHigherRank  boltz:Q38348 ;
-    kgo:nextLowerRank   boltz:Q2361851 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q2361851 a kgo:TaxonRank ;
     rdfs:label	"Infraphylum"@en ;
-    kgo:nextHigherRank  boltz:Q1153785 ;
-    kgo:nextLowerRank   boltz:Q3504061 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q3504061 a kgo:TaxonRank ;
     rdfs:label	"Superclass"@en ;
-    kgo:nextHigherRank  boltz:Q2361851 ;
-    kgo:nextLowerRank   boltz:Q2007442 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q2007442 a kgo:TaxonRank ;
     rdfs:label	"Infraclass"@en ;
-    kgo:nextHigherRank  boltz:Q3504061 ;
-    kgo:nextLowerRank   boltz:Q37517 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q37517 a kgo:TaxonRank ;
     rdfs:label	"Class"@en ;
-    kgo:nextHigherRank  boltz:Q2007442 ;
-    kgo:nextLowerRank   boltz:Q5867051 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q5867051 a kgo:TaxonRank ;
     rdfs:label	"Subclass"@en ;
-    kgo:nextHigherRank  boltz:Q37517 ;
-    kgo:nextLowerRank   boltz:Q5868144 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q5868144 a kgo:TaxonRank ;
     rdfs:label	"Superorder"@en ;
-    kgo:nextHigherRank  boltz:Q5867051 ;
-    kgo:nextLowerRank   boltz:Q2889003 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q2889003 a kgo:TaxonRank ;
     rdfs:label	"Infraorder"@en ;
-    kgo:nextHigherRank  boltz:Q5868144 ;
-    kgo:nextLowerRank   boltz:Q36602 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q36602 a kgo:TaxonRank ;
     rdfs:label	"Order"@en ;
-    kgo:nextHigherRank  boltz:Q2889003 ;
-    kgo:nextLowerRank   boltz:Q5867959 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q5867959 a kgo:TaxonRank ;
     rdfs:label	"Suborder"@en ;
-    kgo:nextHigherRank  boltz:Q36602 ;
-    kgo:nextLowerRank   boltz:Q2136103 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q2136103 a kgo:TaxonRank ;
     rdfs:label	"Superfamily"@en ;
-    kgo:nextHigherRank  boltz:Q5867959 ;
-    kgo:nextLowerRank   boltz:Q35409 ;
     skos:definition	"Taxonomic rank above family and below order"@en .
 
 boltz:Q35409 a kgo:TaxonRank ;
     rdfs:label	"Family"@en ;
-    kgo:nextHigherRank  boltz:Q2136103 ;
-    kgo:nextLowerRank   boltz:Q164280 ;
     skos:definition	"Taxonomic rank (or a taxon at that rank) between order and genus"@en .
 
 boltz:Q164280 a kgo:TaxonRank ;
     rdfs:label	"Subfamily"@en ;
-    kgo:nextHigherRank  boltz:Q35409 ;
-    kgo:nextLowerRank   boltz:Q227936 ;
     skos:definition	"Taxonomic rank below family"@en .
 
 boltz:Q227936 a kgo:TaxonRank ;
     rdfs:label	"Tribe"@en ;
-    kgo:nextHigherRank  boltz:Q164280 ; 
-    kgo:nextLowerRank   boltz:Q3965313 ;
     skos:definition	"Taxonomic rank between family and genus"@en .
 
 boltz:Q3965313 a kgo:TaxonRank ;
     rdfs:label	"Subtribe"@en ;
-    kgo:nextHigherRank  boltz:Q227936 ;
-    kgo:nextLowerRank   boltz:Q34740 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q34740 a kgo:TaxonRank ;
     rdfs:label	"Genus"@en ;
-    go:nkextHigherRank  boltz:Q3965313 ; 
-    kgo:nextLowerRank   boltz:Q3238261 ; 
     skos:definition	"Taxonomic rank used in the biological classification of living and fossil organisms, and viruses"@en .
 
 boltz:Q3238261 a kgo:TaxonRank ;
     rdfs:label	"Subgenus"@en ;
-    kgo:nextHigherRank  boltz:Q34740 ;
-    kgo:nextLowerRank   boltz:Q7432 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q7432 a kgo:TaxonRank ;
     rdfs:label	"Species"@en ;
-    kgo:nextHigherRank  boltz:Q3238261 ;
-    kgo:nextLowerRank   boltz:Q68947 ;
     skos:definition	"One of the basic units of biological classification and a taxonomic rank"@en .
 
 boltz:Q68947 a kgo:TaxonRank ;
     rdfs:label	"Subspecies"@en ;
-    kgo:nextHigherRank  boltz:Q7432 ;
     skos:definition	"Taxonomic rank subordinate to species"@en .
 
 boltz:Q713623 a kgo:TaxonRank ;
     rdfs:label	"Clade"@en ;
     skos:definition	"Mnophyletic group of organisms composed of a common ancestor and all its lineal descendants"@en .
-
-boltz:Q68947 a kgo:TaxonRank ;
-    rdfs:label	"Subspecies"@en ;
-    kgo:nextHigherRank  boltz:Q7432 ;
-    skos:definition	"Taxonomic rank subordinate to species"@en .
-
-boltz:Q713623 a kgo:TaxonRank ;
-    rdfs:label	"Clade"@en ;
-    skos:definition	"Mnophyletic group of organisms composed of a common ancestor and all its lineal descendants"@en .
-

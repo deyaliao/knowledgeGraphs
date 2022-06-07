@@ -1,0 +1,1126 @@
+# ----------------------General Taxonomy----------------------
+boltz:Q2382443 a kgo:Taxon ;
+        kgo:taxonName    "Biota"@en ;
+        kgo:taxonRank    boltz:Q22666877 ;
+        skos:definition  "A superdomain of all organisms"@en ;
+        skos:prefLabel   "Biota"@en .
+
+boltz:Q19088 a  kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q2382443 ;
+        kgo:taxonName    "Eukaryota"@en ;
+        kgo:taxonRank    boltz:Q146481 ;
+        skos:definition  "A taxonomic group whose members have complex structures enclosed within membranes"@en ;
+        skos:prefLabel   "Eukaryote"@en .
+
+boltz:Q19081 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q2382443 ;
+        kgo:taxonName    "Prokaryota"@en ;
+        kgo:taxonRank    boltz:Q146481 ;
+        skos:definition  "Group of organisms whose cells lack a cell nucleus"@en ;
+        skos:prefLabel   "Prokaryotes"@en .
+
+# ----------------------Bacteria Taxonomy----------------------
+boltz:Q10876 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q19081 ;
+        kgo:taxonName    "Bacteria"@en ;
+        kgo:taxonRank    boltz:Q36732 ;
+        skos:definition  "Domain of prokaryotes"@en ;
+        skos:prefLabel   "Bacteria"@en .
+
+# ----------------------E. Coli Taxonomy----------------------
+boltz:Q3337759 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q10876 ;
+        kgo:taxonName    "Negibacteria"@en ;
+        kgo:taxonRank    boltz:Q2752679 ;
+        skos:definition  "Subkingdom of Gram-negative bacteria"@en ;
+        skos:prefLabel   "Negibacteria"@en .
+
+boltz:Q130999 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q3337759 ;
+        kgo:taxonName    "Proteobacteria"@en ;
+        kgo:taxonRank    boltz:Q38348 ;
+        skos:definition  "Phylum of Gram-negative bacteria"@en ;
+        skos:prefLabel   "Proteobacteria"@en .
+
+boltz:Q134668 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q130999 ;
+        kgo:taxonName    "Gammaproteobacteria"@en ;
+        kgo:taxonRank    boltz:Q37517 ;
+        skos:definition  "Class of bacteria"@en ;
+        skos:prefLabel   "Gammaproteobacteria"@en .
+
+boltz:Q6034931 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q134668 ;
+        kgo:taxonName    "Enterobacterales"@en ;
+        kgo:taxonRank    boltz:Q36602 ;
+        skos:definition  "Order of bacteria"@en ;
+        skos:prefLabel   "Enterobacterales"@en .
+
+boltz:Q380136 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q6034931 ;
+        kgo:taxonName    "Enterobacteriaceae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "Family of bacteria"@en ;
+        skos:altLabel   "P. flectens";
+        skos:prefLabel   "Enterobacteriaceae"@en .
+
+boltz:Q311055 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q380136 ;
+        kgo:taxonName    "Escherichia"@en ;
+        kgo:taxonRank    boltz:Q34740 ;
+        skos:definition  "Genus of Bacteria"@en ;
+        skos:prefLabel   "Escherichia"@en .
+
+boltz:Q25419 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q311055 ;
+        kgo:taxonName    "Escherichia coli"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        skos:definition  "Species of Gram-negative, rod-shaped bacterium"@en ;
+        skos:prefLabel   "Escherichia Coli"@en ;
+        skos:altLabel    "E. Coli"@en .
+
+# ----------------------B. Subtilis Taxonomy----------------------
+boltz:Q3399629 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q10876 ;
+        kgo:taxonName    "Posibacteria"@en ;
+        kgo:taxonRank    boltz:Q2752679 ;
+        skos:definition  "Subkingdom of Gram-positive bacteria"@en ;
+        skos:prefLabel   "Posibacteria"@en .
+
+boltz:Q149075 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q3399629 ;
+        kgo:taxonName    "Firmicutes"@en ;
+        kgo:taxonRank    boltz:Q38348 ;
+        skos:definition  "Phylum of bacteria"@en ;
+        skos:prefLabel   "Firmicutes"@en .
+
+boltz:Q149128 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q149075 ;
+        kgo:taxonName    "Bacilli"@en ;
+        kgo:taxonRank    boltz:Q37517 ;
+        skos:definition  "Taxon (class) Bacilli, including some rod-shaped (bacilli) and some spherical (cocci) bacter"@en ;
+        skos:prefLabel   "Bacilli"@en .
+
+boltz:Q149088 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q149128 ;
+        kgo:taxonName    "Bacillales"@en ;
+        kgo:taxonRank    boltz:Q36602 ;
+        skos:definition  "Order of bacteria"@en ;
+        skos:prefLabel   "Bacillales"@en .
+
+boltz:Q149098 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q149088 ;
+        kgo:taxonName    "Bacillaceae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "Family of bacteria"@en ;
+        skos:prefLabel   "Bacillaceae"@en .
+
+boltz:Q212032 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q149098 ;
+        kgo:taxonName    "Bacillus"@en ;
+        kgo:taxonRank    boltz:Q34740 ;
+        skos:definition  "Genus of bacteria"@en ;
+        skos:prefLabel   "Bacillus"@en .
+
+boltz:Q131238 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q212032 ;
+        kgo:taxonName    "Bacillus subtilis"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        skos:definition  "Catalase-positive bacterium"@en ;
+        skos:altLabel   "B. subtilis"@en ;
+        skos:prefLabel   "Bacillus subtilis"@en .
+
+# ----------------------Plant Taxonomy----------------------
+boltz:Q756 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q2382443 ;
+        kgo:taxonName    "Plantae"@en ;
+        kgo:taxonRank    boltz:Q36732 ;
+        skos:definition  "Multicellular eukaryote of the kingdom Plantae"@en ;
+        skos:prefLabel   "Plant"@en .
+
+boltz:Q11973077 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q756 ;
+        kgo:taxonName    "Viridiplantae"@en ;
+        kgo:taxonRank    boltz:Q2752679 ;
+        skos:definition  "Clade of eukaryotes including green algae and the land plants"@en ;
+        skos:prefLabel   "Chlorobiota"@en .
+
+boltz:Q133527 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q11973077 ;
+        kgo:taxonName    "Streptophyta"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "Clade consisting of the charophyte algae and land plants"@en ;
+        skos:prefLabel   "Streptophytina"@en .
+
+boltz:Q192154 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q133527 ;
+        kgo:taxonName    "Embryophyte"@en ;
+        kgo:taxonRank    boltz:Q2752679 ;
+        skos:definition  "Subkingdom of plants"@en ;
+        skos:prefLabel   "Land Plants"@en .
+
+boltz:Q27133 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q192154 ;
+        kgo:taxonName    "Tracheophyta"@en ;
+        kgo:taxonRank    boltz:Q334460 ;
+        skos:definition  "Division of plants"@en ;
+        skos:prefLabel   "Higher Plants"@en .
+
+boltz:Q642865 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q27133 ;
+        kgo:taxonName    "Euphyllophyta"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "Clade of plants"@en ;
+        skos:prefLabel   "Euphyllophytina"@en .
+
+boltz:Q25814 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q642865 ;
+        kgo:taxonName    "Spermatophyta"@en ;
+        kgo:taxonRank    boltz:Q3491997 ;
+        skos:definition  "Subdivision of plants"@en ;
+        skos:prefLabel   "Seed plants"@en .
+
+boltz:Q25314 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25814 ;
+        kgo:taxonName    "Angiospermae"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "Clade of flowering plants (in APG I-III)"@en ;
+        skos:prefLabel   "Angiosperms"@en .
+
+# ----------------------Oak Tree Taxonomy----------------------
+boltz:Q165468 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25314 ;
+        kgo:taxonName    "Eudicotidae"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "Clade of flowering plants"@en ;
+        skos:prefLabel   "Eudicots"@en .
+
+boltz:Q869087 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q165468 ;
+        kgo:taxonName    "Core Eudicots"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "Major clade of flowering plants"@en ;
+        skos:prefLabel   "Core Eudicots"@en .
+
+boltz:Q338878 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q869087 ;
+        kgo:taxonName    "Rosiden"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "Large clade of flowering plants"@en ;
+        skos:prefLabel   "Rosids"@en .
+
+boltz:Q2683213 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q338878 ;
+        kgo:taxonName    "Fabidae"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "An important clade of plants, in APG III and IV"@en ;
+        skos:prefLabel   "Fabids"@en .
+
+boltz:Q21881 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q2683213 ;
+        kgo:taxonName    "Fagales"@en ;
+        kgo:taxonRank    boltz:Q36602 ;
+        skos:definition  "Order of plants"@en ;
+        skos:prefLabel   "Fagales"@en .
+
+boltz:Q145977 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q21881 ;
+        kgo:taxonName    "Fagaceae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "Family of plants"@en ;
+        skos:prefLabel   "Fagaceae"@en .
+
+boltz:Q12004 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q145977 ;
+        kgo:taxonName    "Quercus"@en ;
+        kgo:taxonRank    boltz:Q34740 ;
+        skos:definition  "Genus of plants"@en ;
+        skos:prefLabel   "Oak Tree"@en .
+
+# ----------------------Banana Taxonomy----------------------
+boltz:Q78961 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25314 ;
+        kgo:taxonName    "Monocotyledons"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "Important clade of plants"@en ;
+        skos:prefLabel   "Monocots"@en .
+
+boltz:Q868546 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q78961 ;
+        kgo:taxonName    "Commelinids"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "Important clade of plants (In APG II and III)"@en ;
+        skos:prefLabel   "Commelinids"@en .
+
+boltz:Q203779 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q868546 ;
+        kgo:taxonName    "Zingiberales"@en ;
+        kgo:taxonRank    boltz:Q36602 ;
+        skos:definition  "Order of Plants"@en ;
+        skos:prefLabel   "Zingiberales"@en .
+
+boltz:Q156525 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q203779 ;
+        kgo:taxonName    "Musaceae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "Family of Plants"@en ;
+        skos:prefLabel   "Musaceae"@en .
+
+boltz:Q8666090 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q156525 ;
+        kgo:taxonName    "Musa"@en ;
+        kgo:taxonRank    boltz:Q34740 ;
+        skos:definition  "Genus of Plant"@en ;
+        skos:prefLabel   "Musa"@en .
+
+boltz:Q50845174 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q8666090 ;
+        kgo:taxonName    "Musa ×sapientum"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        skos:definition  "Species of Plant"@en ;
+        skos:altLabel   "Banana"@en ;
+        skos:prefLabel   "Banana Tree"@en .
+
+# ----------------------Broccoli Taxonomy----------------------
+boltz:Q2133361 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q338878 ;
+        kgo:taxonName    "Malvidae"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "Major clade of plants (in APG III and IV)"@en ;
+        skos:prefLabel   "Malvids"@en .
+
+boltz:Q21904 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q2133361 ;
+        kgo:taxonName    "Brassicales"@en ;
+        kgo:taxonRank    boltz:Q36602 ;
+        skos:definition  "Order of plants"@en ;
+        skos:prefLabel   "Brassicales"@en .
+
+boltz:Q156888 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q21904 ;
+        kgo:taxonName    "Brassicaceae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "Family of plants"@en ;
+        skos:prefLabel   "Cruciferae"@en .
+
+boltz:Q15054388 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q156888 ;
+        kgo:taxonName    "Brassiceae"@en ;
+        kgo:taxonRank    boltz:Q227936 ;
+        skos:definition  "Tribe of plants"@en ;
+        skos:prefLabel   "Brassiceae"@en .
+
+boltz:Q58677 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q15054388 ;
+        kgo:taxonName    "Brassica"@en ;
+        kgo:taxonRank    boltz:Q34740 ;
+        skos:definition  "Genus of plants"@en ;
+        skos:prefLabel   "Cabbage"@en .
+
+boltz:Q146212 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q58677 ;
+        kgo:taxonName    "Brassica oleracea"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        skos:definition  "Species of plant"@en ;
+        skos:prefLabel   "Collard Greens"@en .
+
+boltz:Q47722 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q146212 ;
+        kgo:taxonName    "Brassica oleracea var. italica"@en ;
+        kgo:taxonRank    boltz:Q767728 ;
+        skos:definition  "Edible green plant in the cabbage family"@en ;
+        skos:prefLabel   "Broccoli"@en .
+
+# ----------------------Animal Taxonomy----------------------
+boltz:Q729 a   kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q19081 ;
+        kgo:taxonName    "Animalia"@en ;
+        kgo:taxonRank    boltz:Q2752679 ;
+        skos:definition  "A kingdom of multicellular eukaryotic organisms"@en ;
+        skos:altLabel    "Animalia"@en ;
+        skos:altLabel    "Metazoa"@en ;
+        skos:prefLabel   "Animal"@en .
+
+boltz:Q5174 a   kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q729 ;
+        kgo:taxonName    "Eumetazoa"@en ;
+        kgo:taxonRank    boltz:Q2752679 ;
+        skos:definition  "A subkingdom of animals"@en ;
+        skos:prefLabel   "Eumetazoa"@en .
+
+boltz:Q5173 a   kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q5174 ;
+        kgo:taxonName    "Bilateria"@en ;
+        kgo:taxonRank    boltz:Q2752679 ;
+        skos:definition  "A clade containing all animals having a bilateral symmetry as an embryo"@en ;
+        skos:prefLabel   "Bilateria"@en .
+
+boltz:Q150866 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q5173 ;
+        kgo:taxonName    "Deuterostomia"@en ;
+        kgo:taxonRank    boltz:Q3978005 ;
+        skos:definition  "A superphylum of bilateral animals"@en ;
+        skos:prefLabel   "Deuterostome"@en .
+
+boltz:Q10915 a  kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q150866 ;
+        kgo:taxonName    "Chordata"@en ;
+        kgo:taxonRank    boltz:Q38348 ;
+        skos:definition  "A phylum of animals"@en ;
+        skos:prefLabel   "Chordata"@en .
+
+boltz:Q3280581 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q10915 ;
+        kgo:taxonName    "Olfactores"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A clade of chordates"@en ;
+        skos:prefLabel   "Olfactores"@en .
+
+boltz:Q84149 a  kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q3280581 ;
+        kgo:taxonName    "Craniata"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A clade of chordates"@en ;
+        skos:prefLabel   "Craniata"@en .
+
+boltz:Q25241 a  kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q84149 ;
+        kgo:taxonName    "Vertebrata"@en ;
+        kgo:taxonRank    boltz:Q1153785 ;
+        skos:definition  "A subphylum of chordates"@en ;
+        skos:prefLabel   "Vertebrata"@en .
+
+boltz:Q26214 a  kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25241 ;
+        kgo:taxonName    "Gnathostomata"@en ;
+        kgo:taxonRank    boltz:Q2361851 ;
+        skos:definition  "A infraphylum of jawed vertebrates"@en ;
+        skos:prefLabel   "Gnathostomata"@en .
+
+boltz:Q27207 a  kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q26214 ;
+        kgo:taxonName    "Osteichthyes"@en ;
+        kgo:taxonRank    boltz:Q60922428 ;
+        skos:definition  "A diverse group of fish with skeletons of bone rather than cartilage"@en ;
+        skos:prefLabel   "Osteichthyes"@en .
+
+boltz:Q160830 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q27207 ;
+        kgo:taxonName    "Sarcopterygii"@en ;
+        kgo:taxonRank    boltz:Q3504061 ;
+        skos:definition  "A superclass or class of fishes"@en ;
+        skos:prefLabel   "Sarcopterygii"@en .
+
+boltz:Q23809240 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q160830 ;
+        kgo:taxonName    "Dipnotetrapodomorpha"@en ;
+        kgo:taxonRank    boltz:Q37517 ;
+        skos:definition  "A class or subclass of vertebrates: tetrapods and lungfish"@en ;
+        skos:prefLabel   "Dipnotetrapodomorpha"@en .
+
+boltz:Q1209254 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q23809240 ;
+        kgo:taxonName    "Tetrapodomorpha"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A subclass of vertebrates"@en ;
+        skos:prefLabel   "Tetrapodomorpha"@en .
+
+boltz:Q19159 a  kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q1209254 ;
+        kgo:taxonName    "Tetrapoda"@en ;
+        kgo:taxonRank    boltz:Q3504061 ;
+        skos:definition  "A Superclass of the first four-limbed vertebrates and their descendants"@en ;
+        skos:prefLabel   "Tetrapoda"@en .
+
+# ----------------------Bird Taxonomy----------------------
+boltz:Q5113 a   kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q19159 ;
+        kgo:taxonName    "Aves"@en ;
+        kgo:taxonRank    boltz:Q37517 ;
+        skos:definition  "A class of tetrapods"@en ;
+        skos:prefLabel   "Bird"@en .
+
+boltz:Q19166 a  kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q5113 ;
+        kgo:taxonName    "Palaeognathae"@en ;
+        kgo:taxonRank    boltz:Q5867051 ;
+        skos:definition  "A clade of living birds"@en ;
+        skos:prefLabel   "Palaeognathae"@en .
+
+boltz:Q840849 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q19166 ;
+        kgo:taxonName    "Struthioniformes"@en ;
+        kgo:taxonRank    boltz:Q36602 ;
+        skos:definition  "An order of birds"@en ;
+        skos:prefLabel   "Struthioniformes"@en .
+
+boltz:Q1569770 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q840849 ;
+        kgo:taxonName    "Struthionidae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "A family of birds"@en ;
+        skos:prefLabel   "Struthionidae"@en .
+
+boltz:Q2576337 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q1569770 ;
+        kgo:taxonName    "Struthio"@en ;
+        kgo:taxonRank    boltz:Q34740 ;
+        skos:definition  "A genus of birds"@en ;
+        skos:prefLabel   "Struthio"@en .
+
+boltz:Q17592 a  kgo:Taxon ;
+        rdfs:comment     "Note that subClassOf Animal is from the Test dataset"@en ;
+        rdfs:subClassOf  <http://www.w3.org/2000/03/example/classes#Animal> ;
+        kgo:subTaxonOf   boltz:Q2576337 ;
+        kgo:taxonName    "Struthio camelus"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        kgo:averageMass  [
+            a qudt:Quantity ;
+            qudt:unit unit:KiloGM ;
+            qudt:value 104.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLifespan  [
+            a qudt:Quantity ;
+            qudt:unit unit:YR_Common;
+            qudt:value 42.5 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:prefComparisons [
+            a rdf:List ;
+            rdf:first kgo:averageMass ;
+            rdf:rest [
+                a rdf:List ;
+                rdf:first kgo:averageLifespan ;
+                rdf:rest rdf:nil ;
+            ] ;
+        ] ;
+        skos:definition  "A species of large flightless bird"@en ;
+        skos:prefLabel   "Ostrich"@en .
+
+boltz:Q3976169 a  kgo:Taxon ;
+        rdfs:comment     "Note that subClassOf Animal is from the Test dataset"@en ;
+        rdfs:subClassOf  <http://www.w3.org/2000/03/example/classes#Animal> ;
+        kgo:subTaxonOf   boltz:Q17592 ;
+        kgo:taxonName    "Struthio camelus australis"@en ;
+        kgo:taxonRank    boltz:Q68947;
+        skos:definition  "A type of Ostrich found in Southern Africa"@en ;
+        skos:prefLabel   "South African Ostrich"@en .
+
+boltz:Q3976168 a  kgo:Taxon ;
+        rdfs:comment     "Note that subClassOf Animal is from the Test dataset"@en ;
+        rdfs:subClassOf  <http://www.w3.org/2000/03/example/classes#Animal> ;
+        kgo:subTaxonOf   boltz:Q17592 ;
+        kgo:taxonName    "Struthio camelus massaicus"@en ;
+        kgo:taxonRank    boltz:Q68947;
+        kgo:averageMass  [
+            a qudt:Quantity ;
+            qudt:unit unit:KiloGM ;
+            qudt:value 115.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:prefComparisons [
+            a rdf:List ;
+            rdf:first kgo:averageMass ;
+            rdf:rest rdf:nil ;
+        ] ;
+        skos:definition  "A type of Ostrich found in Eastern Africa, also known as the East African Ostrich"@en ;
+        skos:prefLabel   "Masai Ostrich"@en .
+
+boltz:Q3976170 a  kgo:Taxon ;
+        rdfs:comment     "Note that subClassOf Animal is from the Test dataset"@en ;
+        rdfs:subClassOf  <http://www.w3.org/2000/03/example/classes#Animal> ;
+        kgo:subTaxonOf   boltz:Q17592 ;
+        kgo:taxonName    "Struthio camelus camelus"@en ;
+        kgo:taxonRank    boltz:Q68947;
+        kgo:averageMass  [
+            a qudt:Quantity ;
+            qudt:unit unit:KiloGM ;
+            qudt:value 111.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:prefComparisons [
+            a rdf:List ;
+            rdf:first kgo:averageMass ;
+            rdf:rest rdf:nil ;
+        ] ;
+        skos:definition  "A type of Ostrich found in Northern Africa"@en ;
+        skos:prefLabel   "North African Ostrich"@en .
+
+# ----------------------Reptile Taxonomy----------------------
+boltz:Q134683 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q19159 ;
+        kgo:taxonName    "Reptiliomorpha"@en ;
+        kgo:taxonRank    boltz:Q36602 ;
+        skos:definition  "A Order of reptile-like amphibians"@en ;
+        skos:prefLabel   "Reptiliomorpha"@en .
+
+boltz:Q181537 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q134683 ;
+        kgo:taxonName    "Amniota"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Group of Tetrapods"@en ;
+        skos:prefLabel   "Amniota"@en .
+
+boltz:Q329457 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q181537 ;
+        kgo:taxonName    "Sauropsida"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Group of Tetrapod animals"@en ;
+        skos:prefLabel   "Sauropsida"@en .
+
+boltz:Q10811 a  kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q329457 ;
+        kgo:taxonName    "Reptilia"@en ;
+        kgo:taxonRank    boltz:Q37517 ;
+        skos:definition  "A Class of Tetrapod animals"@en ;
+        skos:prefLabel   "Reptilia"@en .
+
+boltz:Q3060510 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q10811 ;
+        kgo:taxonName    "Eureptilia"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Reptiles"@en ;
+        skos:prefLabel   "Eureptilia"@en .
+
+boltz:Q1061761 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q3060510 ;
+        kgo:taxonName    "Romeriida"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of reptiles that consists of diapsids and the extinct family of Protorothyrididae."@en ;
+        skos:prefLabel   "Romeriida"@en .
+
+boltz:Q134688 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q1061761 ;
+        kgo:taxonName    "Diapsida"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of tetrapods that developed two holes (temporal fenestra) in each side of their skulls, about 300 million years ago."@en ;
+        skos:prefLabel   "Diapsid"@en .
+
+boltz:Q3497035 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q134688 ;
+        kgo:taxonName    "Neodiapsida"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of tetrapods that developed two holes (temporal fenestra) in each side of their skulls, about 300 million years ago."@en ;
+        skos:prefLabel   "Neodiapsida"@en .
+
+boltz:Q2254408 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q3497035 ;
+        kgo:taxonName    "Sauria"@en ;
+        kgo:taxonRank    boltz:Q5867959 ;
+        skos:definition  "A Suborder of Reptiles."@en ;
+        skos:prefLabel   "Sauria"@en .
+
+boltz:Q19595522 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q2254408 ;
+        kgo:taxonName    "Archelosauria"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Reptiles."@en ;
+        skos:prefLabel   "Archelosauria"@en .
+
+boltz:Q134676 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q19595522 ;
+        kgo:taxonName    "Archosauromorpha"@en ;
+        kgo:taxonRank    boltz:Q2007442 ;
+        skos:definition  "An Infraclass of Reptiles."@en ;
+        skos:prefLabel   "Archosauromorpha"@en .
+
+boltz:Q282487 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q134676 ;
+        kgo:taxonName    "Archosauriformes"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Reptiles."@en ;
+        skos:prefLabel   "Archosauriformes"@en .
+
+boltz:Q131341 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q282487 ;
+        kgo:taxonName    "Crurotarsi"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Group of Reptiles."@en ;
+        skos:prefLabel   "Crurotarsi"@en .
+
+boltz:Q130910 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q131341 ;
+        kgo:taxonName    "Archosauria"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Group of Reptiles."@en ;
+        skos:prefLabel   "Archosaur"@en .
+
+boltz:Q2742285 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q130910 ;
+        kgo:taxonName    "Pseudosuchia"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Reptiles."@en ;
+        skos:prefLabel   "Pseudosuchia"@en .
+
+boltz:Q1844946 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q2742285 ;
+        kgo:taxonName    "Suchia"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Group of Reptiles."@en ;
+        skos:prefLabel   "Suchia"@en .
+
+boltz:Q10748156 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q1844946 ;
+        kgo:taxonName    "Paracrocodylomorpha"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Group of Reptiles."@en ;
+        skos:prefLabel   "Paracrocodylomorpha"@en .
+
+boltz:Q13362187 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q10748156 ;
+        kgo:taxonName    "Loricata"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Group of Reptiles."@en ;
+        skos:prefLabel   "Loricata"@en .
+
+boltz:Q4869200 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q13362187 ;
+        kgo:taxonName    "Bathyotica"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Reptiles."@en ;
+        skos:prefLabel   "Bathyotica"@en .
+
+boltz:Q131863 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q4869200 ;
+        kgo:taxonName    "Crocodylomorpha"@en ;
+        kgo:taxonRank    boltz:Q5868144 ;
+        skos:definition  "A Superorder of Reptiles."@en ;
+        skos:prefLabel   "Crocodylomorpha"@en .
+
+boltz:Q3003172 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q131863 ;
+        kgo:taxonName    "Crocodyliformes"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Reptiles."@en ;
+        skos:prefLabel   "Crocodyliformes"@en .
+
+boltz:Q2740674 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q3003172 ;
+        kgo:taxonName    "Mesoeucrocodylia"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Reptiles."@en ;
+        skos:prefLabel   "Mesoeucrocodylia"@en .
+
+boltz:Q3307307 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q2740674 ;
+        kgo:taxonName    "Metasuchia"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Reptiles."@en ;
+        skos:prefLabel   "Metasuchia"@en .
+
+boltz:Q3042061 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q3307307 ;
+        kgo:taxonName    "Neosuchia"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Reptiles."@en ;
+        skos:prefLabel   "Neosuchia"@en .
+
+boltz:Q938944 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q3042061 ;
+        kgo:taxonName    "Eusuchia"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Large Reptiles."@en ;
+        skos:prefLabel   "Eusuchia"@en .
+
+boltz:Q25363 a  kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q938944 ;
+        kgo:taxonName    "Crocodilia"@en ;
+        kgo:taxonRank    boltz:Q36602 ;
+        skos:definition  "A Order of Large Reptiles."@en ;
+        skos:prefLabel   "Crocodilia"@en .
+
+boltz:Q507496 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25363 ;
+        kgo:taxonName    "Alligatoroidea"@en ;
+        kgo:taxonRank    boltz:Q2136103 ;
+        skos:definition  "A Superfamily of Large Reptiles."@en ;
+        skos:prefLabel   "Alligatoroidea"@en .
+
+boltz:Q5571040 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q507496 ;
+        kgo:taxonName    "Globidonta"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "A Clade of Reptiles."@en ;
+        skos:prefLabel   "Globidonta"@en .
+
+boltz:Q6184764 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q5571040 ;
+        kgo:taxonName    "Alligatoridae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "A specialization of Crocodilian. Alligatoridae includes Alligator, Caiman, Melanosuchus and Paleosuchus."@en ;
+        skos:prefLabel   "Alligatoridae"@en .
+
+boltz:Q530397 a kgo:Taxon ;
+        rdfs:comment     "This is the base class that comes up on KBPedia when you search for Alligator"@en ;
+        kgo:subTaxonOf   boltz:Q6184764 ;
+        kgo:taxonName    "Alligator"@en ;
+        kgo:taxonRank    boltz:Q34740 ;
+        skos:definition  "The collection of all alligators; a subset of Crocodilian. Alligator includes the American Alligators and Chinese Alligators. Cf. Crocodile."@en ;
+        skos:prefLabel   "Alligator"@en .
+
+boltz:Q194422 a kgo:Taxon ;
+        rdfs:comment     "Note that subClassOf Animal is from the Test dataset"@en ;
+        rdfs:subClassOf  <http://www.w3.org/2000/03/example/classes#Animal> ;
+        kgo:subTaxonOf   boltz:Q530397 ;
+        kgo:taxonName    "Alligator sinensis"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        kgo:averageMass  [
+            a qudt:Quantity ;
+            qudt:unit unit:KiloGM ;
+            qudt:value 40.5 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLength  [
+            a qudt:Quantity ;
+            qudt:unit unit:IN ;
+            qudt:value 72.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLifespan  [
+            a qudt:Quantity ;
+            qudt:unit unit:YR_Common;
+            qudt:value 70.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:prefComparisons [
+            a rdf:List ;
+            rdf:first kgo:averageMass ;
+            rdf:rest [
+                a rdf:List ;
+                rdf:first kgo:averageLength ;
+                rdf:rest [
+                    a rdf:List ;
+                    rdf:first kgo:averageLifespan ;
+                    rdf:rest rdf:nil ;
+                ] ;
+            ] ;
+        ] ;
+        skos:definition  "The Chinese alligator (Alligator sinensis), also known as the Yangtze alligator, is one of two known living species of Alligator, a genus in the family Alligatoridae.\n      This critically endangered species is endemic to eastern China."@en ;
+        skos:prefLabel   "Chinese Alligator"@en .
+
+boltz:Q193327 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q530397 ;
+        kgo:taxonName    "Alligator mississippiensis"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        kgo:averageMass  [
+            a qudt:Quantity ;
+            qudt:unit unit:KiloGM ;
+            qudt:value 360.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLength  [
+            a qudt:Quantity ;
+            qudt:unit unit:IN ;
+            qudt:value 118.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLifespan  [
+            a qudt:Quantity ;
+            qudt:unit unit:YR_Common;
+            qudt:value 50.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:prefComparisons [
+            a rdf:List ;
+            rdf:first kgo:averageMass ;
+            rdf:rest [
+                a rdf:List ;
+                rdf:first kgo:averageLength ;
+                rdf:rest [
+                    a rdf:List ;
+                    rdf:first kgo:averageLifespan ;
+                    rdf:rest rdf:nil ;
+                ] ;
+            ] ;
+        ] ;
+        skos:definition  "The American alligator (Alligator mississippiensis), sometimes referred to colloquially as a gator or common alligator, is a large crocodilian reptile endemic to the southeastern United States. It is one of two living species in the\n      genus Alligator within the family Alligatoridae; it is larger than the other extant alligator species, the Chinese alligator. Adult male American alligators measure 3.4 to 4.6 m (11 to 15 ft) in length, and can weigh up to 453 kg (1,000 lb). Females\n      are smaller, measuring around 3 m (9.8 ft). The American alligator inhabits freshwater wetlands, such as marshes and cypress swamps from Texas to North Carolina. It is distinguished from the sympatric American crocodile by its broader snout, with\n      overlapping jaws and darker coloration, and is less tolerant of saltw."@en ;
+        skos:prefLabel   "American Alligator"@en .
+
+#-------------------------Mammals Hierarchy----------------------
+boltz:Q2082668 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q19159 ;
+        kgo:taxonName    "Mammaliaformes"@en ;
+        kgo:taxonRank    boltz:Q713623 ;
+        skos:definition  "Clade of tetrapods"@en ;
+        skos:prefLabel   "Mammaliaformes"@en .
+
+boltz:Q7377 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q2082668 ;
+        kgo:taxonName    "Mammal"@en ;
+        kgo:taxonRank    boltz:Q37517 ;
+        skos:definition  "Class of tetrapods"@en ;
+        skos:prefLabel   "Mammal"@en .
+
+boltz:Q130942 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q7377 ;
+        kgo:taxonName    "Theria"@en ;
+        kgo:taxonRank    boltz:Q5867051 ;
+        skos:definition  "Subclass of mammals"@en ;
+        skos:prefLabel   "Theria"@en .
+
+boltz:Q25833 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q130942 ;
+        kgo:taxonName    "Placentalia"@en ;
+        kgo:taxonRank    boltz:Q2007442 ;
+        skos:definition  "Infraclass of mammals"@en ;
+        skos:prefLabel   "Placentalia"@en .
+
+boltz:Q25306 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25833 ;
+        kgo:taxonName    "Carnivora"@en ;
+        kgo:taxonRank    boltz:Q36602 ;
+        skos:definition  "Order of mammals"@en ;
+        skos:prefLabel   "Carnivora"@en .
+
+#--------------------Cat Hierarchy--------------------
+boltz:Q27070 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25306 ;
+        kgo:taxonName    "Feliformia"@en ;
+        kgo:taxonRank    boltz:Q5867959 ;
+        skos:definition  "Suborder of mammals in the order Carnivora"@en ;
+        skos:prefLabel   "Feliformia"@en .
+
+boltz:Q25265 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q27070 ;
+        kgo:taxonName    "Felidae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "Family of mammals in the order of carnivorans"@en ;
+        skos:prefLabel   "Felidae"@en .
+
+boltz:Q42602 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25265 ;
+        kgo:taxonName    "Felinae"@en ;
+        kgo:taxonRank    boltz:Q164280 ;
+        skos:definition  "Subfamily of mammals"@en ;
+        skos:prefLabel   "Felinae"@en .
+
+boltz:Q228283 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q42602 ;
+        kgo:taxonName    "Felis"@en ;
+        kgo:taxonRank    boltz:Q34740;
+        skos:definition  "Genus of Mammals"@en ;
+        skos:prefLabel   "Felis"@en .
+
+boltz:Q20980826 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q228283 ;
+        kgo:taxonName    "Felis catus"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        kgo:averageMass  [
+            a qudt:Quantity ;
+            qudt:unit unit:LB ;
+            qudt:value 8.9 ;
+            kgo:timeRetrieve "2022-04-15T13:54:31-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLength  [
+            a qudt:Quantity ;
+            qudt:unit unit:IN ;
+            qudt:value 18.0 ;
+            kgo:timeRetrieve "2022-04-15T13:54:31-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLifespan  [
+            a qudt:Quantity ;
+            qudt:unit unit:YR_Common;
+            qudt:value 15.0 ;
+            kgo:timeRetrieve "2022-04-15T13:54:31-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:prefComparisons [
+            a rdf:List ;
+            rdf:first kgo:averageMass ;
+            rdf:rest [
+                a rdf:List ;
+                rdf:first kgo:averageLength ;
+                rdf:rest [
+                    a rdf:List ;
+                    rdf:first kgo:averageLifespan ;
+                    rdf:rest rdf:nil ;
+                ] ;
+            ] ;
+        ] ;
+        skos:definition  "The collection of all cats"@en ;
+        skos:prefLabel   "Cat"@en .
+
+#--------------------Dog Hierarchy--------------------
+boltz:Q27414 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25306 ;
+        kgo:taxonName    "Caniformia"@en ;
+        kgo:taxonRank    boltz:Q5867959 ;
+        skos:definition  "Suborder of mammals"@en ;
+        skos:prefLabel   "Caniformia"@en .
+
+boltz:Q25324 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q27414 ;
+        kgo:taxonName    "Canidae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "Family of mammals"@en ;
+        skos:prefLabel   "Canidae"@en .
+
+boltz:Q149892 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25324 ;
+        kgo:taxonName    "Canis"@en ;
+        kgo:taxonRank    boltz:Q34740 ;
+        skos:definition  "Genus of mammals, including domestic dogs"@en ;
+        skos:prefLabel   "Canis"@en .
+
+boltz:Q18498 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q149892 ;
+        kgo:taxonName    "Canis lupus"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        skos:definition  "Species of mammal"@en ;
+        skos:prefLabel   "Grey Wolf"@en .
+
+boltz:Q26972265 a kgo:Taxon ;
+        #ADD ANIMAL STATS OF SUBSSPECIES
+        kgo:subTaxonOf   boltz:Q18498 ;
+        kgo:taxonName    "Canis lupus familiaris"@en ;
+        kgo:taxonRank    boltz:Q68947 ;
+        skos:definition  "Subspecies of mammal"@en ;
+        skos:altLabel   "Domesticated Dog"@en ;
+        skos:prefLabel   "Dog"@en .
+
+#-------------------------Primate Hierarchy----------------------
+boltz:Q7380 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q25833 ;
+        kgo:taxonName    "Primates"@en ;
+        kgo:taxonRank    boltz:Q36602 ;
+        skos:definition  "Order of mammals"@en ;
+        skos:prefLabel   "Primate"@en .
+
+boltz:Q82261 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q7380 ;
+        kgo:taxonName    "Haplorrhini"@en ;
+        kgo:taxonRank    boltz:Q5867959 ;
+        skos:definition  "Suborder of \"dry nosed\" primates, including monkeys, apes, humans"@en ;
+        skos:prefLabel   "Haplorrhini"@en .
+
+boltz:Q5452918 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q82261 ;
+        kgo:taxonName    "Simiiformes"@en ;
+        kgo:taxonRank    kgo:Infraorder ;
+        skos:definition  "Infraorder of mammals: \"higher primates\": New World monkeys, Old World monkeys and apes, including humans"@en ;
+        skos:prefLabel   "Simiiformes"@en .
+
+boltz:Q206930 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q5452918 ;
+        kgo:taxonName    "Catarrhini"@en ;
+        kgo:taxonRank    kgo:Parvorder ;
+        skos:definition  "Parvorder of Old World monkeys and the apes, including humans"@en ;
+        skos:prefLabel   "Catarrhini"@en .
+
+#-------------------------Rhesus Macaque Hierarchy----------------------
+boltz:Q3665073 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q206930 ;
+        kgo:taxonName    "Cercopithecoidea"@en ;
+        kgo:taxonRank    boltz:Q2136103 ;
+        skos:definition  "Superfamily of monkeys"@en ;
+        skos:prefLabel   "Cercopithecoidea"@en .
+
+boltz:Q182968 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q3665073 ;
+        kgo:taxonName    "Cercopithecidae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "Family of mammals"@en ;
+        skos:prefLabel   "Cercopithecidae"@en .
+
+boltz:Q220848 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q182968 ;
+        kgo:taxonName    "Cercopithecinae"@en ;
+        kgo:taxonRank    boltz:Q164280 ;
+        skos:definition  "Subfamily of mammals"@en ;
+        skos:prefLabel   "Cercopithecinae"@en .
+
+boltz:Q177601 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q220848 ;
+        kgo:taxonName    "Macaca"@en ;
+        kgo:taxonRank    boltz:Q34740;
+        skos:definition  "Genus of mammals"@en ;
+        skos:prefLabel   "Macaca"@en .
+
+boltz:Q156606 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q177601 ;
+        kgo:taxonName    "Macaca mulatta"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        kgo:averageMass  [
+            a qudt:Quantity ;
+            qudt:unit unit:KiloGM ;
+            qudt:value 7.7 ;
+            kgo:timeRetrieve "2022-04-15T13:54:31-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLength  [
+            a qudt:Quantity ;
+            qudt:unit unit:IN ;
+            qudt:value 19.0 ;
+            kgo:timeRetrieve "2022-04-15T13:54:31-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLifespan  [
+            a qudt:Quantity ;
+            qudt:unit unit:YR_Common;
+            qudt:value 25.0 ;
+            kgo:timeRetrieve "2022-04-15T13:54:31-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:prefComparisons [
+            a rdf:List ;
+            rdf:first kgo:averageMass ;
+            rdf:rest [
+                a rdf:List ;
+                rdf:first kgo:averageLength ;
+                rdf:rest [
+                    a rdf:List ;
+                    rdf:first kgo:averageLifespan ;
+                    rdf:rest rdf:nil ;
+                ] ;
+            ] ;
+        ] ;
+        skos:definition  "Species of Old World monkey"@en ;
+        skos:prefLabel   "Rhesus Macaque"@en .
+
+#-------------------------Human Hierarchy----------------------
+boltz:Q102470 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q206930 ;
+        kgo:taxonName    "Hominoidea"@en ;
+        kgo:taxonRank    boltz:Q2136103 ;
+        skos:definition  "Superfamily of apes"@en ;
+        skos:prefLabel   "Hominoidea"@en .
+
+boltz:Q635162 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q102470 ;
+        kgo:taxonName    "Hominidae"@en ;
+        kgo:taxonRank    boltz:Q35409 ;
+        skos:definition  "Family of apes"@en ;
+        skos:prefLabel   "Hominidae"@en .
+
+boltz:Q242047 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q635162 ;
+        kgo:taxonName    "Homininae"@en ;
+        kgo:taxonRank    boltz:Q164280 ;
+        skos:definition  "Subfamily of mammals"@en ;
+        skos:prefLabel   "Homininae"@en .
+
+boltz:Q107588 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q242047 ;
+        kgo:taxonName    "Hominini"@en ;
+        kgo:taxonRank    boltz:Q227936 ;
+        skos:definition  "Tribe of mammals"@en ;
+        skos:prefLabel   "Hominini"@en .
+
+boltz:Q605457 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q107588 ;
+        kgo:taxonName    "Hominina"@en ;
+        kgo:taxonRank    boltz:Q3965313 ;
+        skos:definition  "Subtribe of the tribe Hominini"@en ;
+        skos:prefLabel   "Hominina"@en .
+
+boltz:Q171283 a kgo:Taxon ;
+        kgo:subTaxonOf   boltz:Q605457 ;
+        kgo:taxonName    "Homo"@en ;
+        kgo:taxonRank    boltz:Q34740 ;
+        skos:definition  "Genus of mammals"@en ;
+        skos:prefLabel   "Homo"@en .
+
+boltz:Q15978631 a kgo:Taxon ;
+        #PROBABLY DONT ADD ANIMAL STATS
+        kgo:subTaxonOf   boltz:Q171283 ;
+        kgo:taxonName    "Homo sapiens"@en ;
+        kgo:taxonRank    boltz:Q7432 ;
+        skos:definition  "Species of mammal"@en ;
+        skos:prefLabel   "Human"@en .

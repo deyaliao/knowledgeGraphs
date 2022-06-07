@@ -21,7 +21,7 @@ def get_results(endpoint_url, query):
 
 # IMPORTED DATA 
 # Q-values for ranks
-ranks = {"kingdom": "Q36732", "subkingdom": "Q2752679", "infrakingdom": "Q3150876", "superphylum":"Q3978005", "phylum": "Q38348", "subphylum": "Q1153785", "infraphylum": "Q2361851", "superclass": "Q3504061", "infraclass": "Q2007442", "class": "Q37517", "subclass": "Q5867051", "superorder":"Q5868144", "infraorder": "Q2889003", "order" :"Q36602", "suborder": "Q5867959", "superfamily" : "Q2136103", "family": "Q35409", "subfamily": "Q164280", "tribe":"Q227936","subtribe": "Q3965313", "genus": "Q34740", "subgenus":"Q3238261", "species": "Q7432", "subspecies": "Q68947"}
+ranks = {"kingdom": "Q36732", "subkingdom": "Q2752679", "infrakingdom": "Q3150876", "superphylum":"Q3978005", "phylum": "Q38348", "subphylum": "Q1153785", "infraphylum": "Q2361851", "superclass": "Q3504061",  "class": "Q37517", "subclass": "Q5867051", "infraclass": "Q2007442","superorder":"Q5868144", "order" :"Q36602", "suborder": "Q5867959",  "infraorder": "Q2889003", "superfamily" : "Q2136103", "family": "Q35409", "subfamily": "Q164280", "tribe":"Q227936","subtribe": "Q3965313", "genus": "Q34740", "subgenus":"Q3238261", "species": "Q7432", "subspecies": "Q68947"}
 
 def run_query(q_value):
     query = "SELECT DISTINCT * WHERE { \
@@ -38,13 +38,14 @@ def run_query(q_value):
 
 outfile = open('rank-triples.ttl', 'w')
 
+# Need data structure that is able to access previous element. Linked list LOL?
 for q_val in ranks.values():
     res = run_query(q_val)
     description = res["itemdesc"]["value"].capitalize()
     label = res["label"]["value"].capitalize()
     triple = "boltz:" + q_val + " a kgo:taxonRank ;\n\
-    rdfs:label\t\"" + label + "\" ;\n\
-    skos:definition\t\"" + description + "\" .\n\n"
+    rdfs:label\t\"" + label + "\"@en ;\n\
+    skos:definition\t\"" + description + "\"@en .\n\n"
     outfile.write(triple)
 
 outfile.close()
