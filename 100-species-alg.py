@@ -8,6 +8,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 from SPARQLWrapper import SPARQLWrapper, JSON
 from os import sep
 
+
 endpoint_url = "https://query.wikidata.org/sparql"
 
 # TAXA that didn't initially match: need to manually check again
@@ -20,13 +21,13 @@ ranks = {"kingdom": "Q36732", "subkingdom": "Q2752679", "infrakingdom": "Q315087
 
 # MANUALLY CREATED TAXA: taxa that we manually added, no entry WikiData
 all_taxa =  {
-    1157319: {"Q": "Q3427090", "Def": "Genus of insects", "Label": "Cnephasia", "WikiData": True},
-    729890: {"Q": "Q27636553", "Def": "Subspecies of bird", "Label": "Molothrus oryzivorus impacifus", "WikiData": True },
-    949898: {"Q": "Q500000000", "Def": "Subspecies of reptile", "Label": "Psammobates tentorius tentorius", "WikiData": False},
-    1084534: {"Q": "Q500000001", "Def": "Subspecies of reptile", "Label": "Telescopus dhara somalicus", "WikiData": False},
-    1084130: {"Q": "Q500000002", "Def": "Subspecies of reptile", "Label": "Duberria lutrix atriventris", "WikiData": False},
-    1084132: {"Q": "Q500000003", "Def": "Subspecies of reptile", "Label": "Duberria lutrix lutrix", "WikiData": False},
-    1157483: {"Q": "Q500000004", "Def": "Subspecies of mammal", "Label": "Eptesicus serotinus mirza", "WikiData": False}
+    1157319: {"Q": "Q3427090", "Def": "Genus of insects", "Label": "Cnephasia", "image": "", "WikiData": True},
+    729890: {"Q": "Q27636553", "Def": "Subspecies of bird", "Label": "Molothrus oryzivorus impacifus", "image": "", "WikiData": True },
+    949898: {"Q": "Q500000000", "Def": "Subspecies of reptile", "Label": "Psammobates tentorius tentorius", "image": "", "WikiData": False},
+    1084534: {"Q": "Q500000001", "Def": "Subspecies of reptile", "Label": "Telescopus dhara somalicus", "image": "", "WikiData": False},
+    1084130: {"Q": "Q500000002", "Def": "Subspecies of reptile", "Label": "Duberria lutrix atriventris",  "image": "","WikiData": False},
+    1084132: {"Q": "Q500000003", "Def": "Subspecies of reptile", "Label": "Duberria lutrix lutrix",  "image": "","WikiData": False},
+    1157483: {"Q": "Q500000004", "Def": "Subspecies of mammal", "Label": "Eptesicus serotinus mirza",  "image": "", "WikiData": False}
 }
 
 def get_results(endpoint_url, query):
@@ -43,6 +44,10 @@ def extract(results):
     url = result['item']['value']
     label = result['itemLabel']['value']
     try:
+        image_link = result['image']['value']
+    except:
+        image_link = ""
+    try:
         description = result['itemDescription']['value']
     except: #in the case of no description 
         description = ""
@@ -51,16 +56,17 @@ def extract(results):
     while url[n] != "/":
         id = url[n:]
         n -= 1
-    print(id + "  " + label + "  " + description)
-    return id, label.capitalize(), description.capitalize()
+    print(id + "  " + image_link + " " + label + "  " + description)
+    return id, image_link, description.capitalize(), label.capitalize(),
 
 def valid_search(results):
     return len(results["results"]["bindings"]) != 0
 
 def run_q1(animal):
-    query1 = "SELECT ?item ?itemLabel ?itemDescription  \
+    query1 = "SELECT ?item ?image ?itemLabel ?itemDescription  \
         WHERE \
             {?item wdt:P225 \"" + animal + "\" . \
+             OPTIONAL{?item wdt:P18 ?image} . \
             SERVICE wikibase:label \
             {bd:serviceParam wikibase:language \"en\" . } \
         }"
@@ -71,9 +77,10 @@ def run_q1(animal):
     
 # use of alt label, sometimes the taxonomic name is the alias
 def run_q2(animal):
-    query2 = "SELECT ?item ?itemLabel ?itemDescription  \
+    query2 = "SELECT ?item ?image ?itemLabel ?itemDescription  \
         WHERE \
             {?item skos:altLabel \"" + animal + "\"@en . \
+                 OPTIONAL{?item wdt:P18 ?image} . \
             SERVICE wikibase:label \
             {bd:serviceParam wikibase:language \"en\" . } \
         }"
@@ -88,10 +95,11 @@ def run_q3(animal, parent):
     while n < 4:
         new_animal = animal[:0-1]
         # might not be EXACT parentLabel but the PATH matches, intentional because some discrepancies between WikiData and ITIS parentTaxons
-        query3 = "SELECT ?item  ?itemLabel ?itemDescription WHERE \
+        query3 = "SELECT ?item ?image ?itemLabel ?itemDescription WHERE \
             { \
              ?item wdt:P171* wd:" + parent + "; \
                    rdfs:label ?itemLabel. \
+             OPTIONAL{?item wdt:P18 ?image} . \
             filter(regex(str(?itemLabel), \"" + new_animal + "\" )) . \
             SERVICE wikibase:label  \
             {bd:serviceParam wikibase:language \"en\"  . } \
@@ -195,22 +203,24 @@ for i in range(0,len(file_list)):
         # Everything else: either quick dictionary access, or search query 
         taxonID = row["taxonID"]
         if taxonID in all_taxa:
-            Q, label, definition =  all_taxa[taxonID]["Q"], all_taxa[taxonID]["Label"], all_taxa[taxonID]["Def"]
+            Q, image, definition, label =  all_taxa[taxonID]["Q"], all_taxa[taxonID]["image"], all_taxa[taxonID]["Def"], all_taxa[taxonID]["Label"]
         else:
-            Q, label, definition = taxa(scientificName, taxonID, parent_Q)
+            Q, image, definition, label = taxa(scientificName, taxonID, parent_Q)
             all_taxa[taxonID] = {}
             all_taxa[taxonID]["Q"] = Q
             all_taxa[taxonID]["Label"] = label
             all_taxa[taxonID]["Def"] = definition
+            all_taxa[taxonID]["image"] = image
             all_taxa[taxonID]["WikiData"] = True
 
-        full_name = "kgo:taxonName \t" + "\"" + scientificName + "\"@en ; \n\t"
+        full_name = "kgo:taxonName \t\""  + scientificName + "\"@en ; \n\t"
         full_ID = "boltz:" + Q + " a kgo:Taxon ; \n\t" #Q-ID
         full_rank = "kgo:taxonRank\tboltz:" + ranks[row['taxonRank']] + " ; \n\t" #rank
+        full_image = "kgo:taxonImage\t<" + image + "> ; \n\t"
         full_definition = "skos:definition\t\"\"\"" + definition + "\"\"\"@en ;\n\t" #definition
         full_label = "skos:prefLabel\t\"" + label + "\"@en .\n\n"    #preflabel – common name
 
-        d =  full_ID + full_parent_Q + full_name + full_rank + full_definition + full_label 
+        d =  full_ID + full_parent_Q + full_name + full_rank + full_image + full_definition + full_label 
         outfile.write(d)
     outfile.write("\n")
 
