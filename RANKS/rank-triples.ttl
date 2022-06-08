@@ -17,7 +17,7 @@ boltz:Q3150876 a kgo:TaxonRank ;
 
 boltz:Q3978005 a kgo:TaxonRank ;
     rdfs:label	"Superphylum"@en ;
-    kgo:nextHigherRank  boltz:Q3150876 ;
+    kgo:nextHigherRank boltz:Q3150876 ;
     kgo:nextLowerRank   boltz:Q38348 ;
     skos:definition	"Taxonomic rank"@en .
 
@@ -42,54 +42,54 @@ boltz:Q2361851 a kgo:TaxonRank ;
 boltz:Q3504061 a kgo:TaxonRank ;
     rdfs:label	"Superclass"@en ;
     kgo:nextHigherRank  boltz:Q2361851 ;
-    kgo:nextLowerRank   boltz:Q2007442 ;
-    skos:definition	"Taxonomic rank"@en .
-
-boltz:Q2007442 a kgo:TaxonRank ;
-    rdfs:label	"Infraclass"@en ;
-    kgo:nextHigherRank  boltz:Q3504061 ;
     kgo:nextLowerRank   boltz:Q37517 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q37517 a kgo:TaxonRank ;
     rdfs:label	"Class"@en ;
-    kgo:nextHigherRank  boltz:Q2007442 ;
+    kgo:nextHigherRank  boltz:Q3504061 ;
     kgo:nextLowerRank   boltz:Q5867051 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q5867051 a kgo:TaxonRank ;
     rdfs:label	"Subclass"@en ;
     kgo:nextHigherRank  boltz:Q37517 ;
+    kgo:nextLowerRank   boltz:Q2007442 ;
+    skos:definition	"Taxonomic rank"@en .
+
+boltz:Q2007442 a kgo:TaxonRank ;
+    rdfs:label	"Infraclass"@en ;
+    kgo:nextHigherRank  boltz:Q5867051 ;
     kgo:nextLowerRank   boltz:Q5868144 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q5868144 a kgo:TaxonRank ;
     rdfs:label	"Superorder"@en ;
-    kgo:nextHigherRank  boltz:Q5867051 ;
-    kgo:nextLowerRank   boltz:Q2889003 ;
-    skos:definition	"Taxonomic rank"@en .
-
-boltz:Q2889003 a kgo:TaxonRank ;
-    rdfs:label	"Infraorder"@en ;
-    kgo:nextHigherRank  boltz:Q5868144 ;
+    kgo:nextHigherRank  boltz:Q2007442 ;
     kgo:nextLowerRank   boltz:Q36602 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q36602 a kgo:TaxonRank ;
     rdfs:label	"Order"@en ;
-    kgo:nextHigherRank  boltz:Q2889003 ;
+    kgo:nextHigherRank  boltz:Q5868144 ;
     kgo:nextLowerRank   boltz:Q5867959 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q5867959 a kgo:TaxonRank ;
     rdfs:label	"Suborder"@en ;
     kgo:nextHigherRank  boltz:Q36602 ;
+    kgo:nextLowerRank   boltz:Q2889003 ;
+    skos:definition	"Taxonomic rank"@en .
+
+boltz:Q2889003 a kgo:TaxonRank ;
+    rdfs:label	"Infraorder"@en ;
+    kgo:nextHigherRank  boltz:Q5867959 ;
     kgo:nextLowerRank   boltz:Q2136103 ;
     skos:definition	"Taxonomic rank"@en .
 
 boltz:Q2136103 a kgo:TaxonRank ;
     rdfs:label	"Superfamily"@en ;
-    kgo:nextHigherRank  boltz:Q5867959 ;
+    kgo:nextHigherRank  boltz:Q2889003 ;
     kgo:nextLowerRank   boltz:Q35409 ;
     skos:definition	"Taxonomic rank above family and below order"@en .
 
@@ -107,7 +107,7 @@ boltz:Q164280 a kgo:TaxonRank ;
 
 boltz:Q227936 a kgo:TaxonRank ;
     rdfs:label	"Tribe"@en ;
-    kgo:nextHigherRank  boltz:Q164280 ; 
+    kgo:nextHigherRank  boltz:Q164280 ;
     kgo:nextLowerRank   boltz:Q3965313 ;
     skos:definition	"Taxonomic rank between family and genus"@en .
 
@@ -119,8 +119,8 @@ boltz:Q3965313 a kgo:TaxonRank ;
 
 boltz:Q34740 a kgo:TaxonRank ;
     rdfs:label	"Genus"@en ;
-    go:nkextHigherRank  boltz:Q3965313 ; 
-    kgo:nextLowerRank   boltz:Q3238261 ; 
+    kgo:nextHigherRank  boltz:Q3965313 ;
+    kgo:nextLowerRank   boltz:Q3238261 ;
     skos:definition	"Taxonomic rank used in the biological classification of living and fossil organisms, and viruses"@en .
 
 boltz:Q3238261 a kgo:TaxonRank ;
@@ -139,17 +139,4 @@ boltz:Q68947 a kgo:TaxonRank ;
     rdfs:label	"Subspecies"@en ;
     kgo:nextHigherRank  boltz:Q7432 ;
     skos:definition	"Taxonomic rank subordinate to species"@en .
-
-boltz:Q713623 a kgo:TaxonRank ;
-    rdfs:label	"Clade"@en ;
-    skos:definition	"Mnophyletic group of organisms composed of a common ancestor and all its lineal descendants"@en .
-
-boltz:Q68947 a kgo:TaxonRank ;
-    rdfs:label	"Subspecies"@en ;
-    kgo:nextHigherRank  boltz:Q7432 ;
-    skos:definition	"Taxonomic rank subordinate to species"@en .
-
-boltz:Q713623 a kgo:TaxonRank ;
-    rdfs:label	"Clade"@en ;
-    skos:definition	"Mnophyletic group of organisms composed of a common ancestor and all its lineal descendants"@en .
 

@@ -36,7 +36,7 @@ def run_query(q_value):
     print(result)
     return result
 
-outfile = open('rank-triples.ttl', 'w')
+outfile = open('RANKS/rank-triples.ttl', 'w')
 
 # Need data structure that is able to access previous element. Linked list LOL?
 for q_val in ranks.values():

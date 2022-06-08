@@ -1,0 +1,290 @@
+@prefix boltz: <http://solid.boltz.cs.cmu.edu:3030/data/> .
+@prefix kgo:   <http://solid.boltz.cs.cmu.edu:3030/ontology/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix qudt:  <http://qudt.org/schema/qudt/> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix qkdv:  <http://qudt.org/vocab/dimensionvector/> .
+@prefix sou: <http://qudt.org/vocab/sou/> .
+
+# ----------------------Date and Time----------------------
+kgo:complementryProperty a rdf:Property ;
+	rdfs:comment "The Subject is the complement of the Object"@en ;
+	rdfs:domain rdfs:Property ;
+	rdfs:range rdfs:Property ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label "complementryProperty"@en .
+
+kgo:timeAt a rdf:Property;
+	rdfs:comment "Root of the time hierarchy tree, used in general cases when no other time property suffices"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "timeAt"@en .
+
+kgo:timeStart a rdf:Property;
+	rdfs:comment "The family of all times something began or started" ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:subPropertyOf kgo:timeAt ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "timeStart"@en .
+
+kgo:earliestStartTime a rdf:Property;
+	rdfs:comment "The earliest point in time something could have begun" ;
+	kgo:complementryProperty kgo:latestStartTime ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:subPropertyOf kgo:timeStart ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "earliestStartTime"@en .
+
+kgo:latestStartTime a rdf:Property;
+	rdfs:comment "The latest point in time something could have begun" ;
+	kgo:complementryProperty kgo:earliestStartTime ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:subPropertyOf kgo:timeStart ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "latestStartTime"@en .
+
+kgo:eraStart a rdf:Property;
+	rdfs:comment "The Era in which something first started or appeared" ;
+	kgo:complementryProperty kgo:eraEnd ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range 	kgo:Era ;
+	rdfs:subPropertyOf kgo:timeStart ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "eraStart"@en .
+
+kgo:timeEnd a rdf:Property;
+	rdfs:comment "The family of all times something ended or finished" ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:subPropertyOf kgo:timeAt ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "timeEnd"@en .
+
+kgo:earliestEndTime a rdf:Property;
+	rdfs:comment "The earliest point in time something could have ended" ;
+	kgo:complementryProperty kgo:latestEndTime ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:subPropertyOf kgo:timeEnd ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "earliestEndTime"@en .
+
+kgo:latestEndTime a rdf:Property;
+	rdfs:comment "The latest point in time something could have ended" ;
+	kgo:complementryProperty kgo:earliestEndTime ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:subPropertyOf kgo:timeEnd ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "latestEndTime"@en .
+
+
+kgo:eraEnd a rdf:Property;
+	rdfs:comment "The Era in which something last appeared or seemingly ended" ;
+	kgo:complementryProperty kgo:eraStart ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:subPropertyOf kgo:timeEnd ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "eraEnd"@en .
+
+kgo:timeOccur a rdf:Property ;
+	rdfs:comment  "The family of all points in time something occured"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:subPropertyOf kgo:timeAt ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "timeOccur"@en .
+
+kgo:timeRetrieve a rdf:Property ;
+	rdfs:comment  "The date and time the information was added to the KGO system"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range		rdfs:Literal ;
+	rdfs:subPropertyOf kgo:timeOccur ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "timeRetrieve"@en .
+
+# ----------------------Eras----------------------
+kgo:Era a rdfs:Class ;
+  rdfs:comment      "The Class of all Eras, or indistinct time periods"@en ;
+  rdfs:isDefinedBy  boltz:ontology ;
+  rdfs:label        "Era"@en ;
+  rdfs:subClassOf   rdfs:Class .
+
+kgo:isSubEraOf a rdfs:Property ;
+	rdfs:comment	"The subject is a subEra of the object"@en ;
+	rdfs:domain kgo:Era ;
+	rdfs:range kgo:Era ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label 	"isSubEraOf"@en .
+
+kgo:seriesNext a rdfs:Property ;
+	rdfs:comment	"The next item in a series"@en ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label 	"seriesNext"@en .
+
+kgo:seriesPrev a rdfs:Property ;
+	rdfs:comment	"The previous item in a series"@en ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label 	"seriesPrev"@en .
+
+# ----------------------QUDT Comparisons----------------------
+kgo:prefComparisons a rdf:Property ;
+	rdfs:comment  "The order which something wants to be compared by. All comparison types that appear in the list must be propertys of the compared entity"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range		rdf:List ;
+	rdfs:isDefinedBy	boltz:ontology ;
+	rdfs:label "prefComparisons"@en .
+
+# ----------------------QUDT References----------------------
+kgo:averageMass a rdf:Property ;
+	rdfs:comment	"The average mass of something in this class"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range	qudt:Quantity ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"averageMass"@en .
+
+kgo:averageLifespan  a rdf:Property ;
+	rdfs:comment	"The average lifespan of something in this class"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range	qudt:Quantity ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"averageLifespan"@en .
+
+kgo:averageLength  a rdf:Property ;
+	rdfs:comment	"The average length of something in this class"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range	qudt:Quantity ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"averageLength"@en .
+
+kgo:numEmployees  a rdf:Property ;
+	rdfs:comment	"The number of people employeed by an organization"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range	qudt:Quantity ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"numEmployees"@en ;
+	rdfs:label	"numberOfEmployees"@en .
+
+kgo:marketCap  a rdf:Property ;
+	rdfs:comment	"The market value of a publically traded organizations outstanding shares"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range	qudt:Quantity ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"marketCap"@en ;
+	rdfs:label	"marketCapitalization"@en .
+
+kgo:marketShare  a rdf:Property ;
+	rdfs:comment	"The percentage of the total revenue or sales in a market that the organization makes up"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range	qudt:Quantity ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"marketShare"@en .
+
+kgo:annualRevenue  a rdf:Property ;
+	rdfs:comment	"The yearly revenue of something in this class"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range	qudt:Quantity ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"annualRevenue"@en .
+
+# ----------------------Company Information----------------------
+kgo:Company a      rdfs:Class ;
+  rdfs:comment      "The Class of all Companies"@en ;
+  rdfs:isDefinedBy  boltz:ontology ;
+  rdfs:label        "Company"@en ;
+  rdfs:subClassOf   rdfs:Class .
+
+kgo:companyName a      rdfs:Property ;
+	rdfs:comment	"The name of an organization"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range	rdfs:Literal ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"companyName"@en .
+
+kgo:tickerSymbol a      rdfs:Property ;
+	rdfs:comment	"The symbol used by the organization on the stock market"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range	rdfs:Literal ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"tickerSymbol"@en .
+
+kgo:headquarters a      rdfs:Property ;
+	rdfs:comment	"The location of an organizations headquarters"@en ;
+	rdfs:domain 	rdfs:Class ;
+	rdfs:range	kgo:Location ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"headquarters"@en .
+
+kgo:Location a      rdfs:Class ;
+	rdfs:comment      "Where something is located"@en ;
+	rdfs:isDefinedBy  boltz:ontology ;
+	rdfs:label        "Location"@en ;
+	rdfs:subClassOf   rdfs:Class .
+
+kgo:address a      rdfs:Property ;
+	rdfs:comment	"The physical address of a location"@en ;
+	rdfs:domain 	kgo:Location ;
+	rdfs:range	rdfs:Literal ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"address"@en .
+
+kgo:coordinates a      rdfs:Property ;
+	rdfs:comment	"The lattitude and longitude coordinates of a location"@en ;
+	rdfs:domain 	kgo:Location ;
+	rdfs:range	rdfs:Literal ;
+	rdfs:isDefinedBy boltz:ontology ;
+	rdfs:label	"coordinates"@en .
+
+# ----------------------Taxon Information----------------------
+kgo:Taxon a      rdfs:Class ;
+        rdfs:comment      "The Class of all Taxonomic classes"@en ;
+        rdfs:isDefinedBy  boltz:ontology ;
+        rdfs:label        "Taxon"@en ;
+        rdfs:subClassOf   rdfs:Class .
+
+kgo:taxonName a  rdf:Property ;
+        rdfs:comment      "The Taxonomic Name of a Class, typically an Animal"@en ;
+        rdfs:domain       kgo:Taxon ;
+        rdfs:isDefinedBy  boltz:ontology ;
+        rdfs:label        "taxonName"@en ;
+        rdfs:range        rdfs:Literal .
+
+kgo:subTaxonOf a rdf:Property ;
+	rdfs:subPropertyOf	rdfs:subClassOf ;
+        rdfs:comment      "The subject is taxonomically below another taxon"@en ;
+        rdfs:domain       kgo:Taxon ;
+        rdfs:isDefinedBy  boltz:ontology ;
+        rdfs:label        "subTaxonOf"@en ;
+        rdfs:range        kgo:Taxon .
+
+kgo:taxonRank a rdf:Property ;
+        rdfs:comment      "The subject has taxonomic rank of the object"@en ;
+        rdfs:domain       rdfs:Class ;
+        rdfs:isDefinedBy  boltz:ontology ;
+        rdfs:label        "taxonRank"@en ;
+        rdfs:range        kgo:TaxonRank .
+
+kgo:taxonImage a rdf:Property ;
+        rdfs:comment	"The image associated with the subject."@en ;
+        rdfs:domain 	kgo:TaxonRank ;
+        rdfs:isDefinedBy	boltz:ontology ;
+        rdfs:label	"taxonImage"@en .
+
+kgo:TaxonRank a  rdfs:Class ;
+        rdfs:comment      "The Class of all Taxonomic Ranks"@en ;
+        rdfs:isDefinedBy  boltz:ontology ;
+        rdfs:label        "TaxonRank"@en ;
+        rdfs:subClassOf   rdfs:Class .
+
+# ----------------------Taxonomic Ranks----------------------
+
+kgo:nextHigherRank a rdf:Property ;
+    	rdfs:comment	"The taxonomic rank above this taxonomic rank."@en ;
+	rdfs:domain 	kgo:TaxonRank ;
+    	rdfs:isDefinedBy	boltz:ontology ;
+    	rdfs:label	"nextHigherRank"@en .
+
+kgo:nextLowerRank a rdf:Property ;
+    	rdfs:comment	"The taxonomic rank below this taxonomic rank."@en ;
+	rdfs:domain	 kgo:TaxonRank ;
+    	rdfs:isDefinedBy  boltz:ontology ;
+    	rdfs:label	"nextLowerRank"@en .
