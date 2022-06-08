@@ -263,11 +263,12 @@ kgo:taxonRank a rdf:Property ;
         rdfs:label        "taxonRank"@en ;
         rdfs:range        kgo:TaxonRank .
 
-kgo:taxonImage a rdf:Property ;
-        rdfs:comment	"The image associated with the subject."@en ;
-        rdfs:domain 	kgo:TaxonRank ;
-        rdfs:isDefinedBy	boltz:ontology ;
-        rdfs:label	"taxonImage"@en .
+kgo:typeSpecies a rdf:Property ;
+        rdfs:comment      "The taxon has type species of the object"@en ;
+        rdfs:domain       rdfs:Class ;
+        rdfs:isDefinedBy  boltz:ontology ;
+        rdfs:label        "typeSpecies"@en ;
+        rdfs:range        kgo:Taxon .
 
 kgo:TaxonRank a  rdfs:Class ;
         rdfs:comment      "The Class of all Taxonomic Ranks"@en ;
@@ -275,16 +276,22 @@ kgo:TaxonRank a  rdfs:Class ;
         rdfs:label        "TaxonRank"@en ;
         rdfs:subClassOf   rdfs:Class .
 
+kgo:taxonImage a rdf:Property ;
+        rdfs:comment	"The image associated with the subject."@en ;
+        rdfs:domain 	kgo:TaxonRank ;
+        rdfs:isDefinedBy	boltz:ontology ;
+        rdfs:label	"taxonImage"@en .
+
 # ----------------------Taxonomic Ranks----------------------
 
 kgo:nextHigherRank a rdf:Property ;
     	rdfs:comment	"The taxonomic rank above this taxonomic rank."@en ;
-	rdfs:domain 	kgo:TaxonRank ;
+		rdfs:domain 	kgo:TaxonRank ;
     	rdfs:isDefinedBy	boltz:ontology ;
     	rdfs:label	"nextHigherRank"@en .
 
 kgo:nextLowerRank a rdf:Property ;
     	rdfs:comment	"The taxonomic rank below this taxonomic rank."@en ;
-	rdfs:domain	 kgo:TaxonRank ;
+		rdfs:domain	 kgo:TaxonRank ;
     	rdfs:isDefinedBy  boltz:ontology ;
     	rdfs:label	"nextLowerRank"@en .

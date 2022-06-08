@@ -1171,6 +1171,112 @@ boltz:Q19159 a kgo:Taxon ;
 	skos:definition	"""Superclass of the first four-limbed vertebrates and their descendants"""@en ;
 	skos:prefLabel	"Tetrapoda"@en .
 
+boltz:Q10811 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q19159 ; 
+	kgo:taxonName 	"Reptilia"@en ; 
+	kgo:taxonRank	boltz:Q37517 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Smaug%20giganteus%20head.jpg> ; 
+	skos:definition	"""Group (class or clade) of tetrapod animals"""@en ;
+	skos:prefLabel	"Reptilia"@en .
+
+boltz:Q122422 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10811 ; 
+	kgo:taxonName 	"Squamata"@en ; 
+	kgo:taxonRank	boltz:Q36602 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Anole%20and%20snake.jpg> ; 
+	skos:definition	"""Order of reptiles"""@en ;
+	skos:prefLabel	"Squamata"@en .
+
+boltz:Q16835867 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q122422 ; 
+	kgo:taxonName 	"Autarchoglossa"@en ; 
+	kgo:taxonRank	boltz:Q5867959 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Eumecesfasciatus.jpg> ; 
+	skos:definition	"""Clade of lizards"""@en ;
+	skos:prefLabel	"Autarchoglossa"@en .
+
+boltz:Q827111 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q16835867 ; 
+	kgo:taxonName 	"Teiidae"@en ; 
+	kgo:taxonRank	boltz:Q35409 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Goldteju%20Tupinambis%20teguixin.jpg> ; 
+	skos:definition	"""Family of reptiles"""@en ;
+	skos:prefLabel	"Teiidae"@en .
+
+boltz:Q11847933 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q827111 ; 
+	kgo:taxonName 	"Contomastix"@en ; 
+	kgo:taxonRank	boltz:Q34740 ; 
+	kgo:typeSpecies	"Contomastix vittata"@en ;
+	kgo:taxonImage	<> ; 
+	skos:definition	"""Genus of reptiles"""@en ;
+	skos:prefLabel	"Contomastix"@en .
+
+boltz:Q2842626 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q11847933 ; 
+	kgo:taxonName 	"Contomastix vittata"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:taxonImage	<> ; 
+	skos:definition	"""Species of reptile"""@en ;
+	skos:prefLabel	"Contomastix vittata"@en .
+
+
+#-----TAXON------
+boltz:Q729 a kgo:Taxon ; 
+	kgo:taxonName 	"Animalia"@en ; 
+	kgo:taxonRank	boltz:Q36732 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/2010-kodiak-bear-1.jpg> ; 
+	skos:definition	"""Kingdom of multicellular eukaryotic organisms"""@en ;
+	skos:prefLabel	"Animal"@en .
+
+boltz:Q5173 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q729 ; 
+	kgo:taxonName 	"Bilateria"@en ; 
+	kgo:taxonRank	boltz:Q2752679 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Stenopus%20hispidus.jpg> ; 
+	skos:definition	"""Clade containing all animals having a bilateral symmetry as an embryo"""@en ;
+	skos:prefLabel	"Bilateria"@en .
+
+boltz:Q150866 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5173 ; 
+	kgo:taxonName 	"Deuterostomia"@en ; 
+	kgo:taxonRank	boltz:Q3150876 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Deuterostomia2.png> ; 
+	skos:definition	"""Superphylum of bilateral animals"""@en ;
+	skos:prefLabel	"Deuterostome"@en .
+
+boltz:Q10915 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q150866 ; 
+	kgo:taxonName 	"Chordata"@en ; 
+	kgo:taxonRank	boltz:Q38348 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tuatara.jpg> ; 
+	skos:definition	"""Phylum of animals"""@en ;
+	skos:prefLabel	"Chordata"@en .
+
+boltz:Q25241 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10915 ; 
+	kgo:taxonName 	"Vertebrata"@en ; 
+	kgo:taxonRank	boltz:Q1153785 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tiliqua%20scincoides%20scincoides.jpg> ; 
+	skos:definition	"""Subphylum of chordates"""@en ;
+	skos:prefLabel	"Vertebrata"@en .
+
+boltz:Q26214 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q25241 ; 
+	kgo:taxonName 	"Gnathostomata"@en ; 
+	kgo:taxonRank	boltz:Q2361851 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/DunkleosteusSannoble.JPG> ; 
+	skos:definition	"""Infraphylum of jawed vertebrates"""@en ;
+	skos:prefLabel	"Gnathostomata"@en .
+
+boltz:Q19159 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q26214 ; 
+	kgo:taxonName 	"Tetrapoda"@en ; 
+	kgo:taxonRank	boltz:Q3504061 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Feuer%20Salamander%202.jpg> ; 
+	skos:definition	"""Superclass of the first four-limbed vertebrates and their descendants"""@en ;
+	skos:prefLabel	"Tetrapoda"@en .
+
 boltz:Q7377 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q19159 ; 
 	kgo:taxonName 	"Mammalia"@en ; 
@@ -2458,6 +2564,111 @@ boltz:Q5674669 a kgo:Taxon ;
 	kgo:taxonImage	<> ; 
 	skos:definition	"""Subspecies of bear"""@en ;
 	skos:prefLabel	"Ursus americanus vancouveri"@en .
+
+
+#-----TAXON------
+boltz:Q729 a kgo:Taxon ; 
+	kgo:taxonName 	"Animalia"@en ; 
+	kgo:taxonRank	boltz:Q36732 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/2010-kodiak-bear-1.jpg> ; 
+	skos:definition	"""Kingdom of multicellular eukaryotic organisms"""@en ;
+	skos:prefLabel	"Animal"@en .
+
+boltz:Q5173 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q729 ; 
+	kgo:taxonName 	"Bilateria"@en ; 
+	kgo:taxonRank	boltz:Q2752679 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Stenopus%20hispidus.jpg> ; 
+	skos:definition	"""Clade containing all animals having a bilateral symmetry as an embryo"""@en ;
+	skos:prefLabel	"Bilateria"@en .
+
+boltz:Q150866 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5173 ; 
+	kgo:taxonName 	"Deuterostomia"@en ; 
+	kgo:taxonRank	boltz:Q3150876 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Deuterostomia2.png> ; 
+	skos:definition	"""Superphylum of bilateral animals"""@en ;
+	skos:prefLabel	"Deuterostome"@en .
+
+boltz:Q10915 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q150866 ; 
+	kgo:taxonName 	"Chordata"@en ; 
+	kgo:taxonRank	boltz:Q38348 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tuatara.jpg> ; 
+	skos:definition	"""Phylum of animals"""@en ;
+	skos:prefLabel	"Chordata"@en .
+
+boltz:Q25241 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10915 ; 
+	kgo:taxonName 	"Vertebrata"@en ; 
+	kgo:taxonRank	boltz:Q1153785 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tiliqua%20scincoides%20scincoides.jpg> ; 
+	skos:definition	"""Subphylum of chordates"""@en ;
+	skos:prefLabel	"Vertebrata"@en .
+
+boltz:Q26214 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q25241 ; 
+	kgo:taxonName 	"Gnathostomata"@en ; 
+	kgo:taxonRank	boltz:Q2361851 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/DunkleosteusSannoble.JPG> ; 
+	skos:definition	"""Infraphylum of jawed vertebrates"""@en ;
+	skos:prefLabel	"Gnathostomata"@en .
+
+boltz:Q19159 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q26214 ; 
+	kgo:taxonName 	"Tetrapoda"@en ; 
+	kgo:taxonRank	boltz:Q3504061 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Feuer%20Salamander%202.jpg> ; 
+	skos:definition	"""Superclass of the first four-limbed vertebrates and their descendants"""@en ;
+	skos:prefLabel	"Tetrapoda"@en .
+
+boltz:Q10811 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q19159 ; 
+	kgo:taxonName 	"Reptilia"@en ; 
+	kgo:taxonRank	boltz:Q37517 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Smaug%20giganteus%20head.jpg> ; 
+	skos:definition	"""Group (class or clade) of tetrapod animals"""@en ;
+	skos:prefLabel	"Reptilia"@en .
+
+boltz:Q122422 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10811 ; 
+	kgo:taxonName 	"Squamata"@en ; 
+	kgo:taxonRank	boltz:Q36602 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Anole%20and%20snake.jpg> ; 
+	skos:definition	"""Order of reptiles"""@en ;
+	skos:prefLabel	"Squamata"@en .
+
+boltz:Q467382 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q122422 ; 
+	kgo:taxonName 	"Amphisbaenia"@en ; 
+	kgo:taxonRank	boltz:Q5867959 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Amphisbaenia.JPG> ; 
+	skos:definition	"""Suborder of reptiles"""@en ;
+	skos:prefLabel	"Amphisbaenia"@en .
+
+boltz:Q733407 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q467382 ; 
+	kgo:taxonName 	"Amphisbaenidae"@en ; 
+	kgo:taxonRank	boltz:Q35409 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Amphisbaena%20alba03.jpg> ; 
+	skos:definition	"""Family of reptiles"""@en ;
+	skos:prefLabel	"Amphisbaenidae"@en .
+
+boltz:Q26187 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q733407 ; 
+	kgo:taxonName 	"Amphisbaena"@en ; 
+	kgo:taxonRank	boltz:Q34740 ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Amphisbaena%20alba03.jpg> ; 
+	skos:definition	"""Genus of reptiles"""@en ;
+	skos:prefLabel	"Amphisbaena"@en .
+
+boltz:Q749066 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q26187 ; 
+	kgo:taxonName 	"Amphisbaena prunicolor"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:taxonImage	<> ; 
+	skos:definition	"""Species of reptile"""@en ;
+	skos:prefLabel	"Amphisbaena prunicolor"@en .
 
 
 #-----TAXON------
@@ -5299,6 +5510,7 @@ boltz:Q205531 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q21400931 ; 
 	kgo:taxonName 	"Iguana"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
+	kgo:typeSpecies	"Iguana iguana"@en ;
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20an%20Iguana.jpg> ; 
 	skos:definition	"""Genus of reptiles"""@en ;
 	skos:prefLabel	"Iguana"@en .
