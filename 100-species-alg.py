@@ -20,7 +20,7 @@ ranks = {"kingdom": "Q36732", "subkingdom": "Q2752679", "infrakingdom": "Q315087
 
 
 # MANUALLY CREATED TAXA: taxa that we manually added, no entry WikiData
-all_taxa =  {
+added_taxa =  {
     1157319: {"Q": "Q3427090", "Def": "Genus of insects", "Label": "Cnephasia", "image": "", "WikiData": True},
     729890: {"Q": "Q27636553", "Def": "Subspecies of bird", "Label": "Molothrus oryzivorus impacifus", "image": "", "WikiData": True },
     949898: {"Q": "Q500000000", "Def": "Subspecies of reptile", "Label": "Psammobates tentorius tentorius", "image": "", "WikiData": False},
@@ -29,6 +29,9 @@ all_taxa =  {
     1084132: {"Q": "Q500000003", "Def": "Subspecies of reptile", "Label": "Duberria lutrix lutrix",  "image": "","WikiData": False},
     1157483: {"Q": "Q500000004", "Def": "Subspecies of mammal", "Label": "Eptesicus serotinus mirza",  "image": "", "WikiData": False}
 }
+
+# TAXA that we already inserted: gets rid of repeats
+used_taxa = {}
 
 def get_results(endpoint_url, query):
     user_agent = "WDQS-example Python/%s.%s" % (sys.version_info[0], sys.version_info[1])
@@ -76,18 +79,18 @@ def run_q1(animal):
     return results
     
 # use of alt label, sometimes the taxonomic name is the alias
-def run_q2(animal):
-    query2 = "SELECT ?item ?image ?itemLabel ?itemDescription  \
-        WHERE \
-            {?item skos:altLabel \"" + animal + "\"@en . \
-                 OPTIONAL{?item wdt:P18 ?image} . \
-            SERVICE wikibase:label \
-            {bd:serviceParam wikibase:language \"en\" . } \
-        }"
-    results = get_results(endpoint_url, query2)
-    print('result1:')
-    print(results)
-    return results
+# def run_q2(animal):
+#     query2 = "SELECT ?item ?image ?itemLabel ?itemDescription  \
+#         WHERE \
+#             {?item skos:altLabel \"" + animal + "\"@en . \
+#                  OPTIONAL{?item wdt:P18 ?image} . \
+#             SERVICE wikibase:label \
+#             {bd:serviceParam wikibase:language \"en\" . } \
+#         }"
+#     results = get_results(endpoint_url, query2)
+#     print('result1:')
+#     print(results)
+#     return results
 
 # use of regex – three letter difference maximum
 def run_q3(animal, parent):
@@ -112,18 +115,24 @@ def run_q3(animal, parent):
     return results
 
 # Get Q-value, definition, prelabel (use with triple style code)
-def taxa(animal, ID, parent):
+def taxa(animal, parent):
     results1 = run_q1(animal)
     if valid_search(results1): #way to check if search yields results
         return extract(results1)
     else:
-        results2 = run_q2(animal)
+        results2 = run_q3(animal, parent)
     
     if valid_search(results2):
         return extract(results2)
-    else:
-        to_confirm[ID] = animal
-        return extract(run_q3(animal, parent))
+
+    # foregeo running query 2: just not worth the time it takes to run
+    # else:
+    #     to_confirm[ID] = animal
+    #     results3 = run_q3(animal, parent)
+    #     if valid_search(results3):
+    #         return extract(results3)
+
+    return "", "", "", ""
     
 
 # Print taxonomic hierarchy
@@ -147,7 +156,9 @@ def taxonomic_hierarchy():
 
 
 # Get reptile type species:
-all_ts = {'Contomastix': 'Contomastix vittata', 'Aporarchus': 'Amphisbaena prunicolor', 'Aurivela': 'Aurivela longicauda', 'Coggeria': 'Coggeria naufragus', 'Acratosaura': 'Acratosaura mentalis', 'Colopus': 'Colopus wahlbergii', 'Cophosaurus': 'Cophosaurus texanus', 'Cophoscincopus': 'Cophoscincopus simulans', 'Corytophanes': 'Corytophanes cristatus', 'Cryptactites': 'Cryptactites peringueyi', 'Cryptoblepharus': 'Cryptoblepharus poecilopleurus', 'Cryptoscincus': 'Paracontias minimus', 'Ctenotus': 'Ctenotus taeniolatus', 'Cyclodina': 'Oligosoma aeneum', 'Siwaligecko': 'Cyrtopodion battalense', 'Davewakeum': 'Brachymeles miriamae', 'Lucasium': 'Lucasium damaeum', 'Diplodactylus': 'Diplodactylus vittatus', 'Diploglossus': 'Diploglossus fasciatus', 'Diplometopon': 'Diplometopon zarudnyi', 'Dogania': 'Dogania subplana', 'Ebenavia': 'Ebenavia inunguis', 'Lissolepis': 'Lissolepis luctuosa', 'Bellatorias': 'Bellatorias major', 'Liopholis': 'Liopholis whitii', 'Elgaria': 'Elgaria multicarinata', 'Elseya': 'Elseya dentata', 'Elusor': 'Elusor macrurus', 'Emydura': 'Emydura macquarii', 'Eremiascincus': 'Eremiascincus richardsonii', 'Eugongylus': 'Eugongylus rufescens', 'Eumeces': 'Eumeces schneideri', 'Eurylepis': 'Eurylepis taeniolata', 'Gambelia': 'Gambelia wislizenii', 'Geomyersia': 'Geomyersia glabra', 'Glaphyromorphus': 'Glaphyromorphus punctulatus', 'Goggia,': 'Goggia lineata', 'Haackgreerius': 'Haackgreerius miopus', 'Haemodracon': 'Haemodracon riebeckii', 'Harpesaurus': 'Harpesaurus tricinctus', 'Homopus': 'Homopus areolatus', 'Iguana': 'Iguana iguana', 'Lacerta': 'Lacerta agilis', 'Atlantolacerta': 'Atlantolacerta andreanskyi', 'Archaeolacerta': 'Archaeolacerta bedriagae', 'Apathya': 'Apathya cappadocica', 'Anatololacerta': 'Anatololacerta danfordi', 'Hellenolacerta': 'Hellenolacerta graeca', 'Phoenicolacerta': 'Phoenicolacerta laevis', 'Iberolacerta': 'Iberolacerta monticola', 'Dinarolacerta': 'Dinarolacerta mosorensis', 'Dalmatolacerta': 'Dalmatolacerta oxycephala', 'Parvilacerta': 'Parvilacerta parva', 'Lacertoides': 'Lacertoides pardalis', 'Lampropholis': 'Lampropholis guichenoti', 'Lankascincus': 'Lankascincus fallax', 'Leiolopisma': 'Leiolopisma telfairii', 'Leiosaurus': 'Leiosaurus bellii', 'Wondjinia': 'Lerista apoda', 'Gaia': 'Lerista bipes', 'Marrunisauria': 'Lerista borealis', 'Krishna': 'Lerista fragilis', 'Spectrascincus': 'Lerista ingrami', 'Aphroditia': 'Lerista macropisthopus', 'Lokisaurus': 'Lerista muelleri', 'Goldneyia': 'Lerista planiventralis', 'Cybelia': 'Lerista terdigitata', 'Alcisius': 'Lerista vermicularis', 'Lioscincus': 'Lioscincus steindachneri', 'Lipinia': 'Lipinia pulchella', 'Lygisaurus': 'Lygisaurus foliorum', 'Vanzoia': 'Lygodactylus klugei', 'Lygosoma': 'Lygosoma quadrupes', 'Varzea': 'Varzea bistriata', 'Panopa': 'Panopa croizati', 'Manciola': 'Manciola guaporicola', 'Eutropis': 'Eutropis multifasciata', 'Exila': 'Exila nigropalmata', 'Marisora': 'Marisora unimarginata', 'Macroscincus': 'Chioninia coctei', 'Celatiscincus': 'Celatiscincus euryotis', 'Marmorosphax': 'Marmorosphax tricolor', 'Matoatoa': 'Matoatoa brevipes', 'Menetia': 'Menetia greyii', 'Mesobaena': 'Mesobaena huebneri', 'Mesoscincus': 'Mesoscincus schwartzei', 'Micrablepharus': 'Micrablepharus maximiliani', 'Lepidothyris': 'Lepidothyris fernandi', 'Monopeltis': 'Monopeltis capensis', 'Morethia': 'Morethia lineoocellata', 'Morunasaurus': 'Morunasaurus groi', 'Naultinus': 'Naultinus elegans', 'Neusticurus': 'Neusticurus bicarinatus', 'Niveoscincus': 'Niveoscincus greeni', 'Notoscincus': 'Notoscincus ornatus', 'Oligosoma': 'Oligosoma zelandicum', 'Ophiodes': 'Ophiodes striatus', 'Ophisaurus': 'Ophisaurus ventralis', 'Pachycalamus': 'Pachycalamus brevis', '': 'Elasmodactylus tuberculosus', 'Palmatogecko': 'Pachydactylus rangei', 'Panaspis': 'Panaspis cabindae', 'Paracontias': 'Paracontias brocchii', 'Phoboscincus': 'Phoboscincus bocourti', 'Mesoclemmys': 'Mesoclemmys gibba', 'Batrachemys': 'Mesoclemmys nasuta', 'Rhinemys': 'Rhinemys rufipes', 'Bufocephala': 'Mesoclemmys vanderhaegei', 'Teira': 'Teira dugesii', 'Prasinohaema': 'Prasinohaema flavipes', 'Proablepharus': 'Proablepharus reginae', 'Proctoporus': 'Proctoporus pachyurus', 'Riama': 'Riama unicolor', 'Pseudoacontias': 'Pseudoacontias madagascariensis', 'Pseudopus': 'Pseudopus apodus', 'Ptychoglossus': 'Ptychoglossus bilineatus', 'Pygomeles': 'Pygomeles braconnieri', 'Mniarogekko': 'Mniarogekko chahoua', 'Correlophus': 'Correlophus ciliatus', 'Rieppeleon': 'Rieppeleon kerstenii', 'Rhampholeon': 'Rhampholeon spectrum', 'Rhineura': 'Rhineura floridana', 'Saiphos': 'Saiphos equalis', 'Saltuarius': 'Saltuarius cornutus', 'Orraya': 'Orraya occultus', 'Kaestlea': 'Kaestlea bilineata', 'Scincopus': 'Scincopus fasciatus', 'Scincus': 'Scincus albifasciatus', 'Sigaloseps': 'Sigaloseps deplanchei', 'Piersonus': 'Crotalus ravus', 'Stenocercus': 'Stenocercus roseiventris', 'Ophryoessoides': 'Stenocercus tricristatus', 'Takydromus': 'Takydromus sexlineatus', 'Altigekko': 'Altiphylax baturensis', 'Indogekko': 'Cyrtopodion indusoani', 'Chersina': 'Chersina angulata', 'Trogonophis': 'Trogonophis wiegmanni', 'Tropidolaemus': 'Tropidolaemus wagleri', 'Tropidophorus': 'Tropidophorus cocincinensis', 'Eurolophosaurus': 'Eurolophosaurus nanuzae', 'Tapinurus': 'Tropidurus semitaeniatus', 'Typhlosaurus': 'Typhlosaurus caecus', 'Saara': 'Orosaura nebulosylvestris', 'Zygaspis': 'Zygaspis quadrifrons', 'Tychismia': 'Lerista chordae', 'Timon': 'Timon lepidus'}
+reptile_ts = {'Contomastix': 'Contomastix vittata', 'Aporarchus': 'Amphisbaena prunicolor', 'Aurivela': 'Aurivela longicauda', 'Coggeria': 'Coggeria naufragus', 'Acratosaura': 'Acratosaura mentalis', 'Colopus': 'Colopus wahlbergii', 'Cophosaurus': 'Cophosaurus texanus', 'Cophoscincopus': 'Cophoscincopus simulans', 'Corytophanes': 'Corytophanes cristatus', 'Cryptactites': 'Cryptactites peringueyi', 'Cryptoblepharus': 'Cryptoblepharus poecilopleurus', 'Cryptoscincus': 'Paracontias minimus', 'Ctenotus': 'Ctenotus taeniolatus', 'Cyclodina': 'Oligosoma aeneum', 'Siwaligecko': 'Cyrtopodion battalense', 'Davewakeum': 'Brachymeles miriamae', 'Lucasium': 'Lucasium damaeum', 'Diplodactylus': 'Diplodactylus vittatus', 'Diploglossus': 'Diploglossus fasciatus', 'Diplometopon': 'Diplometopon zarudnyi', 'Dogania': 'Dogania subplana', 'Ebenavia': 'Ebenavia inunguis', 'Lissolepis': 'Lissolepis luctuosa', 'Bellatorias': 'Bellatorias major', 'Liopholis': 'Liopholis whitii', 'Elgaria': 'Elgaria multicarinata', 'Elseya': 'Elseya dentata', 'Elusor': 'Elusor macrurus', 'Emydura': 'Emydura macquarii', 'Eremiascincus': 'Eremiascincus richardsonii', 'Eugongylus': 'Eugongylus rufescens', 'Eumeces': 'Eumeces schneideri', 'Eurylepis': 'Eurylepis taeniolata', 'Gambelia': 'Gambelia wislizenii', 'Geomyersia': 'Geomyersia glabra', 'Glaphyromorphus': 'Glaphyromorphus punctulatus', 'Goggia,': 'Goggia lineata', 'Haackgreerius': 'Haackgreerius miopus', 'Haemodracon': 'Haemodracon riebeckii', 'Harpesaurus': 'Harpesaurus tricinctus', 'Homopus': 'Homopus areolatus', 'Iguana': 'Iguana iguana', 'Lacerta': 'Lacerta agilis', 'Atlantolacerta': 'Atlantolacerta andreanskyi', 'Archaeolacerta': 'Archaeolacerta bedriagae', 'Apathya': 'Apathya cappadocica', 'Anatololacerta': 'Anatololacerta danfordi', 'Hellenolacerta': 'Hellenolacerta graeca', 'Phoenicolacerta': 'Phoenicolacerta laevis', 'Iberolacerta': 'Iberolacerta monticola', 'Dinarolacerta': 'Dinarolacerta mosorensis', 'Dalmatolacerta': 'Dalmatolacerta oxycephala', 'Parvilacerta': 'Parvilacerta parva', 'Lacertoides': 'Lacertoides pardalis', 'Lampropholis': 'Lampropholis guichenoti', 'Lankascincus': 'Lankascincus fallax', 'Leiolopisma': 'Leiolopisma telfairii', 'Leiosaurus': 'Leiosaurus bellii', 'Wondjinia': 'Lerista apoda', 'Gaia': 'Lerista bipes', 'Marrunisauria': 'Lerista borealis', 'Krishna': 'Lerista fragilis', 'Spectrascincus': 'Lerista ingrami', 'Aphroditia': 'Lerista macropisthopus', 'Lokisaurus': 'Lerista muelleri', 'Goldneyia': 'Lerista planiventralis', 'Cybelia': 'Lerista terdigitata', 'Alcisius': 'Lerista vermicularis', 'Lioscincus': 'Lioscincus steindachneri', 'Lipinia': 'Lipinia pulchella', 'Lygisaurus': 'Lygisaurus foliorum', 'Vanzoia': 'Lygodactylus klugei', 'Lygosoma': 'Lygosoma quadrupes', 'Varzea': 'Varzea bistriata', 'Panopa': 'Panopa croizati', 'Manciola': 'Manciola guaporicola', 'Eutropis': 'Eutropis multifasciata', 'Exila': 'Exila nigropalmata', 'Marisora': 'Marisora unimarginata', 'Macroscincus': 'Chioninia coctei', 'Celatiscincus': 'Celatiscincus euryotis', 'Marmorosphax': 'Marmorosphax tricolor', 'Matoatoa': 'Matoatoa brevipes', 'Menetia': 'Menetia greyii', 'Mesobaena': 'Mesobaena huebneri', 'Mesoscincus': 'Mesoscincus schwartzei', 'Micrablepharus': 'Micrablepharus maximiliani', 'Lepidothyris': 'Lepidothyris fernandi', 'Monopeltis': 'Monopeltis capensis', 'Morethia': 'Morethia lineoocellata', 'Morunasaurus': 'Morunasaurus groi', 'Naultinus': 'Naultinus elegans', 'Neusticurus': 'Neusticurus bicarinatus', 'Niveoscincus': 'Niveoscincus greeni', 'Notoscincus': 'Notoscincus ornatus', 'Oligosoma': 'Oligosoma zelandicum', 'Ophiodes': 'Ophiodes striatus', 'Ophisaurus': 'Ophisaurus ventralis', 'Pachycalamus': 'Pachycalamus brevis', '': 'Elasmodactylus tuberculosus', 'Palmatogecko': 'Pachydactylus rangei', 'Panaspis': 'Panaspis cabindae', 'Paracontias': 'Paracontias brocchii', 'Phoboscincus': 'Phoboscincus bocourti', 'Mesoclemmys': 'Mesoclemmys gibba', 'Batrachemys': 'Mesoclemmys nasuta', 'Rhinemys': 'Rhinemys rufipes', 'Bufocephala': 'Mesoclemmys vanderhaegei', 'Teira': 'Teira dugesii', 'Prasinohaema': 'Prasinohaema flavipes', 'Proablepharus': 'Proablepharus reginae', 'Proctoporus': 'Proctoporus pachyurus', 'Riama': 'Riama unicolor', 'Pseudoacontias': 'Pseudoacontias madagascariensis', 'Pseudopus': 'Pseudopus apodus', 'Ptychoglossus': 'Ptychoglossus bilineatus', 'Pygomeles': 'Pygomeles braconnieri', 'Mniarogekko': 'Mniarogekko chahoua', 'Correlophus': 'Correlophus ciliatus', 'Rieppeleon': 'Rieppeleon kerstenii', 'Rhampholeon': 'Rhampholeon spectrum', 'Rhineura': 'Rhineura floridana', 'Saiphos': 'Saiphos equalis', 'Saltuarius': 'Saltuarius cornutus', 'Orraya': 'Orraya occultus', 'Kaestlea': 'Kaestlea bilineata', 'Scincopus': 'Scincopus fasciatus', 'Scincus': 'Scincus albifasciatus', 'Sigaloseps': 'Sigaloseps deplanchei', 'Piersonus': 'Crotalus ravus', 'Stenocercus': 'Stenocercus roseiventris', 'Ophryoessoides': 'Stenocercus tricristatus', 'Takydromus': 'Takydromus sexlineatus', 'Altigekko': 'Altiphylax baturensis', 'Indogekko': 'Cyrtopodion indusoani', 'Chersina': 'Chersina angulata', 'Trogonophis': 'Trogonophis wiegmanni', 'Tropidolaemus': 'Tropidolaemus wagleri', 'Tropidophorus': 'Tropidophorus cocincinensis', 'Eurolophosaurus': 'Eurolophosaurus nanuzae', 'Tapinurus': 'Tropidurus semitaeniatus', 'Typhlosaurus': 'Typhlosaurus caecus', 'Saara': 'Orosaura nebulosylvestris', 'Zygaspis': 'Zygaspis quadrifrons', 'Tychismia': 'Lerista chordae', 'Timon': 'Timon lepidus'}
+reptile_ts_keys = list(reptile_ts.keys())
+reptile_ts_values = list(reptile_ts.values())
 
 # open ttl file
 outfile = open('100-species.ttl', 'w')
@@ -174,18 +185,22 @@ for i in range(0,len(file_list)):
     data = pd.read_table(file_list[i])
     df = pd.DataFrame(data)
     
-    outfile.write("#-----TAXON------\n")
     # For every taxa in file: 
     for index, row in df.iterrows():
+        taxonID = row["taxonID"]
+        parentID = row['parentNameUsageID']
+        taxonAuthor = row['scientificNameAuthorship']
+        taxonRank = row["taxonRank"]
+        scientificName = row["scientificName"]
+
         # Only run valid taxa
-        if not row['taxonomicStatus'] == "valid":
+        if taxonID in used_taxa or not row['taxonomicStatus'] == "valid" or taxonRank == "subspecies":
             continue
 
-        scientificName = row["scientificName"]
         #----- CLEAN DATA -----
         # Change scientificName, some have author appended onto it
-        if not pd.isna(row["scientificNameAuthorship"]) and row["scientificNameAuthorship"]in row["scientificName"]:
-            scientificName = row["scientificName"].replace(" " + row["scientificNameAuthorship"], "")
+        if not pd.isna(taxonAuthor) and taxonAuthor in scientificName:
+            scientificName = scientificName.replace(" " + taxonAuthor, "")
 
         # if sub-genus, actual name is the one in the parenthesis. for example: Cicindela (Cicindelidia) means that Cicindelidia is the sub-genus in hand, where Cicindela is its parent. cannot directly use entire term in serach query, as that generates no results. also generate a more precise search query which uses the parentID: 
         if row['taxonRank'] == "subgenus":
@@ -195,32 +210,33 @@ for i in range(0,len(file_list)):
         
         # ----- RETRIEVE INFORMATION ----
         # Search parentTaxon information
-        if not pd.isna(row["parentNameUsageID"]) and int(row["parentNameUsageID"]) in all_taxa: 
-            parent_Q = all_taxa[int(row["parentNameUsageID"])]["Q"]
+        if not pd.isna(parentID) and int(parentID) in used_taxa: 
+            parent_Q = used_taxa[int(parentID)]
             full_parent_Q = "kgo:subTaxonOf\tboltz:" + parent_Q + " ; \n\t"
         else:
             parent_Q = ""
             full_parent_Q = ""
-        
-        # Everything else: either quick dictionary access, or search query 
-        taxonID = row["taxonID"]
-        if taxonID in all_taxa:
-            Q, image, definition, label =  all_taxa[taxonID]["Q"], all_taxa[taxonID]["image"], all_taxa[taxonID]["Def"], all_taxa[taxonID]["Label"]
-        else:
-            Q, image, definition, label = taxa(scientificName, taxonID, parent_Q)
-            all_taxa[taxonID] = {}
-            all_taxa[taxonID]["Q"] = Q
-            all_taxa[taxonID]["Label"] = label
-            all_taxa[taxonID]["Def"] = definition
-            all_taxa[taxonID]["image"] = image
-            all_taxa[taxonID]["WikiData"] = True
 
-        # Type-species
-        if scientificName in all_ts:
-            type_species = all_ts[scientificName]
+        # If manually added info, retrieve through dictionary, else search query, add to used taxa
+        if taxonID in added_taxa:
+            Q, image, definition, label =  added_taxa[taxonID]["Q"], added_taxa[taxonID]["image"], added_taxa[taxonID]["Def"], added_taxa[taxonID]["Label"]
+        else:
+            Q, image, definition, label = taxa(scientificName, parent_Q)
+            used_taxa[taxonID] = Q
+        
+        # Type-species:
+        # Check if the genus has a type species:
+        if taxonRank == "genus" and scientificName in reptile_ts:
+            type_species = reptile_ts[scientificName]
             full_type_species = "kgo:typeSpecies\t\"" + type_species + "\"@en ;\n\t" #type species
         else:
             full_type_species = ""
+        # Check if the SPECIES is the designated type species for its genus 
+        if taxonRank == "species" and scientificName in reptile_ts_values:
+            type_species_of = reptile_ts_keys[reptile_ts_values.index(scientificName)]
+            full_tso = "kgo:typeSpeciesOf\t\"" + type_species_of + "\"@en ;\n\t" #type species of
+        else:
+            full_tso = ""
 
         full_name = "kgo:taxonName \t\""  + scientificName + "\"@en ; \n\t"
         full_ID = "boltz:" + Q + " a kgo:Taxon ; \n\t" #Q-ID
@@ -229,9 +245,8 @@ for i in range(0,len(file_list)):
         full_definition = "skos:definition\t\"\"\"" + definition + "\"\"\"@en ;\n\t" #definition
         full_label = "skos:prefLabel\t\"" + label + "\"@en .\n\n"    #preflabel – common name
 
-        d =  full_ID + full_parent_Q + full_name + full_rank + full_type_species+ full_image + full_definition + full_label 
+        d = full_ID + full_parent_Q + full_name + full_rank + full_type_species + full_tso + full_image + full_definition + full_label 
         outfile.write(d)
-    outfile.write("\n")
 
 print(to_confirm)
 outfile.close()
