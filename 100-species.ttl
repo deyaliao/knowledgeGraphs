@@ -612,6 +612,7 @@ boltz:Q223044 a kgo:Taxon ;
 	skos:prefLabel	"Turtle"@en .
 
 boltz:Q4713411 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q46360 ; 
 	kgo:taxonName 	"Aldabrachelys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Aldabra%20Giant%20Tortoise%20Geochelone%20gigantea%20edit1.jpg> ; 
@@ -627,6 +628,7 @@ boltz:Q27885022 a kgo:Taxon ;
 	skos:prefLabel	"Aldabra giant tortoise"@en .
 
 boltz:Q301044 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q9206318 ; 
 	kgo:taxonName 	"Dermatemys mawii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Dlouhohl%C3%A1vka%20mexick%C3%A1%209245u.jpg> ; 
@@ -634,6 +636,7 @@ boltz:Q301044 a kgo:Taxon ;
 	skos:prefLabel	"Central american river turtle"@en .
 
 boltz:Q2205115 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1877590 ; 
 	kgo:taxonName 	"Carettochelyidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Sinaspideretes%20wimani.JPG> ; 
@@ -641,6 +644,7 @@ boltz:Q2205115 a kgo:Taxon ;
 	skos:prefLabel	"Carettochelyidae"@en .
 
 boltz:Q3400043 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1946537 ; 
 	kgo:taxonName 	"Platysternidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Zolw%20wielkoglowy.jpg> ; 
@@ -648,6 +652,7 @@ boltz:Q3400043 a kgo:Taxon ;
 	skos:prefLabel	"Platysternidae"@en .
 
 boltz:Q573026 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q387150 ; 
 	kgo:taxonName 	"Staurotypinae"@en ; 
 	kgo:taxonRank	boltz:Q164280 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Staurotypus%20salvinii.jpg> ; 
@@ -655,6 +660,7 @@ boltz:Q573026 a kgo:Taxon ;
 	skos:prefLabel	"Staurotypinae"@en .
 
 boltz:Q2342737 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q387150 ; 
 	kgo:taxonName 	"Kinosterninae"@en ; 
 	kgo:taxonRank	boltz:Q164280 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Sternotherus%20odoratus.jpg> ; 
@@ -662,6 +668,7 @@ boltz:Q2342737 a kgo:Taxon ;
 	skos:prefLabel	"Kinosterninae"@en .
 
 boltz:Q1930722 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2036081 ; 
 	kgo:taxonName 	"Rafetus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B9a%20%C4%90%E1%BB%93ng%20M%C3%B4.jpg> ; 
@@ -669,6 +676,7 @@ boltz:Q1930722 a kgo:Taxon ;
 	skos:prefLabel	"Rafetus"@en .
 
 boltz:Q1932390 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2962189 ; 
 	kgo:taxonName 	"Acanthochelys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Acanthochelys%20spixii.jpg> ; 
@@ -676,6 +684,7 @@ boltz:Q1932390 a kgo:Taxon ;
 	skos:prefLabel	"Acanthochelys"@en .
 
 boltz:Q4722543 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2962214 ; 
 	kgo:taxonName 	"Rheodytes"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Rheodytes%20shell.jpg> ; 
@@ -683,6 +692,7 @@ boltz:Q4722543 a kgo:Taxon ;
 	skos:prefLabel	"Rheodytes"@en .
 
 boltz:Q14566149 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q133885 ; 
 	kgo:taxonName 	"Erymnochelys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Erymnochelys%20madagascariensis.jpg> ; 
@@ -690,6 +700,7 @@ boltz:Q14566149 a kgo:Taxon ;
 	skos:prefLabel	"Erymnochelys"@en .
 
 boltz:Q3374556 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q133885 ; 
 	kgo:taxonName 	"Peltocephalus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<> ; 
@@ -697,6 +708,7 @@ boltz:Q3374556 a kgo:Taxon ;
 	skos:prefLabel	"Peltocephalus"@en .
 
 boltz:Q11790069 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4490203 ; 
 	kgo:taxonName 	"Natator"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Natator%20depressus.jpg> ; 
@@ -704,6 +716,7 @@ boltz:Q11790069 a kgo:Taxon ;
 	skos:prefLabel	"Natator"@en .
 
 boltz:Q1468192 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Cuora"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cuora%20amboinensis.jpg> ; 
@@ -711,6 +724,7 @@ boltz:Q1468192 a kgo:Taxon ;
 	skos:prefLabel	"Asian box turtles"@en .
 
 boltz:Q2111135 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Cyclemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cycle%20denta%20100207-0654%20ipb.jpg> ; 
@@ -718,6 +732,7 @@ boltz:Q2111135 a kgo:Taxon ;
 	skos:prefLabel	"Cyclemys"@en .
 
 boltz:Q14566120 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Geoclemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Geoclemys%20hamiltonii.jpg> ; 
@@ -725,6 +740,7 @@ boltz:Q14566120 a kgo:Taxon ;
 	skos:prefLabel	"Geoclemys"@en .
 
 boltz:Q785801 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Geoemyda"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Stavenn%20Geoemyda%20spengleri.jpg> ; 
@@ -732,6 +748,7 @@ boltz:Q785801 a kgo:Taxon ;
 	skos:prefLabel	"Geoemyda"@en .
 
 boltz:Q14566135 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Hardella"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Hardella%20thurjii%20Hardwicke.jpg> ; 
@@ -739,6 +756,7 @@ boltz:Q14566135 a kgo:Taxon ;
 	skos:prefLabel	"Hardella"@en .
 
 boltz:Q2648390 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Heosemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Heosemys-depressa.jpg> ; 
@@ -746,6 +764,7 @@ boltz:Q2648390 a kgo:Taxon ;
 	skos:prefLabel	"Heosemys"@en .
 
 boltz:Q2701715 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Malayemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Holotype%20of%20Malayemys%20khoratensis.PNG> ; 
@@ -753,6 +772,7 @@ boltz:Q2701715 a kgo:Taxon ;
 	skos:prefLabel	"Malayemys"@en .
 
 boltz:Q798253 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Mauremys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Mauremys%20leprosa%204.jpg> ; 
@@ -760,6 +780,7 @@ boltz:Q798253 a kgo:Taxon ;
 	skos:prefLabel	"Mauremys"@en .
 
 boltz:Q2713738 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Melanochelys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Melanochelys%20trijuga.jpg> ; 
@@ -767,6 +788,7 @@ boltz:Q2713738 a kgo:Taxon ;
 	skos:prefLabel	"Melanochelys"@en .
 
 boltz:Q14566123 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Notochelys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Notochelys%20platynota%20Hardwicke.jpg> ; 
@@ -774,6 +796,7 @@ boltz:Q14566123 a kgo:Taxon ;
 	skos:prefLabel	"Notochelys"@en .
 
 boltz:Q14566122 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Orlitia"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Orlitia%20borneensis.jpg> ; 
@@ -781,6 +804,7 @@ boltz:Q14566122 a kgo:Taxon ;
 	skos:prefLabel	"Orlitia"@en .
 
 boltz:Q2396266 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Sacalia"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Sacalia%20quadriocellata.jpg> ; 
@@ -788,6 +812,7 @@ boltz:Q2396266 a kgo:Taxon ;
 	skos:prefLabel	"Sacalia"@en .
 
 boltz:Q2252752 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Siebenrockiella"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Heosemys%20leytensis04.jpg> ; 
@@ -795,6 +820,7 @@ boltz:Q2252752 a kgo:Taxon ;
 	skos:prefLabel	"Siebenrockiella"@en .
 
 boltz:Q728220 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q46360 ; 
 	kgo:taxonName 	"Indotestudo"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Indotestudo%20elongata%20Pengo.jpg> ; 
@@ -802,6 +828,7 @@ boltz:Q728220 a kgo:Taxon ;
 	skos:prefLabel	"Indotestudo"@en .
 
 boltz:Q2378269 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q46360 ; 
 	kgo:taxonName 	"Manouria"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Manouria%20emys.jpg> ; 
@@ -809,6 +836,7 @@ boltz:Q2378269 a kgo:Taxon ;
 	skos:prefLabel	"Manouria"@en .
 
 boltz:Q1954939 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2036081 ; 
 	kgo:taxonName 	"Amyda"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Amyd%20cartil%20090818-11752%20tsa.jpg> ; 
@@ -816,6 +844,7 @@ boltz:Q1954939 a kgo:Taxon ;
 	skos:prefLabel	"Amyda"@en .
 
 boltz:Q1932400 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2036081 ; 
 	kgo:taxonName 	"Nilssonia"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Nilssonia%20formosa.jpg> ; 
@@ -823,6 +852,7 @@ boltz:Q1932400 a kgo:Taxon ;
 	skos:prefLabel	"Nilssonia"@en .
 
 boltz:Q597442 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1281025 ; 
 	kgo:taxonName 	"Pseudemys peninsularis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Florida%20Cooter%20turtle%20at%20Gemini%20Springs%20-%20Flickr%20-%20Andrea%20Westmoreland.jpg> ; 
@@ -830,6 +860,7 @@ boltz:Q597442 a kgo:Taxon ;
 	skos:prefLabel	"Pseudemys peninsularis"@en .
 
 boltz:Q597285 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1281025 ; 
 	kgo:taxonName 	"Pseudemys gorzugi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/PB110463CR.jpg> ; 
@@ -837,6 +868,7 @@ boltz:Q597285 a kgo:Taxon ;
 	skos:prefLabel	"Pseudemys gorzugi"@en .
 
 boltz:Q305938 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1279036 ; 
 	kgo:taxonName 	"Graptemys gibbonsi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Graptemys.gibbonsi.jpg> ; 
@@ -844,6 +876,7 @@ boltz:Q305938 a kgo:Taxon ;
 	skos:prefLabel	"Pascagoula map turtle"@en .
 
 boltz:Q301647 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1279036 ; 
 	kgo:taxonName 	"Graptemys ernsti"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Graptemys%20ernsti%2018Jun09%20EscambiaRiver%202z.JPG> ; 
@@ -851,6 +884,7 @@ boltz:Q301647 a kgo:Taxon ;
 	skos:prefLabel	"Escambia map turtle"@en .
 
 boltz:Q1049305 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q385417 ; 
 	kgo:taxonName 	"Trachemys stejnegeri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Trachemys%20stejnegeri01.jpg> ; 
@@ -858,6 +892,7 @@ boltz:Q1049305 a kgo:Taxon ;
 	skos:prefLabel	"Central antillean slider"@en .
 
 boltz:Q301089 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q810578 ; 
 	kgo:taxonName 	"Lepidochelys kempii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Padre%20Island%20National%20Seashore%20-%20Kemps%20Ridley%20Sea%20Turtle.jpg> ; 
@@ -865,6 +900,7 @@ boltz:Q301089 a kgo:Taxon ;
 	skos:prefLabel	"Lepidochelys kempii"@en .
 
 boltz:Q846461 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q132328 ; 
 	kgo:taxonName 	"Geochelone elegans"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Indian%20star%20tortoise%20-%20Houston%20Zoo%20-%20cropped.jpg> ; 
@@ -872,6 +908,7 @@ boltz:Q846461 a kgo:Taxon ;
 	skos:prefLabel	"Indian star tortoise"@en .
 
 boltz:Q852181 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q132328 ; 
 	kgo:taxonName 	"Geochelone platynota"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Geochelone%20platynota%20-Toronto%20Zoo%2C%20Ontario%2C%20Canada-8a.jpg> ; 
@@ -879,6 +916,7 @@ boltz:Q852181 a kgo:Taxon ;
 	skos:prefLabel	"Burmese star tortoise"@en .
 
 boltz:Q642538 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1054788 ; 
 	kgo:taxonName 	"Homopus areolatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:typeSpeciesOf	"Homopus"@en ;
@@ -887,6 +925,7 @@ boltz:Q642538 a kgo:Taxon ;
 	skos:prefLabel	"Beaked cape tortoise"@en .
 
 boltz:Q2631006 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1054788 ; 
 	kgo:taxonName 	"Homopus boulengeri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Karoo%20Padloper%20-%20RSA.jpg> ; 
@@ -894,6 +933,7 @@ boltz:Q2631006 a kgo:Taxon ;
 	skos:prefLabel	"Boulenger's cape tortoise"@en .
 
 boltz:Q3080873 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1054788 ; 
 	kgo:taxonName 	"Homopus femoralis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Greater%20Padloper%20-%20RSA.jpg> ; 
@@ -901,6 +941,7 @@ boltz:Q3080873 a kgo:Taxon ;
 	skos:prefLabel	"Karoo cape tortoise"@en .
 
 boltz:Q302172 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1054788 ; 
 	kgo:taxonName 	"Homopus signatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Homopus%20signatus-Prague%20Zoo.jpg> ; 
@@ -908,6 +949,7 @@ boltz:Q302172 a kgo:Taxon ;
 	skos:prefLabel	"Speckled padloper tortoise"@en .
 
 boltz:Q2688237 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q783716 ; 
 	kgo:taxonName 	"Hydromedusa maximiliani"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Hydromedusa%20maximiliani%20from%20Delectus%20Florae%20et%20Faunae%20Brasiliensis%20%28page%2075%20crop%29.jpg> ; 
@@ -915,6 +957,7 @@ boltz:Q2688237 a kgo:Taxon ;
 	skos:prefLabel	"Brazilian snake-necked turtle"@en .
 
 boltz:Q625475 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q783716 ; 
 	kgo:taxonName 	"Hydromedusa tectifera"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Hydromedusa%20tectifera.jpg> ; 
@@ -922,6 +965,7 @@ boltz:Q625475 a kgo:Taxon ;
 	skos:prefLabel	"Argentine snake-necked turtle"@en .
 
 boltz:Q1529918 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q531347 ; 
 	kgo:taxonName 	"Kinixys belliana"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kinixys%20belliana%20nogueyi%201%20by%20diotime.jpg> ; 
@@ -929,6 +973,7 @@ boltz:Q1529918 a kgo:Taxon ;
 	skos:prefLabel	"Bell's hinge-back tortoise"@en .
 
 boltz:Q302898 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q531347 ; 
 	kgo:taxonName 	"Kinixys erosa"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kinixys%20erosa.jpg> ; 
@@ -936,6 +981,7 @@ boltz:Q302898 a kgo:Taxon ;
 	skos:prefLabel	"Forest hinge-back tortoise"@en .
 
 boltz:Q301423 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q531347 ; 
 	kgo:taxonName 	"Kinixys homeana"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Stutz-gelenkschildkroete-02.jpg> ; 
@@ -943,6 +989,7 @@ boltz:Q301423 a kgo:Taxon ;
 	skos:prefLabel	"Home's hinge-back tortoise"@en .
 
 boltz:Q305966 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q531347 ; 
 	kgo:taxonName 	"Kinixys natalensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kinixys%20natalensis%20-%20adult%20male%20Natal%20Hinged%20Tortoise%20-%20RSA.jpg> ; 
@@ -950,6 +997,7 @@ boltz:Q305966 a kgo:Taxon ;
 	skos:prefLabel	"Natal hinge-back tortoise"@en .
 
 boltz:Q305955 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon acutum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kinosternon%20acutum.jpg> ; 
@@ -957,6 +1005,7 @@ boltz:Q305955 a kgo:Taxon ;
 	skos:prefLabel	"Tabasco mud turtle"@en .
 
 boltz:Q2697591 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon alamosae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -964,6 +1013,7 @@ boltz:Q2697591 a kgo:Taxon ;
 	skos:prefLabel	"Alamos mud turtle"@en .
 
 boltz:Q1107850 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon angustipons"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kinosternon%20angustipons.JPG> ; 
@@ -971,6 +1021,7 @@ boltz:Q1107850 a kgo:Taxon ;
 	skos:prefLabel	"Central american mud turtle"@en .
 
 boltz:Q304439 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon creaseri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Creaser%27s%20Mud%20Turtle%20%28Kinosternon%20creaseri%29.jpg> ; 
@@ -978,6 +1029,7 @@ boltz:Q304439 a kgo:Taxon ;
 	skos:prefLabel	"Creaser's mud turtle"@en .
 
 boltz:Q305960 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon dunni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -985,6 +1037,7 @@ boltz:Q305960 a kgo:Taxon ;
 	skos:prefLabel	"Dunn's mud turtle"@en .
 
 boltz:Q2397755 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon herrerai"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kinosternon%20herrerai%204200729.jpg> ; 
@@ -992,6 +1045,7 @@ boltz:Q2397755 a kgo:Taxon ;
 	skos:prefLabel	"Herrera's mud turtle"@en .
 
 boltz:Q2009022 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon integrum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kinosternon%20integrum%2C%20Mexican%20Mud%20Turtle%2C%20Tamaulipas.jpg> ; 
@@ -999,6 +1053,7 @@ boltz:Q2009022 a kgo:Taxon ;
 	skos:prefLabel	"Mexican mud turtle"@en .
 
 boltz:Q604836 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon leucostomum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/CinosternonLeucostomum.jpg> ; 
@@ -1006,6 +1061,7 @@ boltz:Q604836 a kgo:Taxon ;
 	skos:prefLabel	"White-lipped mud turtle"@en .
 
 boltz:Q305904 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon oaxacae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kinosternon%20oaxacae.jpeg> ; 
@@ -1013,6 +1069,7 @@ boltz:Q305904 a kgo:Taxon ;
 	skos:prefLabel	"Oaxaca mud turtle"@en .
 
 boltz:Q596405 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon scorpioides"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Waldbachschildkroete-01.jpg> ; 
@@ -1020,6 +1077,7 @@ boltz:Q596405 a kgo:Taxon ;
 	skos:prefLabel	"Scorpion mud turtle"@en .
 
 boltz:Q634027 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q594040 ; 
 	kgo:taxonName 	"Lissemys scutata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Lissemys%20scutata.jpg> ; 
@@ -1027,6 +1085,7 @@ boltz:Q634027 a kgo:Taxon ;
 	skos:prefLabel	"Burmese flapshell turtle"@en .
 
 boltz:Q832357 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q11766713 ; 
 	kgo:taxonName 	"Malacochersus tornieri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Malacochersus%20tornieri%20-%20Buffalo%20Zoo.jpg> ; 
@@ -1034,6 +1093,7 @@ boltz:Q832357 a kgo:Taxon ;
 	skos:prefLabel	"Pancake tortoise"@en .
 
 boltz:Q2109464 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1994322 ; 
 	kgo:taxonName 	"Morenia petersi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Morenia%20petersi.jpg> ; 
@@ -1041,6 +1101,7 @@ boltz:Q2109464 a kgo:Taxon ;
 	skos:prefLabel	"Indian eyed turtle"@en .
 
 boltz:Q2272259 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2138486 ; 
 	kgo:taxonName 	"Pelochelys bibroni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pelochelys%20bibroni.png> ; 
@@ -1048,6 +1109,7 @@ boltz:Q2272259 a kgo:Taxon ;
 	skos:prefLabel	"Southern new guinea giant softshell turtle"@en .
 
 boltz:Q482316 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios adansonii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/SternothaerusAdansoniiFord.jpg> ; 
@@ -1055,6 +1117,7 @@ boltz:Q482316 a kgo:Taxon ;
 	skos:prefLabel	"Adanson's mud turtle"@en .
 
 boltz:Q940103 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios bechuanicus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -1062,6 +1125,7 @@ boltz:Q940103 a kgo:Taxon ;
 	skos:prefLabel	"Okavango mud turtle"@en .
 
 boltz:Q849968 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios broadleyi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -1069,6 +1133,7 @@ boltz:Q849968 a kgo:Taxon ;
 	skos:prefLabel	"Turkana mud turtle"@en .
 
 boltz:Q2163840 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios carinatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -1076,6 +1141,7 @@ boltz:Q2163840 a kgo:Taxon ;
 	skos:prefLabel	"African keeled mud turtle"@en .
 
 boltz:Q2139210 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios castaneus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pelusios%20castaneus%20Emmen.JPG> ; 
@@ -1083,6 +1149,7 @@ boltz:Q2139210 a kgo:Taxon ;
 	skos:prefLabel	"West african mud turtle"@en .
 
 boltz:Q545765 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios castanoides"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pelusios%20castanoides.JPG> ; 
@@ -1090,6 +1157,7 @@ boltz:Q545765 a kgo:Taxon ;
 	skos:prefLabel	"Yellow-bellied mud turtle"@en .
 
 boltz:Q2616662 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios chapini"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -1097,6 +1165,7 @@ boltz:Q2616662 a kgo:Taxon ;
 	skos:prefLabel	"Central african mud turtle"@en .
 
 boltz:Q2633044 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios gabonensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Hul%20-%20Pelusios%20gabonensis%20skull%20-%20GMZ%201.jpg> ; 
@@ -1104,6 +1173,7 @@ boltz:Q2633044 a kgo:Taxon ;
 	skos:prefLabel	"African forest turtle"@en .
 
 boltz:Q2126978 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios nanus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -1111,6 +1181,7 @@ boltz:Q2126978 a kgo:Taxon ;
 	skos:prefLabel	"African dwarf mud turtle"@en .
 
 boltz:Q944295 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios niger"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pelusios%20niger%20by%20OpenCage.jpg> ; 
@@ -1118,6 +1189,7 @@ boltz:Q944295 a kgo:Taxon ;
 	skos:prefLabel	"West african black turtle"@en .
 
 boltz:Q2044080 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios rhodesianus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -1125,6 +1197,7 @@ boltz:Q2044080 a kgo:Taxon ;
 	skos:prefLabel	"Variable mud turtle"@en .
 
 boltz:Q2210326 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios sinuatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Serrated%20Hinged%20Terrapin%20%28Pelusios%20sinuatus%29%20%2816711115324%29.jpg> ; 
@@ -1132,6 +1205,7 @@ boltz:Q2210326 a kgo:Taxon ;
 	skos:prefLabel	"Pelusios sinuatus"@en .
 
 boltz:Q2096834 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios upembae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -1139,6 +1213,7 @@ boltz:Q2096834 a kgo:Taxon ;
 	skos:prefLabel	"Upemba mud turtle"@en .
 
 boltz:Q2197483 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1121991 ; 
 	kgo:taxonName 	"Pelusios williamsi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/William%27s%20African%20Mud%20Turtle%20%28Pelusios%20williamsi%29%20%287080593585%29.jpg> ; 
@@ -1146,6 +1221,7 @@ boltz:Q2197483 a kgo:Taxon ;
 	skos:prefLabel	"William's mud turtle"@en .
 
 boltz:Q2507664 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2700403 ; 
 	kgo:taxonName 	"Phrynops geoffroanus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Phrynops%20geoffroanus%20-%20Zoo%20Frankfurt.jpg> ; 
@@ -1153,6 +1229,7 @@ boltz:Q2507664 a kgo:Taxon ;
 	skos:prefLabel	"Phrynops geoffroanus"@en .
 
 boltz:Q1080458 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2700403 ; 
 	kgo:taxonName 	"Phrynops hilarii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Phrynops%20hilarii%202.jpg> ; 
@@ -1160,6 +1237,7 @@ boltz:Q1080458 a kgo:Taxon ;
 	skos:prefLabel	"Phrynops hilarii"@en .
 
 boltz:Q2699603 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2700403 ; 
 	kgo:taxonName 	"Phrynops williamsi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tortugaherradura.JPG> ; 
@@ -1167,6 +1245,7 @@ boltz:Q2699603 a kgo:Taxon ;
 	skos:prefLabel	"Phrynops williamsi"@en .
 
 boltz:Q1971127 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q14566147 ; 
 	kgo:taxonName 	"Platemys platycephala"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Twist-necked%20Turtle.jpg> ; 
@@ -1174,6 +1253,7 @@ boltz:Q1971127 a kgo:Taxon ;
 	skos:prefLabel	"Twist-necked turtle"@en .
 
 boltz:Q754035 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q14566127 ; 
 	kgo:taxonName 	"Platysternon megacephalum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Zolw%20wielkoglowy.jpg> ; 
@@ -1181,6 +1261,7 @@ boltz:Q754035 a kgo:Taxon ;
 	skos:prefLabel	"Big-headed turtle"@en .
 
 boltz:Q2703939 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q969512 ; 
 	kgo:taxonName 	"Podocnemis erythrocephala"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Podocnemis%20erythrocephala.jpg> ; 
@@ -1188,6 +1269,7 @@ boltz:Q2703939 a kgo:Taxon ;
 	skos:prefLabel	"Red-headed amazon river turtle"@en .
 
 boltz:Q2699599 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q969512 ; 
 	kgo:taxonName 	"Podocnemis lewyana"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/PodocnemisLewyana.jpg> ; 
@@ -1195,6 +1277,7 @@ boltz:Q2699599 a kgo:Taxon ;
 	skos:prefLabel	"Magdalena river turtle"@en .
 
 boltz:Q2716566 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q969512 ; 
 	kgo:taxonName 	"Podocnemis sextuberculata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Ia%C3%A7%C3%A1%2C%20Piti%C3%BA%20%28Podocnemis%20sextuberculata%29%20-%20Filhote.jpg> ; 
@@ -1202,6 +1285,7 @@ boltz:Q2716566 a kgo:Taxon ;
 	skos:prefLabel	"Six-tubercled amazon river turtle"@en .
 
 boltz:Q862053 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q969512 ; 
 	kgo:taxonName 	"Podocnemis vogli"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Savanna%20Side-necked%20Turtle%2C%20Medellin%2C%20Colombia.jpg> ; 
@@ -1209,6 +1293,7 @@ boltz:Q862053 a kgo:Taxon ;
 	skos:prefLabel	"Savanna side-necked turtle"@en .
 
 boltz:Q2104559 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1754182 ; 
 	kgo:taxonName 	"Psammobates tentorius"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/TestudoTrimeniSmit.jpg> ; 
@@ -1216,6 +1301,7 @@ boltz:Q2104559 a kgo:Taxon ;
 	skos:prefLabel	"Tent tortoise"@en .
 
 boltz:Q2050578 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q14566146 ; 
 	kgo:taxonName 	"Pseudemydura umbrina"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Western%20swamp%20tortoise.JPG> ; 
@@ -1223,6 +1309,7 @@ boltz:Q2050578 a kgo:Taxon ;
 	skos:prefLabel	"Western swamp turtle"@en .
 
 boltz:Q2611593 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q468535 ; 
 	kgo:taxonName 	"Rhinoclemmys annulata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/GeoclemmysAnnulataFord.jpg> ; 
@@ -1230,6 +1317,7 @@ boltz:Q2611593 a kgo:Taxon ;
 	skos:prefLabel	"Brown wood turtle"@en .
 
 boltz:Q2283148 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q468535 ; 
 	kgo:taxonName 	"Rhinoclemmys areolata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Rhinoclemmys%20areolata.JPG> ; 
@@ -1237,6 +1325,7 @@ boltz:Q2283148 a kgo:Taxon ;
 	skos:prefLabel	"Furrowed wood turtle"@en .
 
 boltz:Q2490459 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q468535 ; 
 	kgo:taxonName 	"Rhinoclemmys diademata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -1244,6 +1333,7 @@ boltz:Q2490459 a kgo:Taxon ;
 	skos:prefLabel	"Maracaibo wood turtle"@en .
 
 boltz:Q2108570 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q468535 ; 
 	kgo:taxonName 	"Rhinoclemmys funerea"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Rhinoclemmys%20funerea.jpg> ; 
@@ -1251,6 +1341,7 @@ boltz:Q2108570 a kgo:Taxon ;
 	skos:prefLabel	"Black river turtle"@en .
 
 boltz:Q2591470 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q468535 ; 
 	kgo:taxonName 	"Rhinoclemmys melanosterna"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Rhinoclemmys%20melanosterna.jpg> ; 
@@ -1258,6 +1349,7 @@ boltz:Q2591470 a kgo:Taxon ;
 	skos:prefLabel	"Colombian wood turtle"@en .
 
 boltz:Q2221697 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q468535 ; 
 	kgo:taxonName 	"Rhinoclemmys nasuta"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Rhinoclemmys%20nasuta.JPG> ; 
@@ -1265,6 +1357,7 @@ boltz:Q2221697 a kgo:Taxon ;
 	skos:prefLabel	"Large-nosed wood turtle"@en .
 
 boltz:Q2107325 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q468535 ; 
 	kgo:taxonName 	"Rhinoclemmys pulcherrima"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/RPincisa-02c.jpg> ; 
@@ -1272,6 +1365,7 @@ boltz:Q2107325 a kgo:Taxon ;
 	skos:prefLabel	"Painted wood turtle"@en .
 
 boltz:Q2697046 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q468535 ; 
 	kgo:taxonName 	"Rhinoclemmys punctularia"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Rhinoclemmys%20punctularia.JPG> ; 
@@ -1279,6 +1373,7 @@ boltz:Q2697046 a kgo:Taxon ;
 	skos:prefLabel	"Spot-legged turtle"@en .
 
 boltz:Q2700420 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q468535 ; 
 	kgo:taxonName 	"Rhinoclemmys rubida"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/RhinoclemmysMexicanaFord.jpg> ; 
@@ -1286,6 +1381,7 @@ boltz:Q2700420 a kgo:Taxon ;
 	skos:prefLabel	"Mexican spotted wood turtle"@en .
 
 boltz:Q646900 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2247900 ; 
 	kgo:taxonName 	"Staurotypus salvinii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Staurotypus%20salvinii.jpg> ; 
@@ -1293,6 +1389,7 @@ boltz:Q646900 a kgo:Taxon ;
 	skos:prefLabel	"Giant musk turtle"@en .
 
 boltz:Q1187567 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2247900 ; 
 	kgo:taxonName 	"Staurotypus triporcatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Staurotypus%20triporcatus%20by%20LA%20Dawson.jpg> ; 
@@ -1300,6 +1397,7 @@ boltz:Q1187567 a kgo:Taxon ;
 	skos:prefLabel	"Mexican musk turtle"@en .
 
 boltz:Q504549 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q662605 ; 
 	kgo:taxonName 	"Testudo graeca"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Nabeulensis%20sarda.JPG> ; 
@@ -1307,6 +1405,7 @@ boltz:Q504549 a kgo:Taxon ;
 	skos:prefLabel	"Spur-thighed tortoise"@en .
 
 boltz:Q262555 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q662605 ; 
 	kgo:taxonName 	"Testudo hermanni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Testudo%20hermanni%20hermanni%20Mallorca%2002.jpg> ; 
@@ -1314,6 +1413,7 @@ boltz:Q262555 a kgo:Taxon ;
 	skos:prefLabel	"Hermann's tortoise"@en .
 
 boltz:Q754182 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q662605 ; 
 	kgo:taxonName 	"Testudo horsfieldii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Halden%20011.jpg> ; 
@@ -1321,6 +1421,7 @@ boltz:Q754182 a kgo:Taxon ;
 	skos:prefLabel	"Russian tortoise"@en .
 
 boltz:Q253781 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q662605 ; 
 	kgo:taxonName 	"Testudo kleinmanni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Testudo%20kleinmanni.jpg> ; 
@@ -1328,6 +1429,7 @@ boltz:Q253781 a kgo:Taxon ;
 	skos:prefLabel	"Kleinmann's tortoise"@en .
 
 boltz:Q645356 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q662605 ; 
 	kgo:taxonName 	"Testudo marginata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Marginata0005.JPG> ; 
@@ -1351,6 +1453,7 @@ boltz:Q1075096 a kgo:Taxon ;
 	skos:prefLabel	"Yangtze giant softshell turtle"@en .
 
 boltz:Q739984 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5079121 ; 
 	kgo:taxonName 	"Trionyx triunguis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Trionyx%20triunguis%20Zoo%20Rostock%2015-08-2008%20083.jpg> ; 
@@ -1390,6 +1493,7 @@ boltz:Q3783140 a kgo:Taxon ;
 	skos:prefLabel	"Black spine-neck swamp turtle"@en .
 
 boltz:Q286099 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q14566771 ; 
 	kgo:taxonName 	"Chelodina expansa"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Chelodina%20expansa.jpg> ; 
@@ -1397,6 +1501,7 @@ boltz:Q286099 a kgo:Taxon ;
 	skos:prefLabel	"Chelodina expansa"@en .
 
 boltz:Q221080 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q532358 ; 
 	kgo:taxonName 	"Chelodina longicollis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/CSIRO%20ScienceImage%207775%20Eastern%20Snakenecked%20Turtle.jpg> ; 
@@ -1404,6 +1509,7 @@ boltz:Q221080 a kgo:Taxon ;
 	skos:prefLabel	"Eastern long-necked turtle"@en .
 
 boltz:Q645675 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q532358 ; 
 	kgo:taxonName 	"Chelodina novaeguineae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/New%20Guinea%20Snake-necked%20Turtle.jpg> ; 
@@ -1411,6 +1517,7 @@ boltz:Q645675 a kgo:Taxon ;
 	skos:prefLabel	"New guinea snake-necked turtle"@en .
 
 boltz:Q2697599 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q14566771 ; 
 	kgo:taxonName 	"Chelodina oblonga"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Chelodina%20oblonga%20description.jpg> ; 
@@ -1418,6 +1525,7 @@ boltz:Q2697599 a kgo:Taxon ;
 	skos:prefLabel	"Chelodina oblonga"@en .
 
 boltz:Q305900 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q14566771 ; 
 	kgo:taxonName 	"Chelodina parkeri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Chelodina%20parkeri%201zz.jpg> ; 
@@ -1425,6 +1533,7 @@ boltz:Q305900 a kgo:Taxon ;
 	skos:prefLabel	"Parker's snake-necked turtle"@en .
 
 boltz:Q2286121 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q532358 ; 
 	kgo:taxonName 	"Chelodina reimanni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -1432,6 +1541,7 @@ boltz:Q2286121 a kgo:Taxon ;
 	skos:prefLabel	"Reimann's snake-necked turtle"@en .
 
 boltz:Q2707055 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q532358 ; 
 	kgo:taxonName 	"Chelodina steindachneri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/C%20steindachneri%20holotype1.jpg> ; 
@@ -1439,6 +1549,7 @@ boltz:Q2707055 a kgo:Taxon ;
 	skos:prefLabel	"Chelodina steindachneri"@en .
 
 boltz:Q2517394 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2708967 ; 
 	kgo:taxonName 	"Elseya dentata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:typeSpeciesOf	"Elseya"@en ;
@@ -1447,6 +1558,7 @@ boltz:Q2517394 a kgo:Taxon ;
 	skos:prefLabel	"Elseya dentata"@en .
 
 boltz:Q1996342 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2708967 ; 
 	kgo:taxonName 	"Elseya novaeguineae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Myuchelys%20novaeguineae.jpg> ; 
@@ -1454,6 +1566,7 @@ boltz:Q1996342 a kgo:Taxon ;
 	skos:prefLabel	"New guinea snapping turtle"@en .
 
 boltz:Q1086983 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2710616 ; 
 	kgo:taxonName 	"Emydura subglobosa"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Rotbauchspitzkopfschildkroete-07.jpg> ; 
@@ -1461,6 +1574,7 @@ boltz:Q1086983 a kgo:Taxon ;
 	skos:prefLabel	"Red-bellied short-necked turtle"@en .
 
 boltz:Q2377830 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2710616 ; 
 	kgo:taxonName 	"Emydura victoriae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Emydura%20australis%20lateral.gif> ; 
@@ -1716,6 +1830,7 @@ boltz:Q2180636 a kgo:Taxon ;
 	skos:prefLabel	"Black marsh turtle"@en .
 
 boltz:Q187036 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2453385 ; 
 	kgo:taxonName 	"Emys orbicularis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Emys%20orbicularis%202009%20G1.jpg> ; 
@@ -1723,6 +1838,7 @@ boltz:Q187036 a kgo:Taxon ;
 	skos:prefLabel	"European pond turtle"@en .
 
 boltz:Q1847668 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q734870 ; 
 	kgo:taxonName 	"Terrapene nelsoni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/In%20go%20the%20legs.jpg> ; 
@@ -1730,6 +1846,7 @@ boltz:Q1847668 a kgo:Taxon ;
 	skos:prefLabel	"Spotted box turtle"@en .
 
 boltz:Q1032577 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q385417 ; 
 	kgo:taxonName 	"Trachemys decorata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Trachemys%20decorata.jpg> ; 
@@ -1737,6 +1854,7 @@ boltz:Q1032577 a kgo:Taxon ;
 	skos:prefLabel	"Trachemys decorata"@en .
 
 boltz:Q2699248 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q385417 ; 
 	kgo:taxonName 	"Trachemys decussata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Trachemys%20decussata.jpg> ; 
@@ -1744,6 +1862,7 @@ boltz:Q2699248 a kgo:Taxon ;
 	skos:prefLabel	"Cuban slider"@en .
 
 boltz:Q2158286 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q385417 ; 
 	kgo:taxonName 	"Trachemys dorbigni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Trachemys%20dorbignyi%20dorbignyi.jpg> ; 
@@ -1751,6 +1870,7 @@ boltz:Q2158286 a kgo:Taxon ;
 	skos:prefLabel	"D'orbigny's slider"@en .
 
 boltz:Q1088098 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q14566125 ; 
 	kgo:taxonName 	"Claudius angustatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Claudius%20angustatus.JPG> ; 
@@ -1758,6 +1878,7 @@ boltz:Q1088098 a kgo:Taxon ;
 	skos:prefLabel	"Narrow-bridged musk turtle"@en .
 
 boltz:Q386571 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8345240 ; 
 	kgo:taxonName 	"Chersina angulata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:typeSpeciesOf	"Chersina"@en ;
@@ -1798,6 +1919,7 @@ boltz:Q1923834 a kgo:Taxon ;
 	skos:prefLabel	"Impressed tortoise"@en .
 
 boltz:Q2376451 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q670769 ; 
 	kgo:taxonName 	"Pyxis arachnoides"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pyxis%20Arachnoides%20Ste%20Marie%20Madagascar.jpg> ; 
@@ -1805,6 +1927,7 @@ boltz:Q2376451 a kgo:Taxon ;
 	skos:prefLabel	"Spider tortoise"@en .
 
 boltz:Q1426275 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q670769 ; 
 	kgo:taxonName 	"Pyxis planicauda"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Flat-tailed%20Tortoise%20Pyxis%20planicanda%202390px.jpg> ; 
@@ -1812,6 +1935,7 @@ boltz:Q1426275 a kgo:Taxon ;
 	skos:prefLabel	"Flat-backed spider tortoise"@en .
 
 boltz:Q302076 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q776906 ; 
 	kgo:taxonName 	"Cyclanorbis elegans"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cyclanorbis%20elegans%20%2829569930902%29.jpg> ; 
@@ -1819,6 +1943,7 @@ boltz:Q302076 a kgo:Taxon ;
 	skos:prefLabel	"Nubian flapshell turtle"@en .
 
 boltz:Q304585 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q776906 ; 
 	kgo:taxonName 	"Cyclanorbis senegalensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/CyclanosteusSenegalensisFord.jpg> ; 
@@ -1826,6 +1951,7 @@ boltz:Q304585 a kgo:Taxon ;
 	skos:prefLabel	"Senegal flapshell turtle"@en .
 
 boltz:Q2476966 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2300380 ; 
 	kgo:taxonName 	"Cycloderma aubryi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cycloderma%20aubryi%20%2829056524413%29.jpg> ; 
@@ -1833,6 +1959,7 @@ boltz:Q2476966 a kgo:Taxon ;
 	skos:prefLabel	"Aubry's flapshell turtle"@en .
 
 boltz:Q302050 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2300380 ; 
 	kgo:taxonName 	"Cycloderma frenatum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/AspidochelysLivingstoniiFordPlastron.jpg> ; 
@@ -1848,6 +1975,7 @@ boltz:Q1945329 a kgo:Taxon ;
 	skos:prefLabel	"Asiatic softshell turtle"@en .
 
 boltz:Q2078104 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q738023 ; 
 	kgo:taxonName 	"Chitra indica"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Dudhwalive%20chitra.JPG> ; 
@@ -1855,6 +1983,7 @@ boltz:Q2078104 a kgo:Taxon ;
 	skos:prefLabel	"Indian narrow-headed softshell turtle"@en .
 
 boltz:Q2078114 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5288303 ; 
 	kgo:taxonName 	"Dogania subplana"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:typeSpeciesOf	"Dogania"@en ;
@@ -1871,6 +2000,7 @@ boltz:Q2138991 a kgo:Taxon ;
 	skos:prefLabel	"Burmese peacock softshell"@en .
 
 boltz:Q14566119 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q3041260 ; 
 	kgo:taxonName 	"Actinemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/2009-Western-pond-turtle.jpg> ; 
@@ -1878,6 +2008,7 @@ boltz:Q14566119 a kgo:Taxon ;
 	skos:prefLabel	"Actinemys"@en .
 
 boltz:Q469543 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q3041260 ; 
 	kgo:taxonName 	"Glyptemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Bog%20Turtle%2001.jpg> ; 
@@ -1885,6 +2016,7 @@ boltz:Q469543 a kgo:Taxon ;
 	skos:prefLabel	"Glyptemys"@en .
 
 boltz:Q11765817 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q650212 ; 
 	kgo:taxonName 	"Macrochelys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Alligator%20snapping%20turtle.jpg> ; 
@@ -1924,6 +2056,7 @@ boltz:Q457872 a kgo:Taxon ;
 	skos:prefLabel	"Alligator snapping turtle"@en .
 
 boltz:Q2713760 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2500468 ; 
 	kgo:taxonName 	"Kinosternon arizonense"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kinosternon%20arizonense.jpg> ; 
@@ -1947,6 +2080,7 @@ boltz:Q14566125 a kgo:Taxon ;
 	skos:prefLabel	"Claudius"@en .
 
 boltz: a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q734870 ; 
 	kgo:taxonName 	"Terrapene bauri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -1954,6 +2088,7 @@ boltz: a kgo:Taxon ;
 	skos:prefLabel	""@en .
 
 boltz:Q650212 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q499621 ; 
 	kgo:taxonName 	"Chelydridae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Snapping%20turtle%202%20md.jpg> ; 
@@ -1977,6 +2112,7 @@ boltz:Q289435 a kgo:Taxon ;
 	skos:prefLabel	"Common snapping turtle"@en .
 
 boltz:Q387150 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2444280 ; 
 	kgo:taxonName 	"Kinosternidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kinosternon%20subrubrum.jpg> ; 
@@ -2064,6 +2200,7 @@ boltz:Q304331 a kgo:Taxon ;
 	skos:prefLabel	"Sonora mud turtle"@en .
 
 boltz:Q390835 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1946537 ; 
 	kgo:taxonName 	"Emydidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Chrysemys%20picta%20dorsalis%20%28aka%29.jpg> ; 
@@ -2071,6 +2208,7 @@ boltz:Q390835 a kgo:Taxon ;
 	skos:prefLabel	"Emydidae"@en .
 
 boltz:Q5131548 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q3041260 ; 
 	kgo:taxonName 	"Clemmys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/ClemmysUnicolorSmit.jpg> ; 
@@ -2086,6 +2224,7 @@ boltz:Q845189 a kgo:Taxon ;
 	skos:prefLabel	"Spotted turtle"@en .
 
 boltz:Q734870 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q3041260 ; 
 	kgo:taxonName 	"Terrapene"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Florida%20Box%20Turtle%20Digon3.jpg> ; 
@@ -2109,6 +2248,7 @@ boltz:Q2302528 a kgo:Taxon ;
 	skos:prefLabel	"Terrapene ornata"@en .
 
 boltz:Q14566115 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q929362 ; 
 	kgo:taxonName 	"Malaclemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Diamondback%20turtle%20adult%20female.jpg> ; 
@@ -2124,6 +2264,7 @@ boltz:Q569170 a kgo:Taxon ;
 	skos:prefLabel	"Diamondback terrapin"@en .
 
 boltz:Q14566117 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q929362 ; 
 	kgo:taxonName 	"Chrysemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Painted%20turtle.jpg> ; 
@@ -2139,6 +2280,7 @@ boltz:Q199203 a kgo:Taxon ;
 	skos:prefLabel	"Painted turtle"@en .
 
 boltz:Q14566118 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q929362 ; 
 	kgo:taxonName 	"Deirochelys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Deirochelys%20reticularia.jpg> ; 
@@ -2154,6 +2296,7 @@ boltz:Q262146 a kgo:Taxon ;
 	skos:prefLabel	"Chicken turtle"@en .
 
 boltz:Q14566116 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q3041260 ; 
 	kgo:taxonName 	"Emydoidea"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Emydoidea%20blandingiiHolbrookV1P03A.jpg> ; 
@@ -2169,6 +2312,7 @@ boltz:Q185526 a kgo:Taxon ;
 	skos:prefLabel	"Blanding's turtle"@en .
 
 boltz:Q1279036 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q929362 ; 
 	kgo:taxonName 	"Graptemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Graptemys%20pseudogeographica.jpg> ; 
@@ -2256,6 +2400,7 @@ boltz:Q301714 a kgo:Taxon ;
 	skos:prefLabel	"Texas map turtle"@en .
 
 boltz:Q1281025 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q929362 ; 
 	kgo:taxonName 	"Pseudemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Florida%20Redbelly%20Turtle%20KSC00pp0306.jpg> ; 
@@ -2295,6 +2440,7 @@ boltz:Q1619703 a kgo:Taxon ;
 	skos:prefLabel	"Pseudemys rubriventris"@en .
 
 boltz:Q385417 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q929362 ; 
 	kgo:taxonName 	"Trachemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tortoise1%20cepolina.jpg> ; 
@@ -2310,6 +2456,7 @@ boltz:Q142985 a kgo:Taxon ;
 	skos:prefLabel	"Trachemys scripta"@en .
 
 boltz:Q30143 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q219329 ; 
 	kgo:taxonName 	"Cheloniidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Green-sea-turtle.jpg> ; 
@@ -2317,6 +2464,7 @@ boltz:Q30143 a kgo:Taxon ;
 	skos:prefLabel	"Cheloniidae"@en .
 
 boltz:Q2938164 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2264801 ; 
 	kgo:taxonName 	"Caretta"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Loggerhead%20turtle.jpg> ; 
@@ -2332,6 +2480,7 @@ boltz:Q192095 a kgo:Taxon ;
 	skos:prefLabel	"Loggerhead sea turtle"@en .
 
 boltz:Q14566112 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4490203 ; 
 	kgo:taxonName 	"Chelonia"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Haeckel%20Chelonia.jpg> ; 
@@ -2347,6 +2496,7 @@ boltz:Q199458 a kgo:Taxon ;
 	skos:prefLabel	"Chelonia mydas"@en .
 
 boltz:Q14566111 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2264801 ; 
 	kgo:taxonName 	"Eretmochelys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Hawksbill%20Turtle.jpg> ; 
@@ -2362,6 +2512,7 @@ boltz:Q203538 a kgo:Taxon ;
 	skos:prefLabel	"Hawksbill sea turtle"@en .
 
 boltz:Q810578 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2264801 ; 
 	kgo:taxonName 	"Lepidochelys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Sea%20turtle.jpg> ; 
@@ -2377,6 +2528,7 @@ boltz:Q282385 a kgo:Taxon ;
 	skos:prefLabel	"Lepidochelys olivacea"@en .
 
 boltz:Q2738058 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q219329 ; 
 	kgo:taxonName 	"Dermochelyidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/TortueLuth%20Leatherback.jpg> ; 
@@ -2400,6 +2552,7 @@ boltz:Q120043 a kgo:Taxon ;
 	skos:prefLabel	"Leatherback sea turtle"@en .
 
 boltz:Q374835 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1877590 ; 
 	kgo:taxonName 	"Trionychidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pelodiscus.jpg> ; 
@@ -2407,6 +2560,7 @@ boltz:Q374835 a kgo:Taxon ;
 	skos:prefLabel	"Trionychidae"@en .
 
 boltz:Q5079121 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2036081 ; 
 	kgo:taxonName 	"Trionyx"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Trionyx%20triunguis%20Alexander%20Stream.jpg> ; 
@@ -2414,6 +2568,7 @@ boltz:Q5079121 a kgo:Taxon ;
 	skos:prefLabel	"Trionyx"@en .
 
 boltz:Q46360 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1946537 ; 
 	kgo:taxonName 	"Testudinidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/A.%20gigantea%20Aldabra%20Giant%20Tortoise.jpg> ; 
@@ -2485,6 +2640,7 @@ boltz:Q14566127 a kgo:Taxon ;
 	skos:prefLabel	"Platysternon"@en .
 
 boltz:Q468535 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q47461034 ; 
 	kgo:taxonName 	"Rhinoclemmys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/RPincisa-02c.jpg> ; 
@@ -2492,6 +2648,7 @@ boltz:Q468535 a kgo:Taxon ;
 	skos:prefLabel	"Rhinoclemmys"@en .
 
 boltz:Q2453385 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q3041260 ; 
 	kgo:taxonName 	"Emys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Emys%20orbicularis.jpg> ; 
@@ -2499,6 +2656,7 @@ boltz:Q2453385 a kgo:Taxon ;
 	skos:prefLabel	"Emys"@en .
 
 boltz:Q1930459 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2036081 ; 
 	kgo:taxonName 	"Apalone"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Apalone%20spinifera.jpg> ; 
@@ -2530,6 +2688,7 @@ boltz:Q650232 a kgo:Taxon ;
 	skos:prefLabel	"Spiny softshell turtle"@en .
 
 boltz:Q14566142 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2036081 ; 
 	kgo:taxonName 	"Palea"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Palea%20steindachneri.jpeg> ; 
@@ -2545,6 +2704,7 @@ boltz:Q2415046 a kgo:Taxon ;
 	skos:prefLabel	"Wattle-necked softshell turtle"@en .
 
 boltz:Q2395694 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2036081 ; 
 	kgo:taxonName 	"Pelodiscus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/8%20pazdziernika%202005%20gliwice%20062.jpg> ; 
@@ -2560,6 +2720,7 @@ boltz:Q754028 a kgo:Taxon ;
 	skos:prefLabel	"Chinese softshell turtle"@en .
 
 boltz:Q738023 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2036081 ; 
 	kgo:taxonName 	"Chitra"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Dudhwalive%20chitra.JPG> ; 
@@ -2567,6 +2728,7 @@ boltz:Q738023 a kgo:Taxon ;
 	skos:prefLabel	"Chitra"@en .
 
 boltz:Q5288303 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2036081 ; 
 	kgo:taxonName 	"Dogania"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:typeSpecies	"Dogania subplana"@en ;
@@ -2575,6 +2737,7 @@ boltz:Q5288303 a kgo:Taxon ;
 	skos:prefLabel	"Dogania"@en .
 
 boltz:Q594040 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q649575 ; 
 	kgo:taxonName 	"Lissemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Lissemys%20punctata5.jpg> ; 
@@ -2582,6 +2745,7 @@ boltz:Q594040 a kgo:Taxon ;
 	skos:prefLabel	"Lissemys"@en .
 
 boltz:Q2138486 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2036081 ; 
 	kgo:taxonName 	"Pelochelys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pelochelys%20cantorii.jpg> ; 
@@ -2589,6 +2753,7 @@ boltz:Q2138486 a kgo:Taxon ;
 	skos:prefLabel	"Pelochelys"@en .
 
 boltz:Q776906 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q649575 ; 
 	kgo:taxonName 	"Cyclanorbis"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/CyclanosteusSenegalensisFord.jpg> ; 
@@ -2596,6 +2761,7 @@ boltz:Q776906 a kgo:Taxon ;
 	skos:prefLabel	"Cyclanorbis"@en .
 
 boltz:Q2300380 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q649575 ; 
 	kgo:taxonName 	"Cycloderma"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cycloderma%20frenatum%20%2829054672994%29.jpg> ; 
@@ -2653,6 +2819,7 @@ boltz:Q662605 a kgo:Taxon ;
 	skos:prefLabel	"Testudo"@en .
 
 boltz:Q14566148 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q743646 ; 
 	kgo:taxonName 	"Pelomedusa"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pelomedusa%20subrufa%20-%20African%20Marsh%20Terrapin%20-%20Garden%20Pond%202.JPG> ; 
@@ -2660,6 +2827,7 @@ boltz:Q14566148 a kgo:Taxon ;
 	skos:prefLabel	"Pelomedusa"@en .
 
 boltz:Q1121991 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q743646 ; 
 	kgo:taxonName 	"Pelusios"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pelusios%20castaneus.jpg> ; 
@@ -2667,6 +2835,7 @@ boltz:Q1121991 a kgo:Taxon ;
 	skos:prefLabel	"Pelusios"@en .
 
 boltz:Q532358 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2962214 ; 
 	kgo:taxonName 	"Chelodina"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Australsnturtle2.jpg> ; 
@@ -2674,6 +2843,7 @@ boltz:Q532358 a kgo:Taxon ;
 	skos:prefLabel	"Chelodina"@en .
 
 boltz:Q2708967 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2962214 ; 
 	kgo:taxonName 	"Elseya"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:typeSpecies	"Elseya dentata"@en ;
@@ -2682,6 +2852,7 @@ boltz:Q2708967 a kgo:Taxon ;
 	skos:prefLabel	"Elseya"@en .
 
 boltz:Q2710616 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2962214 ; 
 	kgo:taxonName 	"Emydura"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:typeSpecies	"Emydura macquarii"@en ;
@@ -2690,6 +2861,7 @@ boltz:Q2710616 a kgo:Taxon ;
 	skos:prefLabel	"Emydura"@en .
 
 boltz:Q14566146 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2962214 ; 
 	kgo:taxonName 	"Pseudemydura"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Western%20swamp%20tortoise.JPG> ; 
@@ -2697,6 +2869,7 @@ boltz:Q14566146 a kgo:Taxon ;
 	skos:prefLabel	"Pseudemydura"@en .
 
 boltz:Q14566138 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2962189 ; 
 	kgo:taxonName 	"Chelus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/2009%20Chelus%20fimbriatus.JPG> ; 
@@ -2712,6 +2885,7 @@ boltz:Q106449044 a kgo:Taxon ;
 	skos:prefLabel	"Chelus fimbriata"@en .
 
 boltz:Q783716 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q19844830 ; 
 	kgo:taxonName 	"Hydromedusa"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Hydromedusa%20tectifera.jpg> ; 
@@ -2719,6 +2893,7 @@ boltz:Q783716 a kgo:Taxon ;
 	skos:prefLabel	"Hydromedusa"@en .
 
 boltz:Q962191 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2962189 ; 
 	kgo:taxonName 	"Mesoclemmys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:typeSpecies	"Mesoclemmys gibba"@en ;
@@ -2727,6 +2902,7 @@ boltz:Q962191 a kgo:Taxon ;
 	skos:prefLabel	"Mesoclemmys"@en .
 
 boltz:Q14566147 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2962189 ; 
 	kgo:taxonName 	"Platemys"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Twist-necked%20Turtle.jpg> ; 
@@ -2758,6 +2934,7 @@ boltz:Q1104186 a kgo:Taxon ;
 	skos:prefLabel	"Coahuilan box turtle"@en .
 
 boltz:Q2710599 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Batagur"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/BatagurPasirKumpal.jpg> ; 
@@ -2773,6 +2950,7 @@ boltz:Q810705 a kgo:Taxon ;
 	skos:prefLabel	"Northern river terrapin"@en .
 
 boltz:Q1994322 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q5534011 ; 
 	kgo:taxonName 	"Morenia"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Morenia%20ocellata.jpg> ; 
@@ -2812,6 +2990,7 @@ boltz:Q2392362 a kgo:Taxon ;
 	skos:prefLabel	"Geometric tortoise"@en .
 
 boltz:Q743646 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q621851 ; 
 	kgo:taxonName 	"Pelomedusidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pelomedusa%20subrufa%20Beloa%20070306.JPG> ; 
@@ -2819,6 +2998,7 @@ boltz:Q743646 a kgo:Taxon ;
 	skos:prefLabel	"Pelomedusidae"@en .
 
 boltz:Q969512 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q133885 ; 
 	kgo:taxonName 	"Podocnemis"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Podocnemis%20unifilis.jpg> ; 
@@ -2842,6 +3022,7 @@ boltz:Q863041 a kgo:Taxon ;
 	skos:prefLabel	"Yellow-spotted river turtle"@en .
 
 boltz:Q583074 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q621851 ; 
 	kgo:taxonName 	"Chelidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Chelus%20fimbriatus%202005.jpg> ; 
@@ -2849,6 +3030,7 @@ boltz:Q583074 a kgo:Taxon ;
 	skos:prefLabel	"Chelidae"@en .
 
 boltz:Q2700403 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2962189 ; 
 	kgo:taxonName 	"Phrynops"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Phrynops%20hilarii%202.jpg> ; 
@@ -2856,6 +3038,7 @@ boltz:Q2700403 a kgo:Taxon ;
 	skos:prefLabel	"Phrynops"@en .
 
 boltz:Q2492757 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2444280 ; 
 	kgo:taxonName 	"Dermatemydidae"@en ; 
 	kgo:taxonRank	boltz:Q35409 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Dermatemydidae.JPG> ; 
@@ -2871,6 +3054,7 @@ boltz:Q9206318 a kgo:Taxon ;
 	skos:prefLabel	"Dermatemys"@en .
 
 boltz:Q21179602 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2080003 ; 
 	kgo:taxonName 	"Chelonoidis donfaustoi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Chelonoidis%20donfaustoi%20%2815072109070%29.jpg> ; 
@@ -3827,7 +4011,7 @@ boltz:Q901188 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q962191 ; 
 	kgo:taxonName 	"Mesoclemmys dahli"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<> ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Mesoclemmys%20dahli.jpg> ; 
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Dahl's toad-headed turtle"@en .
 
@@ -5731,6 +5915,7 @@ boltz:Q25363 a kgo:Taxon ;
 	skos:prefLabel	"Crocodilia"@en .
 
 boltz:Q6008290 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q43169 ; 
 	kgo:taxonName 	"Mecistops"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Mecistops%20leptorhynchus%202009.jpg> ; 
@@ -5746,6 +5931,7 @@ boltz:Q268501 a kgo:Taxon ;
 	skos:prefLabel	"Mecistops cataphractus"@en .
 
 boltz:Q81207 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309495 ; 
 	kgo:taxonName 	"Crocodylus palustris"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Marsh%20crocodile%20-%20Basking%20in%20the%20sun.jpg> ; 
@@ -5753,6 +5939,7 @@ boltz:Q81207 a kgo:Taxon ;
 	skos:prefLabel	"Indus crocodile"@en .
 
 boltz:Q242102 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309495 ; 
 	kgo:taxonName 	"Crocodylus rhombifer"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Estocolm%202008%20163.jpg> ; 
@@ -5760,6 +5947,7 @@ boltz:Q242102 a kgo:Taxon ;
 	skos:prefLabel	"Cuban crocodile"@en .
 
 boltz:Q168745 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309495 ; 
 	kgo:taxonName 	"Crocodylus niloticus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Crocodylus%20niloticus6.jpg> ; 
@@ -5767,6 +5955,7 @@ boltz:Q168745 a kgo:Taxon ;
 	skos:prefLabel	"Nile crocodile"@en .
 
 boltz:Q272395 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309495 ; 
 	kgo:taxonName 	"Crocodylus intermedius"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Croc%20inter.jpg> ; 
@@ -5774,6 +5963,7 @@ boltz:Q272395 a kgo:Taxon ;
 	skos:prefLabel	"Orinoco crocodile"@en .
 
 boltz:Q208277 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309495 ; 
 	kgo:taxonName 	"Crocodylus siamensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Siamcroc.JPG> ; 
@@ -5781,6 +5971,7 @@ boltz:Q208277 a kgo:Taxon ;
 	skos:prefLabel	"Siamese crocodile"@en .
 
 boltz:Q2233478 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q43169 ; 
 	kgo:taxonName 	"Osteolaemus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Bristol.zoo.westafrican.dwarf.croc.arp.jpg> ; 
@@ -5796,6 +5987,7 @@ boltz:Q244349 a kgo:Taxon ;
 	skos:prefLabel	"Dwarf crocodile"@en .
 
 boltz:Q2077433 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q878388 ; 
 	kgo:taxonName 	"Tomistoma"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tomistoma%20schlegelii%20fg02.JPG> ; 
@@ -5811,6 +6003,7 @@ boltz:Q242464 a kgo:Taxon ;
 	skos:prefLabel	"False gharial"@en .
 
 boltz:Q194422 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q530397 ; 
 	kgo:taxonName 	"Alligator sinensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/2011%20China-Alligator%200491.JPG> ; 
@@ -5818,6 +6011,7 @@ boltz:Q194422 a kgo:Taxon ;
 	skos:prefLabel	"Chinese alligator"@en .
 
 boltz:Q644453 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q11001288 ; 
 	kgo:taxonName 	"Caiman latirostris"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Broad-Snouted%20Caiman%20MAV%2001.jpg> ; 
@@ -5825,6 +6019,7 @@ boltz:Q644453 a kgo:Taxon ;
 	skos:prefLabel	"Broad-snouted caiman"@en .
 
 boltz:Q2080580 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q6184764 ; 
 	kgo:taxonName 	"Melanosuchus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Blackcaiman.jpg> ; 
@@ -5864,6 +6059,7 @@ boltz:Q17134 a kgo:Taxon ;
 	skos:prefLabel	"Gavialis gangeticus"@en .
 
 boltz:Q193327 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q530397 ; 
 	kgo:taxonName 	"Alligator mississippiensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/American%20Alligator.jpg> ; 
@@ -5871,6 +6067,7 @@ boltz:Q193327 a kgo:Taxon ;
 	skos:prefLabel	"American alligator"@en .
 
 boltz:Q756678 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q11001288 ; 
 	kgo:taxonName 	"Caiman yacare"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Brillenkaiman%20Caiman%20yacare.jpg> ; 
@@ -5878,6 +6075,7 @@ boltz:Q756678 a kgo:Taxon ;
 	skos:prefLabel	"Caiman yacare"@en .
 
 boltz:Q272402 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309495 ; 
 	kgo:taxonName 	"Crocodylus mindorensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Crocodylus%20mindorensis%20by%20Gregg%20Yan%2001.jpg> ; 
@@ -5885,6 +6083,7 @@ boltz:Q272402 a kgo:Taxon ;
 	skos:prefLabel	"Philippine crocodile"@en .
 
 boltz:Q319535 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309495 ; 
 	kgo:taxonName 	"Crocodylus johnsoni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Australia%20Cairns%2018.jpg> ; 
@@ -5892,6 +6091,7 @@ boltz:Q319535 a kgo:Taxon ;
 	skos:prefLabel	"Freshwater crocodile"@en .
 
 boltz:Q757363 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1529935 ; 
 	kgo:taxonName 	"Paleosuchus palpebrosus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Brauen%20Glattstirnkaiman%20Paleosuchus%20palpebrosus.jpg> ; 
@@ -5899,6 +6099,7 @@ boltz:Q757363 a kgo:Taxon ;
 	skos:prefLabel	"Cuvier's dwarf caiman"@en .
 
 boltz:Q473521 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1529935 ; 
 	kgo:taxonName 	"Paleosuchus trigonatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Paleosuchus-trigonatus.jpg> ; 
@@ -6021,7 +6222,7 @@ boltz:Q110053325 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q2233478 ; 
 	kgo:taxonName 	"Osteolaemus osborni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<> ; 
+	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Osteolaemus%20osborni%2088103967.jpg> ; 
 	skos:definition	"""Crocodile taxon"""@en ;
 	skos:prefLabel	"Osteolaemus osborni"@en .
 
@@ -6870,6 +7071,7 @@ boltz:Q368623 a kgo:Taxon ;
 	skos:prefLabel	"Lorisidae"@en .
 
 boltz:Q19816405 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q425707 ; 
 	kgo:taxonName 	"Saimiriinae"@en ; 
 	kgo:taxonRank	boltz:Q164280 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Black-capped%20Squirrel%20Monkey%2Bbaby%20%28Saimiri%20boliviensis%29.jpg> ; 
@@ -6909,6 +7111,7 @@ boltz:Q1152376 a kgo:Taxon ;
 	skos:prefLabel	"Papionini"@en .
 
 boltz:Q2359025 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q732737 ; 
 	kgo:taxonName 	"Colobini"@en ; 
 	kgo:taxonRank	boltz:Q227936 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Mantled%20Guereza.jpg> ; 
@@ -6916,6 +7119,7 @@ boltz:Q2359025 a kgo:Taxon ;
 	skos:prefLabel	"Colobini"@en .
 
 boltz:Q2238405 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q732737 ; 
 	kgo:taxonName 	"Presbytini"@en ; 
 	kgo:taxonRank	boltz:Q227936 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Douc.jpg> ; 
@@ -6931,6 +7135,7 @@ boltz:Q18351384 a kgo:Taxon ;
 	skos:prefLabel	"Allochrocebus"@en .
 
 boltz:Q14518750 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1114471 ; 
 	kgo:taxonName 	"Cephalopachus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Kera%20hantu%20Sarawak.jpg> ; 
@@ -6938,6 +7143,7 @@ boltz:Q14518750 a kgo:Taxon ;
 	skos:prefLabel	"Cephalopachus"@en .
 
 boltz:Q303166 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q185939 ; 
 	kgo:taxonName 	"Hoolock"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Gibbon%20Hoolock%20de%20l%27ouest.JPG> ; 
@@ -6945,6 +7151,7 @@ boltz:Q303166 a kgo:Taxon ;
 	skos:prefLabel	"Hoolock"@en .
 
 boltz:Q25384537 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q574338 ; 
 	kgo:taxonName 	"Leontocebus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Saguinus%20fuscicoliis%20weddelli.jpg> ; 
@@ -6952,6 +7159,7 @@ boltz:Q25384537 a kgo:Taxon ;
 	skos:prefLabel	"Saddle-back tamarin"@en .
 
 boltz:Q166416 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q271785 ; 
 	kgo:taxonName 	"Mirza"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Mirza%20coquereli%201868.jpg> ; 
@@ -6959,6 +7167,7 @@ boltz:Q166416 a kgo:Taxon ;
 	skos:prefLabel	"Giant mouse lemur"@en .
 
 boltz:Q990943 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q185939 ; 
 	kgo:taxonName 	"Nomascus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Hylobates%20concolor2.jpg> ; 
@@ -6982,6 +7191,7 @@ boltz:Q549325 a kgo:Taxon ;
 	skos:prefLabel	"Rhinopithecus"@en .
 
 boltz:Q11703605 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q326260 ; 
 	kgo:taxonName 	"Sapajus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Capuchin%20monkeys%20sharing.jpg> ; 
@@ -7005,6 +7215,7 @@ boltz:Q3484138 a kgo:Taxon ;
 	skos:prefLabel	"Simias"@en .
 
 boltz:Q1962797 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q185939 ; 
 	kgo:taxonName 	"Symphalangus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/SiamangCouple.jpg> ; 
@@ -7012,6 +7223,7 @@ boltz:Q1962797 a kgo:Taxon ;
 	skos:prefLabel	"Symphalangus"@en .
 
 boltz:Q21446648 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1114471 ; 
 	kgo:taxonName 	"Carlito"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<> ; 
@@ -7019,6 +7231,7 @@ boltz:Q21446648 a kgo:Taxon ;
 	skos:prefLabel	"Carlito"@en .
 
 boltz:Q19826010 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q574338 ; 
 	kgo:taxonName 	"Cebuella"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Zwergseidenaeffchen-01.jpg> ; 
@@ -7026,6 +7239,7 @@ boltz:Q19826010 a kgo:Taxon ;
 	skos:prefLabel	"Cebuella"@en .
 
 boltz:Q1340206 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q574338 ; 
 	kgo:taxonName 	"Mico"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Silvery%20marmoset.jpg> ; 
@@ -7041,6 +7255,7 @@ boltz:Q13123201 a kgo:Taxon ;
 	skos:prefLabel	"Rungwecebus"@en .
 
 boltz:Q1543709 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus griseorufus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Microcebus%20griseorufus.jpg> ; 
@@ -7048,6 +7263,7 @@ boltz:Q1543709 a kgo:Taxon ;
 	skos:prefLabel	"Reddish-gray mouse lemur"@en .
 
 boltz:Q827793 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus berthae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Madame%20Berthe%27s%20Mouse%20Lemur.jpg> ; 
@@ -7055,6 +7271,7 @@ boltz:Q827793 a kgo:Taxon ;
 	skos:prefLabel	"Madame berthe's mouse lemur"@en .
 
 boltz:Q243990 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus myoxinus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Microcebus%20myoxinus.jpg> ; 
@@ -7062,6 +7279,7 @@ boltz:Q243990 a kgo:Taxon ;
 	skos:prefLabel	"Pygmy mouse lemur"@en .
 
 boltz:Q673062 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus ravelobensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7069,6 +7287,7 @@ boltz:Q673062 a kgo:Taxon ;
 	skos:prefLabel	"Golden-brown mouse lemur"@en .
 
 boltz:Q892436 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus bongolavensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7076,6 +7295,7 @@ boltz:Q892436 a kgo:Taxon ;
 	skos:prefLabel	"Bongolava mouse lemur"@en .
 
 boltz:Q687598 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus danfossi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Mouse%20Lemur%20in%20Anjajavy.jpg> ; 
@@ -7083,6 +7303,7 @@ boltz:Q687598 a kgo:Taxon ;
 	skos:prefLabel	"Danfoss's mouse lemur"@en .
 
 boltz:Q865539 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus margotmarshae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7090,6 +7311,7 @@ boltz:Q865539 a kgo:Taxon ;
 	skos:prefLabel	"Margot marsh's mouse lemur"@en .
 
 boltz:Q1202748 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus sambiranensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7097,6 +7319,7 @@ boltz:Q1202748 a kgo:Taxon ;
 	skos:prefLabel	"Sambirano mouse lemur"@en .
 
 boltz:Q1094764 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus mamiratra"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Nosy%20Be%20mouse%20lemur%20%28Microcebus%20mamiratra%29.jpg> ; 
@@ -7104,6 +7327,7 @@ boltz:Q1094764 a kgo:Taxon ;
 	skos:prefLabel	"Claire's mouse lemur"@en .
 
 boltz:Q1202760 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus tavaratra"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7111,6 +7335,7 @@ boltz:Q1202760 a kgo:Taxon ;
 	skos:prefLabel	"Northern rufous mouse lemur"@en .
 
 boltz:Q1134080 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus arnholdi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7118,6 +7343,7 @@ boltz:Q1134080 a kgo:Taxon ;
 	skos:prefLabel	"Arnhold's mouse lemur"@en .
 
 boltz:Q1206248 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus jollyae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7125,6 +7351,7 @@ boltz:Q1206248 a kgo:Taxon ;
 	skos:prefLabel	"Jolly's mouse lemur"@en .
 
 boltz:Q1514699 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus gerpi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Microcebus%20gerpi%20001.jpg> ; 
@@ -7132,6 +7359,7 @@ boltz:Q1514699 a kgo:Taxon ;
 	skos:prefLabel	"Microcebus gerpi"@en .
 
 boltz:Q1194860 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus lehilahytsara"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/GoodmanMouseLemur.jpg> ; 
@@ -7139,6 +7367,7 @@ boltz:Q1194860 a kgo:Taxon ;
 	skos:prefLabel	"Goodman's mouse lemur"@en .
 
 boltz:Q1351736 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus simmonsi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7146,6 +7375,7 @@ boltz:Q1351736 a kgo:Taxon ;
 	skos:prefLabel	"Simmons' mouse lemur"@en .
 
 boltz:Q1185234 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus macarthurii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7153,6 +7383,7 @@ boltz:Q1185234 a kgo:Taxon ;
 	skos:prefLabel	"Macarthur's mouse lemur"@en .
 
 boltz:Q1350668 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus mittermeieri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Mouse%20Lemur%20in%20Anjajavy.jpg> ; 
@@ -7160,6 +7391,7 @@ boltz:Q1350668 a kgo:Taxon ;
 	skos:prefLabel	"Mittermeier's mouse lemur"@en .
 
 boltz:Q13481572 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus marohita"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7167,6 +7399,7 @@ boltz:Q13481572 a kgo:Taxon ;
 	skos:prefLabel	"Marohita mouse lemur"@en .
 
 boltz:Q13440247 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4377 ; 
 	kgo:taxonName 	"Microcebus tanosi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7190,6 +7423,7 @@ boltz:Q1270064 a kgo:Taxon ;
 	skos:prefLabel	"Northern giant mouse lemur"@en .
 
 boltz:Q368515 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q608001 ; 
 	kgo:taxonName 	"Cheirogaleus sibreei"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7197,6 +7431,7 @@ boltz:Q368515 a kgo:Taxon ;
 	skos:prefLabel	"Sibree's dwarf lemur"@en .
 
 boltz:Q1365590 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q608001 ; 
 	kgo:taxonName 	"Cheirogaleus crossleyi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Handbook%20to%20the%20Primates%20Plate%2005.jpg> ; 
@@ -7204,6 +7439,7 @@ boltz:Q1365590 a kgo:Taxon ;
 	skos:prefLabel	"Furry-eared dwarf lemur"@en .
 
 boltz:Q1354692 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q608001 ; 
 	kgo:taxonName 	"Cheirogaleus minusculus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7211,6 +7447,7 @@ boltz:Q1354692 a kgo:Taxon ;
 	skos:prefLabel	"Lesser iron-gray dwarf lemur"@en .
 
 boltz:Q14376067 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q608001 ; 
 	kgo:taxonName 	"Cheirogaleus lavasoensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7218,6 +7455,7 @@ boltz:Q14376067 a kgo:Taxon ;
 	skos:prefLabel	"Lavasoa dwarf lemur"@en .
 
 boltz:Q737953 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1078082 ; 
 	kgo:taxonName 	"Phaner pallescens"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Phaner%20pallescens%201985.JPG> ; 
@@ -7225,6 +7463,7 @@ boltz:Q737953 a kgo:Taxon ;
 	skos:prefLabel	"Pale fork-marked lemur"@en .
 
 boltz:Q1209242 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1078082 ; 
 	kgo:taxonName 	"Phaner parienti"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7232,6 +7471,7 @@ boltz:Q1209242 a kgo:Taxon ;
 	skos:prefLabel	"Pariente's fork-marked lemur"@en .
 
 boltz:Q1202656 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1078082 ; 
 	kgo:taxonName 	"Phaner electromontis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7239,6 +7479,7 @@ boltz:Q1202656 a kgo:Taxon ;
 	skos:prefLabel	"Amber mountain fork-marked lemur"@en .
 
 boltz:Q832234 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur betsileo"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7246,6 +7487,7 @@ boltz:Q832234 a kgo:Taxon ;
 	skos:prefLabel	"Lepilemur betsileo"@en .
 
 boltz:Q1365640 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur fleuretae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7253,6 +7495,7 @@ boltz:Q1365640 a kgo:Taxon ;
 	skos:prefLabel	"Fleurete's sportive lemur"@en .
 
 boltz:Q1134086 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur hollandorum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7260,6 +7503,7 @@ boltz:Q1134086 a kgo:Taxon ;
 	skos:prefLabel	"Lepilemur hollandorum"@en .
 
 boltz:Q1209794 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur seali"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7267,6 +7511,7 @@ boltz:Q1209794 a kgo:Taxon ;
 	skos:prefLabel	"Lepilemur seali"@en .
 
 boltz:Q664080 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur scottorum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Lepilemur%20scottorum%20173025595.jpg> ; 
@@ -7274,6 +7519,7 @@ boltz:Q664080 a kgo:Taxon ;
 	skos:prefLabel	"Lepilemur scottorum"@en .
 
 boltz:Q140019 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur milanoii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Lepilemur%20milanoii%20imported%20from%20iNaturalist%20photo%20113687001%20on%201%20April%202021.jpg> ; 
@@ -7281,6 +7527,7 @@ boltz:Q140019 a kgo:Taxon ;
 	skos:prefLabel	"Lepilemur milanoii"@en .
 
 boltz:Q556483 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur ankaranensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Lepilemur%20ankaranensis1.jpg> ; 
@@ -7288,6 +7535,7 @@ boltz:Q556483 a kgo:Taxon ;
 	skos:prefLabel	"Lepilemur ankaranensis"@en .
 
 boltz:Q1210741 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur tymerlachsoni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Lepilemur%20tymerlachsoni%20Lokobe%20445.jpg> ; 
@@ -7295,6 +7543,7 @@ boltz:Q1210741 a kgo:Taxon ;
 	skos:prefLabel	"Lepilemur tymerlachsoni"@en .
 
 boltz:Q1139452 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur mittermeieri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7302,6 +7551,7 @@ boltz:Q1139452 a kgo:Taxon ;
 	skos:prefLabel	"Lepilemur mittermeieri"@en .
 
 boltz:Q1185242 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur otto"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7309,6 +7559,7 @@ boltz:Q1185242 a kgo:Taxon ;
 	skos:prefLabel	"Lepilemur otto"@en .
 
 boltz: a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur hubbardi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7316,6 +7567,7 @@ boltz: a kgo:Taxon ;
 	skos:prefLabel	""@en .
 
 boltz:Q1209742 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur petteri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Lepilemur%20petteri%2049019918.jpg> ; 
@@ -7323,6 +7575,7 @@ boltz:Q1209742 a kgo:Taxon ;
 	skos:prefLabel	"Lepilemur petteri"@en .
 
 boltz:Q571320 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q544028 ; 
 	kgo:taxonName 	"Hapalemur meridionalis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Southern%20lesser%20bamboo%20lemur%2C%20S%C3%BCdliche%20Bambuslemur%2C%20Detail.jpg> ; 
@@ -7330,6 +7583,7 @@ boltz:Q571320 a kgo:Taxon ;
 	skos:prefLabel	"Hapalemur meridionalis"@en .
 
 boltz:Q962570 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q544028 ; 
 	kgo:taxonName 	"Hapalemur occidentalis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Hapalemur%20occidentalis.jpg> ; 
@@ -7337,6 +7591,7 @@ boltz:Q962570 a kgo:Taxon ;
 	skos:prefLabel	"Hapalemur occidentalis"@en .
 
 boltz:Q575671 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q544028 ; 
 	kgo:taxonName 	"Hapalemur alaotrensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Hapalemur%20alaotrensis%20JJLM.JPG> ; 
@@ -7344,6 +7599,7 @@ boltz:Q575671 a kgo:Taxon ;
 	skos:prefLabel	"Hapalemur alaotrensis"@en .
 
 boltz:Q969373 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2059145 ; 
 	kgo:taxonName 	"Prolemur simus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Prolemur%20simus%20Cedric%20Girard-Buttoz.jpg> ; 
@@ -7351,6 +7607,7 @@ boltz:Q969373 a kgo:Taxon ;
 	skos:prefLabel	"Greater bamboo lemur"@en .
 
 boltz:Q520434 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q607497 ; 
 	kgo:taxonName 	"Eulemur rufus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Eulemur%20rufifrons%2C%20Isalo%20National%20Park%202007-03-01.jpg> ; 
@@ -7358,6 +7615,7 @@ boltz:Q520434 a kgo:Taxon ;
 	skos:prefLabel	"Eulemur rufus"@en .
 
 boltz:Q249153 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q607497 ; 
 	kgo:taxonName 	"Eulemur rufifrons"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Eulemur%20rufifrons%20Kirindy%20Madagascar.jpg> ; 
@@ -7365,6 +7623,7 @@ boltz:Q249153 a kgo:Taxon ;
 	skos:prefLabel	"Eulemur rufifrons"@en .
 
 boltz:Q1150284 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q607497 ; 
 	kgo:taxonName 	"Eulemur albifrons"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Eulemur%20albifrons%20001.jpg> ; 
@@ -7372,6 +7631,7 @@ boltz:Q1150284 a kgo:Taxon ;
 	skos:prefLabel	"Eulemur albifrons"@en .
 
 boltz:Q787633 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q607497 ; 
 	kgo:taxonName 	"Eulemur sanfordi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Sanford%27s%20brown%20lemur%20%28Eulemur%20sanfordi%29%20female.jpg> ; 
@@ -7379,6 +7639,7 @@ boltz:Q787633 a kgo:Taxon ;
 	skos:prefLabel	"Eulemur sanfordi"@en .
 
 boltz:Q580795 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q607497 ; 
 	kgo:taxonName 	"Eulemur cinereiceps"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7386,6 +7647,7 @@ boltz:Q580795 a kgo:Taxon ;
 	skos:prefLabel	"Eulemur cinereiceps"@en .
 
 boltz:Q913784 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q607497 ; 
 	kgo:taxonName 	"Eulemur collaris"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Eulemur%20collaris%20001%20edit.jpg> ; 
@@ -7393,6 +7655,7 @@ boltz:Q913784 a kgo:Taxon ;
 	skos:prefLabel	"Eulemur collaris"@en .
 
 boltz:Q882366 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q607497 ; 
 	kgo:taxonName 	"Eulemur flavifrons"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Blue-eyed%20black%20lemur.jpg> ; 
@@ -7400,6 +7663,7 @@ boltz:Q882366 a kgo:Taxon ;
 	skos:prefLabel	"Eulemur flavifrons"@en .
 
 boltz:Q516703 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q640161 ; 
 	kgo:taxonName 	"Varecia rubra"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Red.ruffed.lemur.ontree.arp.jpg> ; 
@@ -7407,6 +7671,7 @@ boltz:Q516703 a kgo:Taxon ;
 	skos:prefLabel	"Red ruffed lemur"@en .
 
 boltz:Q1206238 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1064408 ; 
 	kgo:taxonName 	"Avahi mooreorum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7414,6 +7679,7 @@ boltz:Q1206238 a kgo:Taxon ;
 	skos:prefLabel	"Moore's woolly lemur"@en .
 
 boltz:Q1210782 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1064408 ; 
 	kgo:taxonName 	"Avahi peyrierasi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Avahi%20laniger%20Madagascar%2030-09-2004.jpg> ; 
@@ -7421,6 +7687,7 @@ boltz:Q1210782 a kgo:Taxon ;
 	skos:prefLabel	"Peyrieras' woolly lemur"@en .
 
 boltz:Q832240 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1064408 ; 
 	kgo:taxonName 	"Avahi betsileo"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7428,6 +7695,7 @@ boltz:Q832240 a kgo:Taxon ;
 	skos:prefLabel	"Betsileo woolly lemur"@en .
 
 boltz: a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1064408 ; 
 	kgo:taxonName 	"Avahi ramanantsoavani"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7435,6 +7703,7 @@ boltz: a kgo:Taxon ;
 	skos:prefLabel	""@en .
 
 boltz:Q1350349 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1064408 ; 
 	kgo:taxonName 	"Avahi meridionalis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7442,6 +7711,7 @@ boltz:Q1350349 a kgo:Taxon ;
 	skos:prefLabel	"Southern woolly lemur"@en .
 
 boltz:Q1194866 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1064408 ; 
 	kgo:taxonName 	"Avahi occidentalis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Avahi%20occidentalis.jpg> ; 
@@ -7449,6 +7719,7 @@ boltz:Q1194866 a kgo:Taxon ;
 	skos:prefLabel	"Western woolly lemur"@en .
 
 boltz:Q1099688 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1064408 ; 
 	kgo:taxonName 	"Avahi cleesei"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7456,6 +7727,7 @@ boltz:Q1099688 a kgo:Taxon ;
 	skos:prefLabel	"Bemaraha woolly lemur"@en .
 
 boltz:Q1365845 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1064408 ; 
 	kgo:taxonName 	"Avahi unicolor"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7463,6 +7735,7 @@ boltz:Q1365845 a kgo:Taxon ;
 	skos:prefLabel	"Sambirano woolly lemur"@en .
 
 boltz:Q179384 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q673365 ; 
 	kgo:taxonName 	"Propithecus coronatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Propithecus%20coronatus%202.jpg> ; 
@@ -7470,6 +7743,7 @@ boltz:Q179384 a kgo:Taxon ;
 	skos:prefLabel	"Crowned sifaka"@en .
 
 boltz:Q1131678 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q673365 ; 
 	kgo:taxonName 	"Propithecus coquereli"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Sifaka%20in%20Madagascar.jpg> ; 
@@ -7477,6 +7751,7 @@ boltz:Q1131678 a kgo:Taxon ;
 	skos:prefLabel	"Coquerel's sifaka"@en .
 
 boltz:Q1202844 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q673365 ; 
 	kgo:taxonName 	"Propithecus edwardsi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Milne-Edwards%20Sifaka%20%2815720281920%29.jpg> ; 
@@ -7484,6 +7759,7 @@ boltz:Q1202844 a kgo:Taxon ;
 	skos:prefLabel	"Milne-edwards' sifaka"@en .
 
 boltz:Q763853 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q673365 ; 
 	kgo:taxonName 	"Propithecus candidus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Propithecus%20candidus%20001.jpg> ; 
@@ -7491,6 +7767,7 @@ boltz:Q763853 a kgo:Taxon ;
 	skos:prefLabel	"Silky sifaka"@en .
 
 boltz:Q1350394 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q673365 ; 
 	kgo:taxonName 	"Propithecus perrieri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Propithecus%20perrieri%20001.jpg> ; 
@@ -7498,6 +7775,7 @@ boltz:Q1350394 a kgo:Taxon ;
 	skos:prefLabel	"Perrier's sifaka"@en .
 
 boltz:Q28157194 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q3094482 ; 
 	kgo:taxonName 	"Galagoides thomasi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7529,6 +7807,7 @@ boltz:Q20721809 a kgo:Taxon ;
 	skos:prefLabel	"Sciurocheirus makandensis"@en .
 
 boltz:Q27980394 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q19816393 ; 
 	kgo:taxonName 	"Perodicticus edwardsi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7536,6 +7815,7 @@ boltz:Q27980394 a kgo:Taxon ;
 	skos:prefLabel	"Perodicticus edwardsi"@en .
 
 boltz:Q20721817 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q19816393 ; 
 	kgo:taxonName 	"Perodicticus ibeanus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Perodicticus%20potto%20-%20Royal%20Museum%20for%20Central%20Africa%20-%20DSC06777.JPG> ; 
@@ -7543,6 +7823,7 @@ boltz:Q20721817 a kgo:Taxon ;
 	skos:prefLabel	"Perodicticus potto ibeanus"@en .
 
 boltz:Q262590 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q3259581 ; 
 	kgo:taxonName 	"Loris lydekkerianus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Slender%20Loris.jpg> ; 
@@ -7550,6 +7831,7 @@ boltz:Q262590 a kgo:Taxon ;
 	skos:prefLabel	"Loris lydekkerianus"@en .
 
 boltz:Q817174 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q74941 ; 
 	kgo:taxonName 	"Nycticebus bengalensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Captive%20N.%20bengalensis%20from%20Laos%20with%206-week%20baby.JPG> ; 
@@ -7557,6 +7839,7 @@ boltz:Q817174 a kgo:Taxon ;
 	skos:prefLabel	"Bengal slow loris"@en .
 
 boltz:Q972907 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q74941 ; 
 	kgo:taxonName 	"Nycticebus javanicus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Coucang.jpg> ; 
@@ -7564,6 +7847,7 @@ boltz:Q972907 a kgo:Taxon ;
 	skos:prefLabel	"Javan slow loris"@en .
 
 boltz:Q2363029 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q74941 ; 
 	kgo:taxonName 	"Nycticebus menagensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Nycticebus%20menagensis.png> ; 
@@ -7571,6 +7855,7 @@ boltz:Q2363029 a kgo:Taxon ;
 	skos:prefLabel	"Bornean slow loris"@en .
 
 boltz:Q1385338 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q74941 ; 
 	kgo:taxonName 	"Nycticebus bancanus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Nycticebus%20bancanus.jpg> ; 
@@ -7578,6 +7863,7 @@ boltz:Q1385338 a kgo:Taxon ;
 	skos:prefLabel	"Nycticebus bancanus"@en .
 
 boltz:Q7071010 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q74941 ; 
 	kgo:taxonName 	"Nycticebus borneanus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Nycticebus%20borneanus%20%28Nycticebus%20coucang%20borneanus%29%20-%20Museo%20Civico%20di%20Storia%20Naturale%20Giacomo%20Doria%20-%20Genoa%2C%20Italy%20-%20DSC02519.JPG> ; 
@@ -7585,6 +7871,7 @@ boltz:Q7071010 a kgo:Taxon ;
 	skos:prefLabel	"Nycticebus borneanus"@en .
 
 boltz:Q956010 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q74941 ; 
 	kgo:taxonName 	"Nycticebus kayan"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Slow%20Loris.jpg> ; 
@@ -7608,6 +7895,7 @@ boltz:Q536862 a kgo:Taxon ;
 	skos:prefLabel	"Philippine tarsier"@en .
 
 boltz:Q859277 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q60205 ; 
 	kgo:taxonName 	"Tarsius tarsier"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tarsius%20tarsier%20Tandurusa%20zoo.JPG> ; 
@@ -7615,6 +7903,7 @@ boltz:Q859277 a kgo:Taxon ;
 	skos:prefLabel	"Spectral tarsier"@en .
 
 boltz:Q7686752 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q60205 ; 
 	kgo:taxonName 	"Tarsius fuscus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tarsier%20-%20Tarsius%20fuscus%20-%20NHMI.jpg> ; 
@@ -7622,6 +7911,7 @@ boltz:Q7686752 a kgo:Taxon ;
 	skos:prefLabel	"Tarsius fuscus"@en .
 
 boltz:Q1194873 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q60205 ; 
 	kgo:taxonName 	"Tarsius dentatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7629,6 +7919,7 @@ boltz:Q1194873 a kgo:Taxon ;
 	skos:prefLabel	"Dian's tarsier"@en .
 
 boltz:Q205340 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q60205 ; 
 	kgo:taxonName 	"Tarsius pelengensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20JennyHuang%20-%20Tarsier.jpg> ; 
@@ -7636,6 +7927,7 @@ boltz:Q205340 a kgo:Taxon ;
 	skos:prefLabel	"Peleng tarsier"@en .
 
 boltz:Q1365798 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q60205 ; 
 	kgo:taxonName 	"Tarsius sangirensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tarsius%20sangirensis.jpg> ; 
@@ -7643,6 +7935,7 @@ boltz:Q1365798 a kgo:Taxon ;
 	skos:prefLabel	"Sangihe tarsier"@en .
 
 boltz:Q1133505 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q60205 ; 
 	kgo:taxonName 	"Tarsius tumpara"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tarsius%20tumpara.JPG> ; 
@@ -7650,6 +7943,7 @@ boltz:Q1133505 a kgo:Taxon ;
 	skos:prefLabel	"Siau island tarsier"@en .
 
 boltz:Q1350693 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q60205 ; 
 	kgo:taxonName 	"Tarsius lariang"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7657,6 +7951,7 @@ boltz:Q1350693 a kgo:Taxon ;
 	skos:prefLabel	"Lariang tarsier"@en .
 
 boltz:Q588616 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q60205 ; 
 	kgo:taxonName 	"Tarsius wallacei"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7776,6 +8071,7 @@ boltz:Q20890524 a kgo:Taxon ;
 	skos:prefLabel	"Mico humeralifer"@en .
 
 boltz:Q672895 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q240034 ; 
 	kgo:taxonName 	"Saguinus niger"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Saguinus%20niger.JPG> ; 
@@ -7783,6 +8079,7 @@ boltz:Q672895 a kgo:Taxon ;
 	skos:prefLabel	"Black tamarin"@en .
 
 boltz:Q932541 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q240034 ; 
 	kgo:taxonName 	"Saguinus martinsi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7790,6 +8087,7 @@ boltz:Q932541 a kgo:Taxon ;
 	skos:prefLabel	"Martins's tamarin"@en .
 
 boltz:Q60607308 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309200 ; 
 	kgo:taxonName 	"Saimiri cassiquiarensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Amazonia%20377.jpg> ; 
@@ -7797,6 +8095,7 @@ boltz:Q60607308 a kgo:Taxon ;
 	skos:prefLabel	"Saimiri cassiquiarensis"@en .
 
 boltz:Q41088164 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309200 ; 
 	kgo:taxonName 	"Saimiri macrodon"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7852,6 +8151,7 @@ boltz:Q18324712 a kgo:Taxon ;
 	skos:prefLabel	"Sapajus apella"@en .
 
 boltz:Q20224949 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus yuracus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Mara%C3%B1on%20White-fronted%20Capuchin%20Cebus%20yuracus%20A.jpg> ; 
@@ -7859,6 +8159,7 @@ boltz:Q20224949 a kgo:Taxon ;
 	skos:prefLabel	"Cebus yuracus"@en .
 
 boltz:Q34270937 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus cuscinus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cebus%20albifrons%20Puerto%20Maldonado%20Peru.jpg> ; 
@@ -7866,6 +8167,7 @@ boltz:Q34270937 a kgo:Taxon ;
 	skos:prefLabel	"Cebus cuscinus"@en .
 
 boltz:Q60789225 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus unicolor"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7873,6 +8175,7 @@ boltz:Q60789225 a kgo:Taxon ;
 	skos:prefLabel	"Spix's white-fronted capuchin"@en .
 
 boltz:Q1365676 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus kaapori"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/20150626%20DSC%201378.jpg> ; 
@@ -7880,6 +8183,7 @@ boltz:Q1365676 a kgo:Taxon ;
 	skos:prefLabel	"Kaapori capuchin"@en .
 
 boltz: a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus brunneus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7887,6 +8191,7 @@ boltz: a kgo:Taxon ;
 	skos:prefLabel	""@en .
 
 boltz:Q22675351 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus leucocephalus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Rio%20limon%20venezuela111.jpg> ; 
@@ -7894,6 +8199,7 @@ boltz:Q22675351 a kgo:Taxon ;
 	skos:prefLabel	"Cebus leucocephalus"@en .
 
 boltz:Q60768671 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus cesarae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7901,6 +8207,7 @@ boltz:Q60768671 a kgo:Taxon ;
 	skos:prefLabel	"Río cesar white-fronted capuchin"@en .
 
 boltz: a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus versicolor"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7908,6 +8215,7 @@ boltz: a kgo:Taxon ;
 	skos:prefLabel	""@en .
 
 boltz:Q81655062 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus malitiosus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Mono%20del%20Tayrona.jpg> ; 
@@ -7915,6 +8223,7 @@ boltz:Q81655062 a kgo:Taxon ;
 	skos:prefLabel	"Cebus malitiosus"@en .
 
 boltz: a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus aequatorialis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7922,6 +8231,7 @@ boltz: a kgo:Taxon ;
 	skos:prefLabel	""@en .
 
 boltz:Q31836365 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus imitator"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cebus%20capucinus%2C%20Costa%20Rica.JPG> ; 
@@ -7929,6 +8239,7 @@ boltz:Q31836365 a kgo:Taxon ;
 	skos:prefLabel	"Panama capuchin monkey"@en .
 
 boltz:Q1185106 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q469636 ; 
 	kgo:taxonName 	"Aotus griseimembra"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Aotus%20griseimembra%20-%20Marwell%20Wildlife%2C%20Hampshire%2C%20England-8a.jpg> ; 
@@ -7936,6 +8247,7 @@ boltz:Q1185106 a kgo:Taxon ;
 	skos:prefLabel	"Gray-handed night monkey"@en .
 
 boltz:Q1185098 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q469636 ; 
 	kgo:taxonName 	"Aotus zonalis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Panamanian%20night%20monkey.jpg> ; 
@@ -7943,6 +8255,7 @@ boltz:Q1185098 a kgo:Taxon ;
 	skos:prefLabel	"Panamanian night monkey"@en .
 
 boltz:Q1134351 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q469636 ; 
 	kgo:taxonName 	"Aotus jorgehernandezi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7950,6 +8263,7 @@ boltz:Q1134351 a kgo:Taxon ;
 	skos:prefLabel	"Hernández-camacho's night monkey"@en .
 
 boltz:Q1365852 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q469636 ; 
 	kgo:taxonName 	"Aotus azarae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Aotus%20Azarae.jpg> ; 
@@ -7957,6 +8271,7 @@ boltz:Q1365852 a kgo:Taxon ;
 	skos:prefLabel	"Azara's night monkey"@en .
 
 boltz:Q168013 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q809594 ; 
 	kgo:taxonName 	"Chiropotes chiropotes"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Chiropotes%20chiropotes%20Itatiba.jpg> ; 
@@ -7964,6 +8279,7 @@ boltz:Q168013 a kgo:Taxon ;
 	skos:prefLabel	"Chiropotes chiropotes"@en .
 
 boltz:Q20721793 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q809594 ; 
 	kgo:taxonName 	"Chiropotes sagulatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Chiropotes%20sagulatus%20%28Chiropotes%20chiropotes%29.jpg> ; 
@@ -7971,6 +8287,7 @@ boltz:Q20721793 a kgo:Taxon ;
 	skos:prefLabel	"Chiropotes sagulatus"@en .
 
 boltz:Q1207222 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q504247 ; 
 	kgo:taxonName 	"Alouatta arctoidea"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Ursine%20howler%20monkey%20%28Alouatta%20seniculus%20arctoide%29.jpg> ; 
@@ -7978,6 +8295,7 @@ boltz:Q1207222 a kgo:Taxon ;
 	skos:prefLabel	"Ursine howler"@en .
 
 boltz:Q1206162 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q504247 ; 
 	kgo:taxonName 	"Alouatta macconnelli"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Guyanan%20red%20howler%201.jpg> ; 
@@ -7985,6 +8303,7 @@ boltz:Q1206162 a kgo:Taxon ;
 	skos:prefLabel	"Guyanan red howler"@en .
 
 boltz:Q456535 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q504247 ; 
 	kgo:taxonName 	"Alouatta nigerrima"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -7992,6 +8311,7 @@ boltz:Q456535 a kgo:Taxon ;
 	skos:prefLabel	"Amazon black howler"@en .
 
 boltz:Q1207240 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q504247 ; 
 	kgo:taxonName 	"Alouatta discolor"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Alouatta%20discolor.jpg> ; 
@@ -7999,6 +8319,7 @@ boltz:Q1207240 a kgo:Taxon ;
 	skos:prefLabel	"Spix's red-handed howler"@en .
 
 boltz:Q1353729 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q504247 ; 
 	kgo:taxonName 	"Alouatta ululata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8006,6 +8327,7 @@ boltz:Q1353729 a kgo:Taxon ;
 	skos:prefLabel	"Maranhão red-handed howler"@en .
 
 boltz:Q790592 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q504247 ; 
 	kgo:taxonName 	"Alouatta guariba"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Alouatta%20fusca%20clamitans.jpg> ; 
@@ -8013,6 +8335,7 @@ boltz:Q790592 a kgo:Taxon ;
 	skos:prefLabel	"Brown howler"@en .
 
 boltz:Q790630 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q258244 ; 
 	kgo:taxonName 	"Ateles hybridus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/BrownSpiderMonkey%20%28edit2%29.jpg> ; 
@@ -8020,6 +8343,7 @@ boltz:Q790630 a kgo:Taxon ;
 	skos:prefLabel	"Ateles hybridus"@en .
 
 boltz:Q107054796 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1061113 ; 
 	kgo:taxonName 	"Lagothrix lagothricha"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8027,6 +8351,7 @@ boltz:Q107054796 a kgo:Taxon ;
 	skos:prefLabel	"Lagothrix lagothricha"@en .
 
 boltz:Q1195203 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca nigrescens"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Macaca%20nigrescens.jpg> ; 
@@ -8034,6 +8359,7 @@ boltz:Q1195203 a kgo:Taxon ;
 	skos:prefLabel	"Gorontalo macaque"@en .
 
 boltz:Q773935 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca hecki"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8041,6 +8367,7 @@ boltz:Q773935 a kgo:Taxon ;
 	skos:prefLabel	"Heck's macaque"@en .
 
 boltz:Q770434 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca pagensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Beruk%20Mentawai%20Macaca%20pagensis.JPG> ; 
@@ -8048,6 +8375,7 @@ boltz:Q770434 a kgo:Taxon ;
 	skos:prefLabel	"Pagai island macaque"@en .
 
 boltz:Q1206265 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca siberu"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8055,6 +8383,7 @@ boltz:Q1206265 a kgo:Taxon ;
 	skos:prefLabel	"Siberut macaque"@en .
 
 boltz:Q913765 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca leonina"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Macaca%20leonina%20mother%20with%20baby%20-%20Khao%20Yai.jpg> ; 
@@ -8062,6 +8391,7 @@ boltz:Q913765 a kgo:Taxon ;
 	skos:prefLabel	"Northern pig-tailed macaque"@en .
 
 boltz:Q716628 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca munzala"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Arunachal%20macaque%20on%20a%20camera%20trap%20in%20Eaglenest%20Wildlife%20Sanctuary.JPG> ; 
@@ -8069,6 +8399,7 @@ boltz:Q716628 a kgo:Taxon ;
 	skos:prefLabel	"Arunachal macaque"@en .
 
 boltz:Q576469 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1070855 ; 
 	kgo:taxonName 	"Cercocebus chrysogaster"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cercocebus%20chrysogaster%200006.jpg> ; 
@@ -8076,6 +8407,7 @@ boltz:Q576469 a kgo:Taxon ;
 	skos:prefLabel	"Golden-bellied mangabey"@en .
 
 boltz:Q1206211 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1070855 ; 
 	kgo:taxonName 	"Cercocebus sanjei"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tanzania%20-Sanje%20Mangabey.jpg> ; 
@@ -8083,6 +8415,7 @@ boltz:Q1206211 a kgo:Taxon ;
 	skos:prefLabel	"Sanje mangabey"@en .
 
 boltz:Q1365754 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1070855 ; 
 	kgo:taxonName 	"Cercocebus atys"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Barcelona.Zoologico.Mangabey.Gris.jpg> ; 
@@ -8090,6 +8423,7 @@ boltz:Q1365754 a kgo:Taxon ;
 	skos:prefLabel	"Cercocebus atys"@en .
 
 boltz:Q25391251 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1070855 ; 
 	kgo:taxonName 	"Cercocebus lunulatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/ZSL%20London%20-%20White-naped%20Mangabey.jpg> ; 
@@ -8097,6 +8431,7 @@ boltz:Q25391251 a kgo:Taxon ;
 	skos:prefLabel	"Cercocebus lunulatus"@en .
 
 boltz:Q179225 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q592657 ; 
 	kgo:taxonName 	"Lophocebus aterrimus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Black%20Mangabey%20002.jpg> ; 
@@ -8112,6 +8447,7 @@ boltz:Q155399 a kgo:Taxon ;
 	skos:prefLabel	"Kipunji"@en .
 
 boltz:Q751636 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q159429 ; 
 	kgo:taxonName 	"Papio cynocephalus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Papio%20cynocephalus02.jpg> ; 
@@ -8119,6 +8455,7 @@ boltz:Q751636 a kgo:Taxon ;
 	skos:prefLabel	"Yellow baboon"@en .
 
 boltz:Q27986705 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q159429 ; 
 	kgo:taxonName 	"Papio kindae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Female%20kinda%20baboon.jpg> ; 
@@ -8126,6 +8463,7 @@ boltz:Q27986705 a kgo:Taxon ;
 	skos:prefLabel	"Papio kindae"@en .
 
 boltz:Q257670 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q159429 ; 
 	kgo:taxonName 	"Papio ursinus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Chacma%20Baboon%2C%20male.jpg> ; 
@@ -8133,6 +8471,7 @@ boltz:Q257670 a kgo:Taxon ;
 	skos:prefLabel	"Papio ursinus"@en .
 
 boltz:Q208561 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q159429 ; 
 	kgo:taxonName 	"Papio anubis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Olive%20baboon%20Ngorongoro.jpg> ; 
@@ -8140,6 +8479,7 @@ boltz:Q208561 a kgo:Taxon ;
 	skos:prefLabel	"Olive baboon"@en .
 
 boltz:Q748929 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q159429 ; 
 	kgo:taxonName 	"Papio papio"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Male%20Guinea%20Baboon%20in%20Nuremberg%20Zoo.jpg> ; 
@@ -8147,6 +8487,7 @@ boltz:Q748929 a kgo:Taxon ;
 	skos:prefLabel	"Papio papio"@en .
 
 boltz:Q568895 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q244245 ; 
 	kgo:taxonName 	"Miopithecus ogouensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Miopithecus%20ogouensis.jpg> ; 
@@ -8202,6 +8543,7 @@ boltz:Q28154838 a kgo:Taxon ;
 	skos:prefLabel	"Allochrocebus solatus"@en .
 
 boltz:Q636075 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q255571 ; 
 	kgo:taxonName 	"Cercopithecus roloway"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cercopithecus%20diana%20roloway.JPG> ; 
@@ -8209,6 +8551,7 @@ boltz:Q636075 a kgo:Taxon ;
 	skos:prefLabel	"Roloway monkey"@en .
 
 boltz:Q1209768 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q255571 ; 
 	kgo:taxonName 	"Cercopithecus lowei"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cercopithecus%20campbelli%20lowei.JPG> ; 
@@ -8216,6 +8559,7 @@ boltz:Q1209768 a kgo:Taxon ;
 	skos:prefLabel	"Lowe's mona monkey"@en .
 
 boltz:Q548700 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q255571 ; 
 	kgo:taxonName 	"Cercopithecus denti"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/PZSL1907Plate01.png> ; 
@@ -8223,6 +8567,7 @@ boltz:Q548700 a kgo:Taxon ;
 	skos:prefLabel	"Dent's mona monkey"@en .
 
 boltz:Q27926 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q255571 ; 
 	kgo:taxonName 	"Cercopithecus lomamiensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cercopithecus%20lomamiensis%20%28Lesula%29.png> ; 
@@ -8230,6 +8575,7 @@ boltz:Q27926 a kgo:Taxon ;
 	skos:prefLabel	"Lesula"@en .
 
 boltz:Q546456 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q358813 ; 
 	kgo:taxonName 	"Colobus vellerosus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Colobus%20polycomos%20vellerosus%20fur%20skin.jpg> ; 
@@ -8365,6 +8711,7 @@ boltz:Q1287462 a kgo:Taxon ;
 	skos:prefLabel	"Thollon's red colobus"@en .
 
 boltz:Q1112463 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q857471 ; 
 	kgo:taxonName 	"Presbytis chrysomelas"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Presbytis%20chrysomelas.png> ; 
@@ -8372,6 +8719,7 @@ boltz:Q1112463 a kgo:Taxon ;
 	skos:prefLabel	"Sarawak surili"@en .
 
 boltz:Q104248290 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q857471 ; 
 	kgo:taxonName 	"Presbytis canicrus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Presbytis%20hosei%20canicrus.jpg> ; 
@@ -8379,6 +8727,7 @@ boltz:Q104248290 a kgo:Taxon ;
 	skos:prefLabel	"Miller's langur"@en .
 
 boltz:Q104248504 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q857471 ; 
 	kgo:taxonName 	"Presbytis sabana"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8386,6 +8735,7 @@ boltz:Q104248504 a kgo:Taxon ;
 	skos:prefLabel	"Saban grizzled langur"@en .
 
 boltz:Q104248718 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q857471 ; 
 	kgo:taxonName 	"Presbytis bicolor"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8393,6 +8743,7 @@ boltz:Q104248718 a kgo:Taxon ;
 	skos:prefLabel	"Black-and-white langur"@en .
 
 boltz:Q96373665 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q857471 ; 
 	kgo:taxonName 	"Presbytis sumatrana"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8400,6 +8751,7 @@ boltz:Q96373665 a kgo:Taxon ;
 	skos:prefLabel	"Black sumatran langur"@en .
 
 boltz:Q20721831 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q857471 ; 
 	kgo:taxonName 	"Presbytis mitrata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8407,6 +8759,7 @@ boltz:Q20721831 a kgo:Taxon ;
 	skos:prefLabel	"Presbytis mitrata"@en .
 
 boltz:Q104248903 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q857471 ; 
 	kgo:taxonName 	"Presbytis siberu"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8414,6 +8767,7 @@ boltz:Q104248903 a kgo:Taxon ;
 	skos:prefLabel	"Siberut langur"@en .
 
 boltz:Q1365651 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q857471 ; 
 	kgo:taxonName 	"Presbytis siamensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Presbytis%20siamensis.jpg> ; 
@@ -8421,6 +8775,7 @@ boltz:Q1365651 a kgo:Taxon ;
 	skos:prefLabel	"White-thighed surili"@en .
 
 boltz:Q693246 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q857471 ; 
 	kgo:taxonName 	"Presbytis natunae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8428,6 +8783,7 @@ boltz:Q693246 a kgo:Taxon ;
 	skos:prefLabel	"Natuna island surili"@en .
 
 boltz:Q591886 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1140604 ; 
 	kgo:taxonName 	"Pygathrix cinerea"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cuc.Phuong.Primate.Rehab.center.jpg> ; 
@@ -8435,6 +8791,7 @@ boltz:Q591886 a kgo:Taxon ;
 	skos:prefLabel	"Gray-shanked douc"@en .
 
 boltz:Q959360 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1140604 ; 
 	kgo:taxonName 	"Pygathrix nigripes"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Black-shanked%20douc.jpg> ; 
@@ -8490,6 +8847,7 @@ boltz:Q617979 a kgo:Taxon ;
 	skos:prefLabel	"Simias concolor"@en .
 
 boltz:Q385525 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q721407 ; 
 	kgo:taxonName 	"Semnopithecus ajax"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8497,6 +8855,7 @@ boltz:Q385525 a kgo:Taxon ;
 	skos:prefLabel	"Semnopithecus ajax"@en .
 
 boltz:Q1206256 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q721407 ; 
 	kgo:taxonName 	"Semnopithecus hector"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Tarai%20Grey%20Langur.jpg> ; 
@@ -8504,6 +8863,7 @@ boltz:Q1206256 a kgo:Taxon ;
 	skos:prefLabel	"Semnopithecus hector"@en .
 
 boltz:Q509143 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q721407 ; 
 	kgo:taxonName 	"Semnopithecus schistaceus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Langur%20at%20Cheri%20Goemba.jpg> ; 
@@ -8511,6 +8871,7 @@ boltz:Q509143 a kgo:Taxon ;
 	skos:prefLabel	"Semnopithecus schistaceus"@en .
 
 boltz:Q980085 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q721407 ; 
 	kgo:taxonName 	"Semnopithecus hypoleucos"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Semnopithecus%20hypoleucos.JPG> ; 
@@ -8518,6 +8879,7 @@ boltz:Q980085 a kgo:Taxon ;
 	skos:prefLabel	"Semnopithecus hypoleucos"@en .
 
 boltz:Q1208862 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q721407 ; 
 	kgo:taxonName 	"Semnopithecus priam"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/PeterMaas-India-MudumalaiNationalPark-Langur1.jpg> ; 
@@ -8525,6 +8887,7 @@ boltz:Q1208862 a kgo:Taxon ;
 	skos:prefLabel	"Semnopithecus priam"@en .
 
 boltz:Q101500289 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q721407 ; 
 	kgo:taxonName 	"Semnopithecus vetulus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Purple-faced%20langur%20%28Semnopithecus%20vetulus%20vetulus%29.jpg> ; 
@@ -8532,6 +8895,7 @@ boltz:Q101500289 a kgo:Taxon ;
 	skos:prefLabel	"Semnopithecus vetulus"@en .
 
 boltz:Q103928246 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q721407 ; 
 	kgo:taxonName 	"Semnopithecus johnii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Nilgiri%20langur.jpg> ; 
@@ -8539,6 +8903,7 @@ boltz:Q103928246 a kgo:Taxon ;
 	skos:prefLabel	"Semnopithecus johnii"@en .
 
 boltz:Q20721794 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus mauritius"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8546,6 +8911,7 @@ boltz:Q20721794 a kgo:Taxon ;
 	skos:prefLabel	"Trachypithecus mauritius"@en .
 
 boltz:Q20721803 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus selangorensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Silver%20langur%20with%20baby.jpg> ; 
@@ -8553,6 +8919,7 @@ boltz:Q20721803 a kgo:Taxon ;
 	skos:prefLabel	"Trachypithecus selangorensis"@en .
 
 boltz:Q1202908 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus germaini"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/SAIGON%20ZOO%20VIETNAM%20JAN%202012%20%287009538995%29.jpg> ; 
@@ -8560,6 +8927,7 @@ boltz:Q1202908 a kgo:Taxon ;
 	skos:prefLabel	"Indochinese lutung"@en .
 
 boltz:Q20181763 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus margarita"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8567,6 +8935,7 @@ boltz:Q20181763 a kgo:Taxon ;
 	skos:prefLabel	"Trachypithecus margarita"@en .
 
 boltz:Q1354633 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus barbei"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Stamp%20of%20India%20-%202009%20-%20Colnect%20159928%20-%20Barbe%20s%20Leaf%20Monkey%20Trachypithecus%20barbei.jpeg> ; 
@@ -8574,6 +8943,7 @@ boltz:Q1354633 a kgo:Taxon ;
 	skos:prefLabel	"Tenasserim lutung"@en .
 
 boltz:Q20688544 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus crepusculus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Trachypithecus%20phayrei.jpg> ; 
@@ -8581,6 +8951,7 @@ boltz:Q20688544 a kgo:Taxon ;
 	skos:prefLabel	"Trachypithecus crepusculus"@en .
 
 boltz:Q28466511 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus leucocephalus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Trachypithecus%20francoisi%20leucocephalus%20-%20Kunming%20Natural%20History%20Museum%20of%20Zoology%20-%20DSC02504.JPG> ; 
@@ -8588,6 +8959,7 @@ boltz:Q28466511 a kgo:Taxon ;
 	skos:prefLabel	"Trachypithecus leucocephalus"@en .
 
 boltz:Q681546 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus delacouri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Langur%20de%20Delacour.jpg> ; 
@@ -8595,6 +8967,7 @@ boltz:Q681546 a kgo:Taxon ;
 	skos:prefLabel	"Delacour's langur"@en .
 
 boltz:Q1205624 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus ebenus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8602,6 +8975,7 @@ boltz:Q1205624 a kgo:Taxon ;
 	skos:prefLabel	"Indochinese black langur"@en .
 
 boltz:Q1206187 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus hatinhensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8625,6 +8999,7 @@ boltz:Q602511 a kgo:Taxon ;
 	skos:prefLabel	"Hoolock leuconedys"@en .
 
 boltz:Q1721268 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q878467 ; 
 	kgo:taxonName 	"Hylobates albibarbis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/COLLECTIE%20TROPENMUSEUM%20Een%20grijze%20gibbon%20%28hylobates%20cinereus%20albibarbis%29%20Borneo%20TMnr%2010006732.jpg> ; 
@@ -8632,6 +9007,7 @@ boltz:Q1721268 a kgo:Taxon ;
 	skos:prefLabel	"Bornean white-bearded gibbon"@en .
 
 boltz:Q29580608 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q878467 ; 
 	kgo:taxonName 	"Hylobates abbotti"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8639,6 +9015,7 @@ boltz:Q29580608 a kgo:Taxon ;
 	skos:prefLabel	"Abbot's gray gibbon"@en .
 
 boltz:Q29578698 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q878467 ; 
 	kgo:taxonName 	"Hylobates funereus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Hylobates%20funereus%20North%20Borneo%20Gibbon%20Tabin%20WR%20Sabah%20Quentin%20Phillipps%2023%20Oct%202010.jpg> ; 
@@ -8710,6 +9087,7 @@ boltz:Q213889 a kgo:Taxon ;
 	skos:prefLabel	"Symphalangus syndactylus"@en .
 
 boltz:Q543424 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q41050 ; 
 	kgo:taxonName 	"Pongo abelii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Orangutan-Columbus-zoo.JPG> ; 
@@ -8717,6 +9095,7 @@ boltz:Q543424 a kgo:Taxon ;
 	skos:prefLabel	"Sumatran orangutan"@en .
 
 boltz:Q307157 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q36611 ; 
 	kgo:taxonName 	"Gorilla beringei"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Gorillas%20in%20Uganda-1%2C%20by%20Fiver%20L%C3%B6cker.jpg> ; 
@@ -8724,6 +9103,7 @@ boltz:Q307157 a kgo:Taxon ;
 	skos:prefLabel	"Eastern gorilla"@en .
 
 boltz:Q559289 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q857477 ; 
 	kgo:taxonName 	"Brachyteles hypoxanthus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Brachyteles%20hypoxanthus2.jpg> ; 
@@ -8731,6 +9111,7 @@ boltz:Q559289 a kgo:Taxon ;
 	skos:prefLabel	"Northern muriqui"@en .
 
 boltz:Q81849002 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus castaneus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8738,6 +9119,7 @@ boltz:Q81849002 a kgo:Taxon ;
 	skos:prefLabel	"Cebus castaneus"@en .
 
 boltz:Q901749 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q809594 ; 
 	kgo:taxonName 	"Chiropotes israelita"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Red-backed%20Bearded%20Saki.jpg> ; 
@@ -8753,6 +9135,7 @@ boltz:Q1202598 a kgo:Taxon ;
 	skos:prefLabel	"Malbrouck"@en .
 
 boltz:Q108865004 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10758998 ; 
 	kgo:taxonName 	"Erythrocebus baumstarki"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -8760,6 +9143,7 @@ boltz:Q108865004 a kgo:Taxon ;
 	skos:prefLabel	"Erythrocebus baumstarki"@en .
 
 boltz:Q1184997 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q673365 ; 
 	kgo:taxonName 	"Propithecus deckenii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Van%20der%20Decken%27s%20Sifaka%20in%20Namoroka.jpg> ; 
@@ -8767,6 +9151,7 @@ boltz:Q1184997 a kgo:Taxon ;
 	skos:prefLabel	"Von der decken's sifaka"@en .
 
 boltz:Q1206315 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus laotum"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Trachypithecus%20laotum.jpg> ; 
@@ -8774,6 +9159,7 @@ boltz:Q1206315 a kgo:Taxon ;
 	skos:prefLabel	"Laotian langur"@en .
 
 boltz:Q929055 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus poliocephalus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Cat%20Ba%20Langur%208.jpg> ; 
@@ -8781,6 +9167,7 @@ boltz:Q929055 a kgo:Taxon ;
 	skos:prefLabel	"White-headed langur"@en .
 
 boltz:Q976397 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus shortridgei"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Trachypithecus%20shortridgei%20-%20Kunming%20Natural%20History%20Museum%20of%20Zoology%20-%20DSC02508.JPG> ; 
@@ -8796,6 +9183,7 @@ boltz:Q109341581 a kgo:Taxon ;
 	skos:prefLabel	"Piliocolobus lulindicus"@en .
 
 boltz:Q25386850 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q841159 ; 
 	kgo:taxonName 	"Pithecia inusta"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pithecia%20inusta.jpg> ; 
@@ -8803,6 +9191,7 @@ boltz:Q25386850 a kgo:Taxon ;
 	skos:prefLabel	"Pithecia inusta"@en .
 
 boltz:Q25384584 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q841159 ; 
 	kgo:taxonName 	"Pithecia hirsuta"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Pithecia%20hirsuta.jpg> ; 
@@ -8810,6 +9199,7 @@ boltz:Q25384584 a kgo:Taxon ;
 	skos:prefLabel	"Pithecia hirsuta"@en .
 
 boltz:Q191781 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca fuscata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/JapaneseMacaqueM2186.jpg> ; 
@@ -8881,6 +9271,7 @@ boltz:Q1199185 a kgo:Taxon ;
 	skos:prefLabel	"Atelinae"@en .
 
 boltz:Q19816406 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10860343 ; 
 	kgo:taxonName 	"Callicebinae"@en ; 
 	kgo:taxonRank	boltz:Q164280 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Brown%20Titi%20Monkey%20%28Callicebus%20brunneus%29%20%283419492981%29.jpg> ; 
@@ -8888,6 +9279,7 @@ boltz:Q19816406 a kgo:Taxon ;
 	skos:prefLabel	"Callicebinae"@en .
 
 boltz:Q268969 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10860343 ; 
 	kgo:taxonName 	"Pitheciinae"@en ; 
 	kgo:taxonRank	boltz:Q164280 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/WhiteFacedSaki.jpg> ; 
@@ -9159,6 +9551,7 @@ boltz:Q20870077 a kgo:Taxon ;
 	skos:prefLabel	"Callicebus"@en .
 
 boltz:Q8447051 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q326260 ; 
 	kgo:taxonName 	"Cebus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Capuchin%20Costa%20Rica.jpg> ; 
@@ -10054,6 +10447,7 @@ boltz:Q169682 a kgo:Taxon ;
 	skos:prefLabel	"Wedge-capped capuchin"@en .
 
 boltz:Q834329 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309200 ; 
 	kgo:taxonName 	"Saimiri boliviensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Squirrel%20monkey%202.JPG> ; 
@@ -10061,6 +10455,7 @@ boltz:Q834329 a kgo:Taxon ;
 	skos:prefLabel	"Black-capped squirrel monkey"@en .
 
 boltz:Q1150922 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309200 ; 
 	kgo:taxonName 	"Saimiri oerstedii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Central%20American%20Squirrel%20Monkey.jpg> ; 
@@ -10068,6 +10463,7 @@ boltz:Q1150922 a kgo:Taxon ;
 	skos:prefLabel	"Central american squirrel monkey"@en .
 
 boltz:Q281736 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309200 ; 
 	kgo:taxonName 	"Saimiri ustus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Macaquinhos%20m%C3%A3o%20de%20ouro.jpg> ; 
@@ -10075,6 +10471,7 @@ boltz:Q281736 a kgo:Taxon ;
 	skos:prefLabel	"Bare-eared squirrel monkey"@en .
 
 boltz:Q1266116 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q309200 ; 
 	kgo:taxonName 	"Saimiri vanzolinii"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Saimiri%20vanzolinii.jpg> ; 
@@ -10322,6 +10719,7 @@ boltz:Q636490 a kgo:Taxon ;
 	skos:prefLabel	"Grey-cheeked mangabey"@en .
 
 boltz:Q266955 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca arctoides"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Stump%20tailed%20Macaque%20P1130751%2018.jpg> ; 
@@ -10329,6 +10727,7 @@ boltz:Q266955 a kgo:Taxon ;
 	skos:prefLabel	"Stump-tailed macaque"@en .
 
 boltz:Q738925 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca assamensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Macaca%20assamensis%20m%C3%A2le.jpg> ; 
@@ -10336,6 +10735,7 @@ boltz:Q738925 a kgo:Taxon ;
 	skos:prefLabel	"Assam macaque"@en .
 
 boltz:Q713841 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca cyclopis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Formosan%20macaque.jpg> ; 
@@ -10343,6 +10743,7 @@ boltz:Q713841 a kgo:Taxon ;
 	skos:prefLabel	"Formosan rock macaque"@en .
 
 boltz: a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca maura"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
@@ -10350,6 +10751,7 @@ boltz: a kgo:Taxon ;
 	skos:prefLabel	""@en .
 
 boltz:Q618026 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca nemestrina"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Schweinsaffe.jpg> ; 
@@ -10357,6 +10759,7 @@ boltz:Q618026 a kgo:Taxon ;
 	skos:prefLabel	"Southern pig-tailed macaque"@en .
 
 boltz:Q280590 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca nigra"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Crested%20Black%20Macaque%20%28Macaca%20nigra%29.jpg> ; 
@@ -10364,6 +10767,7 @@ boltz:Q280590 a kgo:Taxon ;
 	skos:prefLabel	"Celebes crested macaque"@en .
 
 boltz:Q1074459 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca ochreata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Macaca%20ochreata.jpg> ; 
@@ -10371,6 +10775,7 @@ boltz:Q1074459 a kgo:Taxon ;
 	skos:prefLabel	"Booted macaque"@en .
 
 boltz:Q520949 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca radiata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B4%A4%E0%B5%8A%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%81%E0%B4%B0%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B5%8D..JPG> ; 
@@ -10378,6 +10783,7 @@ boltz:Q520949 a kgo:Taxon ;
 	skos:prefLabel	"Bonnet macaque"@en .
 
 boltz:Q506518 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca silenus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Lion-tailed%20macaque%20by%20N.%20A.%20Naseer.jpg> ; 
@@ -10385,6 +10791,7 @@ boltz:Q506518 a kgo:Taxon ;
 	skos:prefLabel	"Lion-tailed macaque"@en .
 
 boltz:Q669594 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca sinica"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Macaca%20sinica%20-%2001.jpg> ; 
@@ -10392,6 +10799,7 @@ boltz:Q669594 a kgo:Taxon ;
 	skos:prefLabel	"Toque macaque"@en .
 
 boltz:Q199962 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca sylvanus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20father.jpg> ; 
@@ -10399,6 +10807,7 @@ boltz:Q199962 a kgo:Taxon ;
 	skos:prefLabel	"Macaca sylvanus"@en .
 
 boltz:Q854566 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca thibetana"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Emei%20shan.jinding.Old%20Tibetan%20macaque.jpg> ; 
@@ -10406,6 +10815,7 @@ boltz:Q854566 a kgo:Taxon ;
 	skos:prefLabel	"Tibetan macaque"@en .
 
 boltz:Q790684 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca tonkeana"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Macaca%20tonkeana%20groupe.jpg> ; 
@@ -10709,6 +11119,7 @@ boltz:Q599672 a kgo:Taxon ;
 	skos:prefLabel	"Bornean orangutan"@en .
 
 boltz:Q326260 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q425707 ; 
 	kgo:taxonName 	"Cebinae"@en ; 
 	kgo:taxonRank	boltz:Q164280 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Capuchin%20Costa%20Rica.jpg> ; 
@@ -12590,6 +13001,7 @@ boltz:Q3427090 a kgo:Taxon ;
 	skos:prefLabel	"Cnephasia"@en .
 
 boltz:Q214869 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q3427090 ; 
 	kgo:taxonName 	"Eptesicus serotinus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Eptesicus%20serotinus.jpg> ; 

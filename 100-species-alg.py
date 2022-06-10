@@ -95,7 +95,7 @@ def run_q1(animal):
 # use of regex – three letter difference maximum
 def run_q3(animal, parent):
     n = 0
-    while n < 4:
+    while n < 3:
         new_animal = animal[:0-1]
         # might not be EXACT parentLabel but the PATH matches, intentional because some discrepancies between WikiData and ITIS parentTaxons
         query3 = "SELECT ?item ?image ?itemLabel ?itemDescription WHERE \
@@ -119,11 +119,11 @@ def taxa(animal, parent):
     results1 = run_q1(animal)
     if valid_search(results1): #way to check if search yields results
         return extract(results1)
-    else:
+        
+    if parent != "":
         results2 = run_q3(animal, parent)
-    
-    if valid_search(results2):
-        return extract(results2)
+        if valid_search(results2):
+            return extract(results2)
 
     # foregeo running query 2: just not worth the time it takes to run
     # else:
@@ -180,11 +180,11 @@ outfile.write("@prefix boltz: <http://solid.boltz.cs.cmu.edu:3030/data/> . \n\
 folder_path = 'species'
 file_list = glob.glob(folder_path + "/*.txt")
 
-# For every file in directory:
+# FIRST PASS: For every file in directory, insert information into dictionary for future access
 for i in range(0,len(file_list)):
     data = pd.read_table(file_list[i])
     df = pd.DataFrame(data)
-    
+
     # For every taxa in file: 
     for index, row in df.iterrows():
         taxonID = row["taxonID"]
@@ -196,6 +196,9 @@ for i in range(0,len(file_list)):
         # Only run valid taxa
         if taxonID in used_taxa or not row['taxonomicStatus'] == "valid" or taxonRank == "subspecies":
             continue
+        
+        # SET UP for future use
+        used_taxa[taxonID] = {}
 
         #----- CLEAN DATA -----
         # Change scientificName, some have author appended onto it
@@ -210,43 +213,73 @@ for i in range(0,len(file_list)):
         
         # ----- RETRIEVE INFORMATION ----
         # Search parentTaxon information
-        if not pd.isna(parentID) and int(parentID) in used_taxa: 
-            parent_Q = used_taxa[int(parentID)]
-            full_parent_Q = "kgo:subTaxonOf\tboltz:" + parent_Q + " ; \n\t"
-        else:
-            parent_Q = ""
-            full_parent_Q = ""
+        parent_id = 0
+        if not pd.isna(parentID): 
+            parent_id = int(parentID)
+        used_taxa[taxonID]["parent_id"] = parent_id
 
         # If manually added info, retrieve through dictionary, else search query, add to used taxa
+        # Obtain parent-Q value: used when running algorithm.
+        parent_Q = ""
+        parent_id = used_taxa[taxonID]["parent_id"]
+        if parent_id in used_taxa:
+            parent_Q = used_taxa[parent_id]["Q"]
         if taxonID in added_taxa:
-            Q, image, definition, label =  added_taxa[taxonID]["Q"], added_taxa[taxonID]["image"], added_taxa[taxonID]["Def"], added_taxa[taxonID]["Label"]
+            Q, image, definition, label = added_taxa[taxonID]["Q"], added_taxa[taxonID]["image"], added_taxa[taxonID]["Def"], added_taxa[taxonID]["Label"]
         else:
             Q, image, definition, label = taxa(scientificName, parent_Q)
-            used_taxa[taxonID] = Q
+        
+        taxon = used_taxa[taxonID]
+        taxon["name"] = scientificName
+        taxon["Q"] = Q
+        taxon["rank"] = taxonRank
+        taxon["image"] = image
+        taxon["definition"] = definition
+        taxon["label"] = label
         
         # Type-species:
         # Check if the genus has a type species:
+        type_species = ""
         if taxonRank == "genus" and scientificName in reptile_ts:
             type_species = reptile_ts[scientificName]
-            full_type_species = "kgo:typeSpecies\t\"" + type_species + "\"@en ;\n\t" #type species
-        else:
-            full_type_species = ""
-        # Check if the SPECIES is the designated type species for its genus 
+        used_taxa[taxonID]["type_species"] = type_species
+
+        # Check if the SPECIES is the designated type species for its genus
+        type_species_of = "" 
         if taxonRank == "species" and scientificName in reptile_ts_values:
             type_species_of = reptile_ts_keys[reptile_ts_values.index(scientificName)]
-            full_tso = "kgo:typeSpeciesOf\t\"" + type_species_of + "\"@en ;\n\t" #type species of
-        else:
-            full_tso = ""
+        used_taxa[taxonID]["type_species_of"] = type_species_of
+        print("HELLO")
+        print(used_taxa[taxonID])
 
-        full_name = "kgo:taxonName \t\""  + scientificName + "\"@en ; \n\t"
-        full_ID = "boltz:" + Q + " a kgo:Taxon ; \n\t" #Q-ID
-        full_rank = "kgo:taxonRank\tboltz:" + ranks[row['taxonRank']] + " ; \n\t" #rank
-        full_image = "kgo:taxonImage\t<" + image + "> ; \n\t"
-        full_definition = "skos:definition\t\"\"\"" + definition + "\"\"\"@en ;\n\t" #definition
-        full_label = "skos:prefLabel\t\"" + label + "\"@en .\n\n"    #preflabel – common name
+# SECOND PASS
+for taxon_id in list(used_taxa.keys()):
+    taxon = used_taxa[taxon_id]
+    print(taxon)
+    full_Q = "boltz:" + taxon["Q"] + " a kgo:Taxon ; \n\t" #Q-ID
+    full_name = "kgo:taxonName \t\""  + taxon["name"] + "\"@en ; \n\t"
+    full_rank = "kgo:taxonRank\tboltz:" + ranks[taxon["rank"]] + " ; \n\t" #rank
 
-        d = full_ID + full_parent_Q + full_name + full_rank + full_type_species + full_tso + full_image + full_definition + full_label 
-        outfile.write(d)
+    full_parent_Q = ""
+    full_type_species = ""
+    full_tso = ""
+
+    parent_id = taxon["parent_id"]
+    if parent_id != 0:
+        parent_Q = used_taxa[parent_id]["Q"]
+        full_parent_Q = "kgo:subTaxonOf\tboltz:" + parent_Q + " ; \n\t" 
+    if taxon["type_species"] != "":
+        full_type_species = "kgo:typeSpecies\t\"" + taxon["type_species"] + "\"@en ;\n\t" #type species
+    if taxon["type_species_of"] != "":
+        full_tso = "kgo:typeSpeciesOf\t\"" + taxon["type_species_of"] + "\"@en ;\n\t" #type species of
+
+    full_image = "kgo:taxonImage\t<" + taxon["image"] + "> ; \n\t"
+    full_definition = "skos:definition\t\"\"\"" + taxon["definition"] + "\"\"\"@en ;\n\t" #definition
+    full_label = "skos:prefLabel\t\"" + taxon["label"] + "\"@en .\n\n"    #preflabel – common name
+
+    d = full_Q + full_parent_Q + full_name + full_rank + full_type_species + full_tso + full_image + full_definition + full_label 
+
+    outfile.write(d)
 
 print(to_confirm)
 outfile.close()
