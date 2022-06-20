@@ -887,355 +887,7 @@ boltz:Q47722 a kgo:Taxon ;
         skos:definition  "Edible green plant in the cabbage family"@en ;
         skos:prefLabel   "Broccoli"@en .
 
-# ----------------------Bird Taxonomy----------------------
-boltz:Q5113 a   kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q19159 ;
-        kgo:taxonName    "Aves"@en ;
-        kgo:taxonRank    boltz:Q37517 ;
-        skos:definition  "A class of tetrapods"@en ;
-        skos:prefLabel   "Bird"@en .
 
-boltz:Q19166 a  kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q5113 ;
-        kgo:taxonName    "Palaeognathae"@en ;
-        kgo:taxonRank    boltz:Q5867051 ;
-        skos:definition  "A clade of living birds"@en ;
-        skos:prefLabel   "Palaeognathae"@en .
-
-boltz:Q840849 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q19166 ;
-        kgo:taxonName    "Struthioniformes"@en ;
-        kgo:taxonRank    boltz:Q36602 ;
-        skos:definition  "An order of birds"@en ;
-        skos:prefLabel   "Struthioniformes"@en .
-
-boltz:Q1569770 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q840849 ;
-        kgo:taxonName    "Struthionidae"@en ;
-        kgo:taxonRank    boltz:Q35409 ;
-        skos:definition  "A family of birds"@en ;
-        skos:prefLabel   "Struthionidae"@en .
-
-boltz:Q2576337 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q1569770 ;
-        kgo:taxonName    "Struthio"@en ;
-        kgo:taxonRank    boltz:Q34740 ;
-        skos:definition  "A genus of birds"@en ;
-        skos:prefLabel   "Struthio"@en .
-
-boltz:Q17592 a  kgo:Taxon ;
-        rdfs:comment     "Note that subClassOf Animal is from the Test dataset"@en ;
-        rdfs:subClassOf  <http://www.w3.org/2000/03/example/classes#Animal> ;
-        kgo:subTaxonOf   boltz:Q2576337 ;
-        kgo:taxonName    "Struthio camelus"@en ;
-        kgo:taxonRank    boltz:Q7432 ;
-        kgo:averageMass  [
-            a qudt:Quantity ;
-            qudt:unit unit:KiloGM ;
-            qudt:value 104.0 ;
-            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:averageLifespan  [
-            a qudt:Quantity ;
-            qudt:unit unit:YR_Common;
-            qudt:value 42.5 ;
-            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:prefComparisons [
-            a rdf:List ;
-            rdf:first kgo:averageMass ;
-            rdf:rest [
-                a rdf:List ;
-                rdf:first kgo:averageLifespan ;
-                rdf:rest rdf:nil ;
-            ] ;
-        ] ;
-        skos:definition  "A species of large flightless bird"@en ;
-        skos:prefLabel   "Ostrich"@en .
-
-boltz:Q3976169 a  kgo:Taxon ;
-        rdfs:comment     "Note that subClassOf Animal is from the Test dataset"@en ;
-        rdfs:subClassOf  <http://www.w3.org/2000/03/example/classes#Animal> ;
-        kgo:subTaxonOf   boltz:Q17592 ;
-        kgo:taxonName    "Struthio camelus australis"@en ;
-        kgo:taxonRank    boltz:Q68947;
-        skos:definition  "A type of Ostrich found in Southern Africa"@en ;
-        skos:prefLabel   "South African Ostrich"@en .
-
-boltz:Q3976168 a  kgo:Taxon ;
-        rdfs:comment     "Note that subClassOf Animal is from the Test dataset"@en ;
-        rdfs:subClassOf  <http://www.w3.org/2000/03/example/classes#Animal> ;
-        kgo:subTaxonOf   boltz:Q17592 ;
-        kgo:taxonName    "Struthio camelus massaicus"@en ;
-        kgo:taxonRank    boltz:Q68947;
-        kgo:averageMass  [
-            a qudt:Quantity ;
-            qudt:unit unit:KiloGM ;
-            qudt:value 115.0 ;
-            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:prefComparisons [
-            a rdf:List ;
-            rdf:first kgo:averageMass ;
-            rdf:rest rdf:nil ;
-        ] ;
-        skos:definition  "A type of Ostrich found in Eastern Africa, also known as the East African Ostrich"@en ;
-        skos:prefLabel   "Masai Ostrich"@en .
-
-boltz:Q3976170 a  kgo:Taxon ;
-        rdfs:comment     "Note that subClassOf Animal is from the Test dataset"@en ;
-        rdfs:subClassOf  <http://www.w3.org/2000/03/example/classes#Animal> ;
-        kgo:subTaxonOf   boltz:Q17592 ;
-        kgo:taxonName    "Struthio camelus camelus"@en ;
-        kgo:taxonRank    boltz:Q68947;
-        kgo:averageMass  [
-            a qudt:Quantity ;
-            qudt:unit unit:KiloGM ;
-            qudt:value 111.0 ;
-            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:prefComparisons [
-            a rdf:List ;
-            rdf:first kgo:averageMass ;
-            rdf:rest rdf:nil ;
-        ] ;
-        skos:definition  "A type of Ostrich found in Northern Africa"@en ;
-        skos:prefLabel   "North African Ostrich"@en .
-
-# REPTILE: to transfer information over
-boltz:Q194422 a kgo:Taxon ;
-        rdfs:comment     "Note that subClassOf Animal is from the Test dataset"@en ;
-        rdfs:subClassOf  <http://www.w3.org/2000/03/example/classes#Animal> ;
-        kgo:subTaxonOf   boltz:Q530397 ;
-        kgo:taxonName    "Alligator sinensis"@en ;
-        kgo:taxonRank    boltz:Q7432 ;
-        kgo:averageMass  [
-            a qudt:Quantity ;
-            qudt:unit unit:KiloGM ;
-            qudt:value 40.5 ;
-            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:averageLength  [
-            a qudt:Quantity ;
-            qudt:unit unit:IN ;
-            qudt:value 72.0 ;
-            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:averageLifespan  [
-            a qudt:Quantity ;
-            qudt:unit unit:YR_Common;
-            qudt:value 70.0 ;
-            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:prefComparisons [
-            a rdf:List ;
-            rdf:first kgo:averageMass ;
-            rdf:rest [
-                a rdf:List ;
-                rdf:first kgo:averageLength ;
-                rdf:rest [
-                    a rdf:List ;
-                    rdf:first kgo:averageLifespan ;
-                    rdf:rest rdf:nil ;
-                ] ;
-            ] ;
-        ] ;
-        skos:definition  "The Chinese alligator (Alligator sinensis), also known as the Yangtze alligator, is one of two known living species of Alligator, a genus in the family Alligatoridae.\n      This critically endangered species is endemic to eastern China."@en ;
-        skos:prefLabel   "Chinese Alligator"@en .
-
-boltz:Q193327 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q530397 ;
-        kgo:taxonName    "Alligator mississippiensis"@en ;
-        kgo:taxonRank    boltz:Q7432 ;
-        kgo:averageMass  [
-            a qudt:Quantity ;
-            qudt:unit unit:KiloGM ;
-            qudt:value 360.0 ;
-            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:averageLength  [
-            a qudt:Quantity ;
-            qudt:unit unit:IN ;
-            qudt:value 118.0 ;
-            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:averageLifespan  [
-            a qudt:Quantity ;
-            qudt:unit unit:YR_Common;
-            qudt:value 50.0 ;
-            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:prefComparisons [
-            a rdf:List ;
-            rdf:first kgo:averageMass ;
-            rdf:rest [
-                a rdf:List ;
-                rdf:first kgo:averageLength ;
-                rdf:rest [
-                    a rdf:List ;
-                    rdf:first kgo:averageLifespan ;
-                    rdf:rest rdf:nil ;
-                ] ;
-            ] ;
-        ] ;
-        skos:definition  "The American alligator (Alligator mississippiensis), sometimes referred to colloquially as a gator or common alligator, is a large crocodilian reptile endemic to the southeastern United States. It is one of two living species in the\n      genus Alligator within the family Alligatoridae; it is larger than the other extant alligator species, the Chinese alligator. Adult male American alligators measure 3.4 to 4.6 m (11 to 15 ft) in length, and can weigh up to 453 kg (1,000 lb). Females\n      are smaller, measuring around 3 m (9.8 ft). The American alligator inhabits freshwater wetlands, such as marshes and cypress swamps from Texas to North Carolina. It is distinguished from the sympatric American crocodile by its broader snout, with\n      overlapping jaws and darker coloration, and is less tolerant of saltw."@en ;
-        skos:prefLabel   "American Alligator"@en .
-
-#--------------------Cat Hierarchy--------------------
-boltz:Q27070 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q25306 ;
-        kgo:taxonName    "Feliformia"@en ;
-        kgo:taxonRank    boltz:Q5867959 ;
-        skos:definition  "Suborder of mammals in the order Carnivora"@en ;
-        skos:prefLabel   "Feliformia"@en .
-
-boltz:Q25265 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q27070 ;
-        kgo:taxonName    "Felidae"@en ;
-        kgo:taxonRank    boltz:Q35409 ;
-        skos:definition  "Family of mammals in the order of carnivorans"@en ;
-        skos:prefLabel   "Felidae"@en .
-
-boltz:Q42602 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q25265 ;
-        kgo:taxonName    "Felinae"@en ;
-        kgo:taxonRank    boltz:Q164280 ;
-        skos:definition  "Subfamily of mammals"@en ;
-        skos:prefLabel   "Felinae"@en .
-
-boltz:Q228283 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q42602 ;
-        kgo:taxonName    "Felis"@en ;
-        kgo:taxonRank    boltz:Q34740;
-        skos:definition  "Genus of Mammals"@en ;
-        skos:prefLabel   "Felis"@en .
-
-boltz:Q20980826 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q228283 ;
-        kgo:taxonName    "Felis catus"@en ;
-        kgo:taxonRank    boltz:Q7432 ;
-        kgo:averageMass  [
-            a qudt:Quantity ;
-            qudt:unit unit:LB ;
-            qudt:value 8.9 ;
-            kgo:timeRetrieve "2022-04-15T13:54:31-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:averageLength  [
-            a qudt:Quantity ;
-            qudt:unit unit:IN ;
-            qudt:value 18.0 ;
-            kgo:timeRetrieve "2022-04-15T13:54:31-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:averageLifespan  [
-            a qudt:Quantity ;
-            qudt:unit unit:YR_Common;
-            qudt:value 15.0 ;
-            kgo:timeRetrieve "2022-04-15T13:54:31-04:00"^^xsd:dateTime;
-        ] ;
-        kgo:prefComparisons [
-            a rdf:List ;
-            rdf:first kgo:averageMass ;
-            rdf:rest [
-                a rdf:List ;
-                rdf:first kgo:averageLength ;
-                rdf:rest [
-                    a rdf:List ;
-                    rdf:first kgo:averageLifespan ;
-                    rdf:rest rdf:nil ;
-                ] ;
-            ] ;
-        ] ;
-        skos:definition  "The collection of all cats"@en ;
-        skos:prefLabel   "Cat"@en .
-
-#--------------------Dog Hierarchy--------------------
-boltz:Q27414 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q25306 ;
-        kgo:taxonName    "Caniformia"@en ;
-        kgo:taxonRank    boltz:Q5867959 ;
-        skos:definition  "Suborder of mammals"@en ;
-        skos:prefLabel   "Caniformia"@en .
-
-boltz:Q25324 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q27414 ;
-        kgo:taxonName    "Canidae"@en ;
-        kgo:taxonRank    boltz:Q35409 ;
-        skos:definition  "Family of mammals"@en ;
-        skos:prefLabel   "Canidae"@en .
-
-boltz:Q149892 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q25324 ;
-        kgo:taxonName    "Canis"@en ;
-        kgo:taxonRank    boltz:Q34740 ;
-        skos:definition  "Genus of mammals, including domestic dogs"@en ;
-        skos:prefLabel   "Canis"@en .
-
-boltz:Q18498 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q149892 ;
-        kgo:taxonName    "Canis lupus"@en ;
-        kgo:taxonRank    boltz:Q7432 ;
-        skos:definition  "Species of mammal"@en ;
-        skos:prefLabel   "Grey Wolf"@en .
-
-boltz:Q26972265 a kgo:Taxon ;
-        #ADD ANIMAL STATS OF SUBSSPECIES
-        kgo:subTaxonOf   boltz:Q18498 ;
-        kgo:taxonName    "Canis lupus familiaris"@en ;
-        kgo:taxonRank    boltz:Q68947 ;
-        skos:definition  "Subspecies of mammal"@en ;
-        skos:altLabel   "Domesticated Dog"@en ;
-        skos:prefLabel   "Dog"@en .
-
-#-------------------------Human Hierarchy----------------------
-boltz:Q102470 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q206930 ;
-        kgo:taxonName    "Hominoidea"@en ;
-        kgo:taxonRank    boltz:Q2136103 ;
-        skos:definition  "Superfamily of apes"@en ;
-        skos:prefLabel   "Hominoidea"@en .
-
-boltz:Q635162 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q102470 ;
-        kgo:taxonName    "Hominidae"@en ;
-        kgo:taxonRank    boltz:Q35409 ;
-        skos:definition  "Family of apes"@en ;
-        skos:prefLabel   "Hominidae"@en .
-
-boltz:Q242047 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q635162 ;
-        kgo:taxonName    "Homininae"@en ;
-        kgo:taxonRank    boltz:Q164280 ;
-        skos:definition  "Subfamily of mammals"@en ;
-        skos:prefLabel   "Homininae"@en .
-
-boltz:Q107588 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q242047 ;
-        kgo:taxonName    "Hominini"@en ;
-        kgo:taxonRank    boltz:Q227936 ;
-        skos:definition  "Tribe of mammals"@en ;
-        skos:prefLabel   "Hominini"@en .
-
-boltz:Q605457 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q107588 ;
-        kgo:taxonName    "Hominina"@en ;
-        kgo:taxonRank    boltz:Q3965313 ;
-        skos:definition  "Subtribe of the tribe Hominini"@en ;
-        skos:prefLabel   "Hominina"@en .
-
-boltz:Q171283 a kgo:Taxon ;
-        kgo:subTaxonOf   boltz:Q605457 ;
-        kgo:taxonName    "Homo"@en ;
-        kgo:taxonRank    boltz:Q34740 ;
-        skos:definition  "Genus of mammals"@en ;
-        skos:prefLabel   "Homo"@en .
-
-boltz:Q15978631 a kgo:Taxon ;
-        #PROBABLY DONT ADD ANIMAL STATS
-        kgo:subTaxonOf   boltz:Q171283 ;
-        kgo:taxonName    "Homo sapiens"@en ;
-        kgo:taxonRank    boltz:Q7432 ;
-        skos:definition  "Species of mammal"@en ;
-        skos:prefLabel   "Human"@en .
 
 # INSERTED TAXA – DEYA
 boltz:Q729 a kgo:Taxon ; 
@@ -3307,13 +2959,13 @@ boltz:Q14566125 a kgo:Taxon ;
 	skos:definition	"""Genus of reptiles"""@en ;
 	skos:prefLabel	"Claudius"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q500000008 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q734870 ; 
 	kgo:taxonName 	"Terrapene bauri"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of reptile"""@en ;
+	skos:prefLabel	"Terrapene bauri"@en .
 
 boltz:Q650212 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q499621 ; 
@@ -4547,12 +4199,12 @@ boltz:Q16965558 a kgo:Taxon ;
 	skos:definition	"""Genus of reptiles"""@en ;
 	skos:prefLabel	"Flaviemys"@en .
 
-boltz:Q532358 a kgo:Taxon ; 
+boltz:Q21440282 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q532358 ; 
 	kgo:taxonName 	"Chelodina"@en ; 
 	kgo:taxonRank	boltz:Q3238261 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Australsnturtle2.jpg> ; 
-	skos:definition	"""Genus of reptiles"""@en ;
+	skos:definition	"""Subgenus of reptiles"""@en ;
 	skos:prefLabel	"Chelodina"@en .
 
 boltz:Q14566771 a kgo:Taxon ; 
@@ -5787,12 +5439,12 @@ boltz:Q736473 a kgo:Taxon ;
 	skos:definition	"""Genus of mammals"""@en ;
 	skos:prefLabel	"Eptesicus"@en .
 
-boltz:Q736473 a kgo:Taxon ; 
+boltz:Q5834970 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q736473 ; 
 	kgo:taxonName 	"Eptesicus"@en ; 
 	kgo:taxonRank	boltz:Q3238261 ; 
-	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Eptesicus%20nilssoni.jpg> ; 
-	skos:definition	"""Genus of mammals"""@en ;
+	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:Eptesicus_furinalis.jpg> ; 
+	skos:definition	"""Subgenus of mammals"""@en ;
 	skos:prefLabel	"Eptesicus"@en .
 
 boltz:Q301930 a kgo:Taxon ; 
@@ -7235,6 +6887,37 @@ boltz:Q194422 a kgo:Taxon ;
 	kgo:taxonName 	"Alligator sinensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/2011%20China-Alligator%200491.JPG> ; 
+	 kgo:averageMass  [
+            a qudt:Quantity ;
+            qudt:unit unit:KiloGM ;
+            qudt:value 40.5 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLength  [
+            a qudt:Quantity ;
+            qudt:unit unit:IN ;
+            qudt:value 72.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLifespan  [
+            a qudt:Quantity ;
+            qudt:unit unit:YR_Common;
+            qudt:value 70.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:prefComparisons [
+            a rdf:List ;
+            rdf:first kgo:averageMass ;
+            rdf:rest [
+                a rdf:List ;
+                rdf:first kgo:averageLength ;
+                rdf:rest [
+                    a rdf:List ;
+                    rdf:first kgo:averageLifespan ;
+                    rdf:rest rdf:nil ;
+                ] ;
+            ] ;
+        ] ;
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Chinese alligator"@en .
 
@@ -7291,6 +6974,37 @@ boltz:Q193327 a kgo:Taxon ;
 	kgo:taxonName 	"Alligator mississippiensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/American%20Alligator.jpg> ; 
+	kgo:averageMass  [
+            a qudt:Quantity ;
+            qudt:unit unit:KiloGM ;
+            qudt:value 360.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLength  [
+            a qudt:Quantity ;
+            qudt:unit unit:IN ;
+            qudt:value 118.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLifespan  [
+            a qudt:Quantity ;
+            qudt:unit unit:YR_Common;
+            qudt:value 50.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:prefComparisons [
+            a rdf:List ;
+            rdf:first kgo:averageMass ;
+            rdf:rest [
+                a rdf:List ;
+                rdf:first kgo:averageLength ;
+                rdf:rest [
+                    a rdf:List ;
+                    rdf:first kgo:averageLifespan ;
+                    rdf:rest rdf:nil ;
+                ] ;
+            ] ;
+        ] ;
 	skos:definition	"""Large crocodilian reptile"""@en ;
 	skos:prefLabel	"American alligator"@en .
 
@@ -8786,13 +8500,13 @@ boltz:Q1185242 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Lepilemur otto"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q1209803 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName 	"Lepilemur hubbardi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:Lepilemur_hubbardorum.jpg> ; 
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Lepilemur hubbardorum"@en .
 
 boltz:Q1209742 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q834470 ; 
@@ -8922,13 +8636,13 @@ boltz:Q832240 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Betsileo woolly lemur"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q1210789 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1064408 ; 
 	kgo:taxonName 	"Avahi ramanantsoavani"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Avahi ramanantsoavani"@en .
 
 boltz:Q1350349 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1064408 ; 
@@ -9018,13 +8732,13 @@ boltz:Q28155507 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Sciurocheirus alleni"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q1202102 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q3952448 ; 
 	kgo:taxonName 	"Sciurocheirus gabonensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Gabon bushbaby"@en .
 
 boltz:Q20721809 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q3952448 ; 
@@ -9274,13 +8988,13 @@ boltz:Q20888577 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Mico mauesi"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q1206327 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1340206 ; 
 	kgo:taxonName 	"Mico chrysoleucos"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:Mico_chrysoleucus_Kenny_Ross_1.jpg> ; 
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Mico chrysoleucos"@en .
 
 boltz:Q20890485 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1340206 ; 
@@ -9407,16 +9121,16 @@ boltz:Q1365676 a kgo:Taxon ;
 	kgo:taxonName 	"Cebus kaapori"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/20150626%20DSC%201378.jpg> ; 
-	skos:definition	"""Species of mammal"""@en ;
+	skos:definition	"""Cebus brunneus"""@en ;
 	skos:prefLabel	"Kaapori capuchin"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q500000007 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus brunneus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Cebus brunneus"""@en ;
+	skos:prefLabel	"Cebus brunneus"@en .
 
 boltz:Q22675351 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q8447051 ; 
@@ -9434,13 +9148,13 @@ boltz:Q60768671 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Río cesar white-fronted capuchin"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q500000005 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus versicolor"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Cebus versicolor"@en .
 
 boltz:Q81655062 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q8447051 ; 
@@ -9450,13 +9164,13 @@ boltz:Q81655062 a kgo:Taxon ;
 	skos:definition	"""Species of new world monkey"""@en ;
 	skos:prefLabel	"Cebus malitiosus"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q500000006 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q8447051 ; 
 	kgo:taxonName 	"Cebus aequatorialis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Cebus aequatorialis"@en .
 
 boltz:Q31836365 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q8447051 ; 
@@ -11970,13 +11684,13 @@ boltz:Q713841 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Formosan rock macaque"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q913762 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName 	"Macaca maura"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:M%C3%A2le_macaque_maure_(Macaca_maura).jpg> ; 
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Moor macaque"@en .
 
 boltz:Q618026 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q177601 ; 
@@ -12881,13 +12595,13 @@ boltz:Q56120707 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Plecturocebus oenanthe"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q737104 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25386240 ; 
 	kgo:taxonName 	"Plecturocebus olallae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Ollala Brothers' titi"@en .
 
 boltz:Q56120682 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25386240 ; 
@@ -12897,13 +12611,13 @@ boltz:Q56120682 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Plecturocebus modestus"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q20721824 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25386240 ; 
 	kgo:taxonName 	"Plecturocebus urubambensis"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Callicebus urubambensis"@en .
 
 boltz:Q56116672 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25386240 ; 
@@ -12937,13 +12651,13 @@ boltz:Q56116539 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Plecturocebus cinerascens"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q19279592 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25386240 ; 
 	kgo:taxonName 	"Plecturocebus miltoni"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Callicebus miltoni"@en .
 
 boltz:Q56120547 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25386240 ; 
@@ -13009,13 +12723,13 @@ boltz:Q56088124 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Plecturocebus aureipalatii"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q20721823 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25386240 ; 
 	kgo:taxonName 	"Plecturocebus toppini"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:Callicebus_cupreus_Tambopata_Research_Center.jpg> ; 
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Callicebus toppini"@en .
 
 boltz:Q56116463 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25386240 ; 
@@ -13070,16 +12784,16 @@ boltz:Q104248230 a kgo:Taxon ;
 	kgo:taxonName 	"Paragalago granti"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
+	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Paragalago granti"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q104005586 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q31837388 ; 
 	kgo:taxonName 	"Paragalago zanzibaricus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Paragalago zanzibarensis"@en .
 
 boltz:Q103998647 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q31837388 ; 
@@ -13105,21 +12819,21 @@ boltz:Q104004501 a kgo:Taxon ;
 	skos:definition	"""Species of mammals"""@en ;
 	skos:prefLabel	"Paragalago rondoensis"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q1075064 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1061088 ; 
 	kgo:taxonName 	"Chlorocebus dryas"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:Chlorocebus_dryas_still-frame.png> ; 
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Dryas monkey"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q500000009 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q11703605 ; 
 	kgo:taxonName 	"Sapajus cucullatus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Sapajus cucullatus"@en .
 
 boltz:Q97961729 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q4377 ; 
@@ -13201,13 +12915,13 @@ boltz:Q41087741 a kgo:Taxon ;
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Presbytis robinsoni"@en .
 
-boltz: a kgo:Taxon ; 
+boltz:Q101543962 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1071167 ; 
 	kgo:taxonName 	"Trachypithecus melamerus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<> ; 
-	skos:definition	""""""@en ;
-	skos:prefLabel	""@en .
+	skos:definition	"""Species of mammal"""@en ;
+	skos:prefLabel	"Trachypithecus melamerus"@en .
 
 boltz:Q101475669 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1071167 ; 
@@ -13430,6 +13144,27 @@ boltz:Q17592 a kgo:Taxon ;
 	kgo:taxonName 	"Struthio camelus"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/North%20African%20Ostrich%20-%20Masai%20Ostrich%20-%20female%20non-breeding%20%28Struthio%20camelus%29%20-%20Flickr%20-%20Lip%20Kee%20%281%29.jpg> ; 
+	kgo:averageMass  [
+            a qudt:Quantity ;
+            qudt:unit unit:KiloGM ;
+            qudt:value 104.0 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:averageLifespan  [
+            a qudt:Quantity ;
+            qudt:unit unit:YR_Common;
+            qudt:value 42.5 ;
+            kgo:timeRetrieve "2022-02-25T15:48:26-04:00"^^xsd:dateTime;
+        ] ;
+        kgo:prefComparisons [
+            a rdf:List ;
+            rdf:first kgo:averageMass ;
+            rdf:rest [
+                a rdf:List ;
+                rdf:first kgo:averageLifespan ;
+                rdf:rest rdf:nil ;
+            ] ;
+        ] ;
 	skos:definition	"""Species of large flightless bird"""@en ;
 	skos:prefLabel	"Common ostrich"@en .
 
@@ -13621,12 +13356,12 @@ boltz:Q3363204 a kgo:Taxon ;
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Paracontias minimus"@en .
 
-boltz:Q27022 a kgo:Taxon ; 
+boltz:Q111287972 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q27022 ; 
 	kgo:taxonName 	"Equus"@en ; 
 	kgo:taxonRank	boltz:Q3238261 ; 
-	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/Przewalski%2026-9-2004-2.jpg> ; 
-	skos:definition	"""Genus of mammals"""@en ;
+	kgo:taxonImage	<> ; 
+	skos:definition	"""Subenus of mammals"""@en ;
 	skos:prefLabel	"Equus"@en .
 
 boltz:Q10758650 a kgo:Taxon ; 
@@ -14255,7 +13990,7 @@ boltz:Q3427090 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q736473 ; 
 	kgo:taxonName 	"Cnephaeus"@en ; 
 	kgo:taxonRank	boltz:Q3238261 ; 
-	kgo:taxonImage	<> ; 
+	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:Cnephasia.asseclana.-.lindsey.jpg> ; 
 	skos:definition	"""Genus of insects"""@en ;
 	skos:prefLabel	"Cnephasia"@en .
 
@@ -14299,12 +14034,12 @@ boltz:Q27027 a kgo:Taxon ;
 	skos:definition	"""Species of marine mammal"""@en ;
 	skos:prefLabel	"Harbour porpoise"@en .
 
-boltz:Q25371 a kgo:Taxon ; 
+boltz:Q500000012 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q26214 ; 
 	kgo:taxonName 	"Chondrichthyes"@en ; 
 	kgo:taxonRank	boltz:Q3504061 ; 
 	kgo:taxonImage	<http://commons.wikimedia.org/wiki/Special:FilePath/White%20shark.jpg> ; 
-	skos:definition	"""Class of fishes"""@en ;
+	skos:definition	"""Superclass of fishes"""@en ;
 	skos:prefLabel	"Chondrichthyes"@en .
 
 boltz:Q25371 a kgo:Taxon ; 
