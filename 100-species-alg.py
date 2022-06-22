@@ -59,7 +59,7 @@ def extract(results):
     url = result['item']['value']
     label = result['itemLabel']['value']
     try:
-        image_link = result['image']['value']
+        image_link = result['thumb']['value']
     except:
         image_link = ""
     try:
@@ -78,13 +78,16 @@ def valid_search(results):
     return len(results["results"]["bindings"]) != 0
 
 def run_q1(animal):
-    query1 = "SELECT ?item ?image ?itemLabel ?itemDescription  \
+    query1 = "SELECT ?item ?image ?thumb ?itemLabel ?itemDescription  \
         WHERE \
             {?item wdt:P225 \"" + animal + "\" . \
              OPTIONAL{?item wdt:P18 ?image} . \
             SERVICE wikibase:label \
             {bd:serviceParam wikibase:language \"en\" . } \
-        }"
+            BIND(REPLACE(wikibase:decodeUri(STR(?image)), \"http://commons.wikimedia.org/wiki/Special:FilePath/\", \"\") as ?fileName) . \
+            BIND(REPLACE(?fileName, \" \", \"_\") as ?safeFileName) \
+            BIND(MD5(?safeFileName) as ?fileNameMD5) . \
+            BIND(CONCAT(\"https://upload.wikimedia.org/wikipedia/commons/thumb/\", SUBSTR(?fileNameMD5, 1, 1), \"/\", SUBSTR(?fileNameMD5, 1, 2), \"/\", ?safeFileName, \"/650px-\", ?safeFileName) as ?thumb)} "
     results = get_results(endpoint_url, query1)
     print('result1:')
     print(results)
@@ -110,15 +113,18 @@ def run_q3(animal, parent):
     while n < 3:
         new_animal = animal[:0-1]
         # might not be EXACT parentlabel but the PATH matches, intentional because some discrepancies between WikiData and ITIS parentTaxons
-        query3 = "SELECT ?item ?image ?itemLabel ?itemDescription WHERE \
+        query3 = "SELECT ?item ?image ?thumb ?itemLabel ?itemDescription WHERE \
             { \
-             ?item wdt:P171* wd:" + parent + "; \
+            ?item wdt:P171* wd:" + parent + "; \
                    rdfs:label ?itemLabel. \
-             OPTIONAL{?item wdt:P18 ?image} . \
-            filter(regex(str(?itemLabel), \"" + new_animal + "\" )) . \
+            OPTIONAL{?item wdt:P18 ?image} . \
+            filter(regex(str(?itemLabel), \"" + new_animal + "\" )) \
             SERVICE wikibase:label  \
             {bd:serviceParam wikibase:language \"en\"  . } \
-            }" 
+            BIND(REPLACE(wikibase:decodeUri(STR(?image)), \"http://commons.wikimedia.org/wiki/Special:FilePath/\", \"\") as ?fileName) . \
+            BIND(REPLACE(?fileName, \" \", \"_\") as ?safeFileName)  \
+            BIND(MD5(?safeFileName) as ?fileNameMD5) . \
+            BIND(CONCAT(\"https://upload.wikimedia.org/wikipedia/commons/thumb/\", SUBSTR(?fileNameMD5, 1, 1), \"/\", SUBSTR(?fileNameMD5, 1, 2), \"/\", ?safeFileName, \"/650px-\", ?safeFileName) as ?thumb)} "
         results = get_results(endpoint_url, query3)
         # check if query yielded a valid result
         if valid_search(results):
@@ -295,7 +301,7 @@ for taxon_id in list(used_taxa.keys()):
     if taxon["image"] != "":
         full_image = "kgo:taxonImage\t<" + taxon["image"] + "> ; \n\t"
     full_definition = "skos:definition\t\"\"\"" + taxon["definition"] + "\"\"\"@en ;\n\t" #definition
-    full_label = "skos:preflabel\t\"" + taxon["label"] + "\"@en .\n\n"    #preflabel – common name
+    full_label = "skos:prefLabel\t\"" + taxon["label"] + "\"@en .\n\n"    #prefLabel – common name
 
     d = full_Q + full_parent_Q + full_name + full_rank + full_type_species + full_tso + full_image + full_definition + full_label 
 
