@@ -81,15 +81,16 @@ boltz:Q130942 a kgo:Taxon ;
 	skos:definition	"""Subclass of mammals"""@en ;
 	skos:prefLabel	"Theria"@en .
 
-boltz:Q2156282 a kgo:Taxon ; 
+boltz:Q17092469 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q130942 ; 
 	kgo:taxonName	"Eutheria"@en ; 
 	kgo:taxonRank	boltz:Q2007442 ; 
-	skos:definition	"""Genus of tortoise beetles"""@en ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Eutheria.png/650px-Eutheria.png> ; 
+	skos:definition	"""Clade of mammals"""@en ;
 	skos:prefLabel	"Eutheria"@en .
 
 boltz:Q10850 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Rodentia"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Tamias_striatus_CT.jpg/650px-Tamias_striatus_CT.jpg> ; 
@@ -219,8 +220,65 @@ boltz:Q3329148 a kgo:Taxon ;
 	skos:definition	"""Species of cnidarian"""@en ;
 	skos:prefLabel	"Gorgonia ventalina"@en .
 
+boltz:Q10811 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q19159 ; 
+	kgo:taxonName	"Reptilia"@en ; 
+	kgo:taxonRank	boltz:Q37517 ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Smaug_giganteus_head.jpg/650px-Smaug_giganteus_head.jpg> ; 
+	skos:definition	"""Group (class or clade) of tetrapod animals"""@en ;
+	skos:prefLabel	"Reptilia"@en .
+
+boltz:Q122422 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q10811 ; 
+	kgo:taxonName	"Squamata"@en ; 
+	kgo:taxonRank	boltz:Q36602 ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Anole_and_snake.jpg/650px-Anole_and_snake.jpg> ; 
+	skos:definition	"""Order of reptiles"""@en ;
+	skos:prefLabel	"Squamata"@en .
+
+boltz:Q61882053 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q122422 ; 
+	kgo:taxonName	"Autarchoglossa"@en ; 
+	kgo:taxonRank	boltz:Q5867959 ; 
+	skos:definition	"""Suborder of reptiles"""@en ;
+	skos:prefLabel	"Autarchoglossa"@en .
+
+boltz:Q272206 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q61882053 ; 
+	kgo:taxonName	"Scincidae"@en ; 
+	kgo:taxonRank	boltz:Q35409 ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Blue-toungued_skink444.jpg/650px-Blue-toungued_skink444.jpg> ; 
+	skos:definition	"""Family of reptiles"""@en ;
+	skos:prefLabel	"Scincidae"@en .
+
+boltz:Q15110830 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q272206 ; 
+	kgo:taxonName	"Eugongylinae"@en ; 
+	kgo:taxonRank	boltz:Q164280 ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cryptoblepharus_boutonii_furcata.jpg/650px-Cryptoblepharus_boutonii_furcata.jpg> ; 
+	skos:definition	"""Subfamily of reptiles"""@en ;
+	skos:prefLabel	"Eugongylinae"@en .
+
+boltz:Q767155 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q15110830 ; 
+	kgo:taxonName	"Oligosoma"@en ; 
+	kgo:taxonRank	boltz:Q34740 ; 
+	kgo:typeSpecies	boltz:Q3350601 ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Otago_skink.jpg/650px-Otago_skink.jpg> ; 
+	skos:definition	"""Genus of reptiles"""@en ;
+	skos:prefLabel	"Oligosoma"@en .
+
+boltz:Q3350601 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q767155 ; 
+	kgo:taxonName	"Oligosoma zelandicum"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:typeSpeciesOf	boltz:Q767155 ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Brown_skink_by_Tony_Wills.jpg/650px-Brown_skink_by_Tony_Wills.jpg> ; 
+	skos:definition	"""Species of reptile"""@en ;
+	skos:prefLabel	"Oligosoma zelandicum"@en .
+
 boltz:Q160 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Cetacea"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Graywhale_MMC.jpg/650px-Graywhale_MMC.jpg> ; 
@@ -423,37 +481,6 @@ boltz:Q13467669 a kgo:Taxon ;
 	skos:definition	"""Species of insect"""@en ;
 	skos:prefLabel	"Cicindela amargosae"@en .
 
-boltz:Q10811 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q19159 ; 
-	kgo:taxonName	"Reptilia"@en ; 
-	kgo:taxonRank	boltz:Q37517 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Smaug_giganteus_head.jpg/650px-Smaug_giganteus_head.jpg> ; 
-	skos:definition	"""Group (class or clade) of tetrapod animals"""@en ;
-	skos:prefLabel	"Reptilia"@en .
-
-boltz:Q122422 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q10811 ; 
-	kgo:taxonName	"Squamata"@en ; 
-	kgo:taxonRank	boltz:Q36602 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Anole_and_snake.jpg/650px-Anole_and_snake.jpg> ; 
-	skos:definition	"""Order of reptiles"""@en ;
-	skos:prefLabel	"Squamata"@en .
-
-boltz:Q61882053 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q122422 ; 
-	kgo:taxonName	"Autarchoglossa"@en ; 
-	kgo:taxonRank	boltz:Q5867959 ; 
-	skos:definition	"""Suborder of reptiles"""@en ;
-	skos:prefLabel	"Autarchoglossa"@en .
-
-boltz:Q272206 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q61882053 ; 
-	kgo:taxonName	"Scincidae"@en ; 
-	kgo:taxonRank	boltz:Q35409 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Blue-toungued_skink444.jpg/650px-Blue-toungued_skink444.jpg> ; 
-	skos:definition	"""Family of reptiles"""@en ;
-	skos:prefLabel	"Scincidae"@en .
-
 boltz:Q15127891 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q272206 ; 
 	kgo:taxonName	"Sphenomorphinae"@en ; 
@@ -544,8 +571,50 @@ boltz:Q2537221 a kgo:Taxon ;
 	skos:definition	"""Species of insect"""@en ;
 	skos:prefLabel	"Forficula auricularia"@en .
 
+boltz:Q661136 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q122422 ; 
+	kgo:taxonName	"Iguania"@en ; 
+	kgo:taxonRank	boltz:Q5867959 ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Chamaeleo_zeylanicus.jpg/650px-Chamaeleo_zeylanicus.jpg> ; 
+	skos:definition	"""Suborder of reptiles"""@en ;
+	skos:prefLabel	"Iguania"@en .
+
+boltz:Q37686 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q661136 ; 
+	kgo:taxonName	"Chamaeleonidae"@en ; 
+	kgo:taxonRank	boltz:Q35409 ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bradypodion_pumilum_Cape_chameleon_female_IMG_1767_(cropped).jpg/650px-Bradypodion_pumilum_Cape_chameleon_female_IMG_1767_(cropped).jpg> ; 
+	skos:definition	"""Family of reptiles"""@en ;
+	skos:prefLabel	"Chamaeleonidae"@en .
+
+boltz:Q2491068 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q37686 ; 
+	kgo:taxonName	"Chamaeleoninae"@en ; 
+	kgo:taxonRank	boltz:Q164280 ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Calumma_gastrotaenia.jpg/650px-Calumma_gastrotaenia.jpg> ; 
+	skos:definition	"""Subfamily of reptiles"""@en ;
+	skos:prefLabel	"Chamaeleoninae"@en .
+
+boltz:Q1758255 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2491068 ; 
+	kgo:taxonName	"Trioceros"@en ; 
+	kgo:taxonRank	boltz:Q34740 ; 
+	kgo:typeSpecies	boltz:Q3539439 ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Jackson's_Chameleon444.jpg/650px-Jackson's_Chameleon444.jpg> ; 
+	skos:definition	"""Genus of reptiles"""@en ;
+	skos:prefLabel	"Trioceros"@en .
+
+boltz:Q3539439 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1758255 ; 
+	kgo:taxonName	"Trioceros oweni"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:typeSpeciesOf	boltz:Q1758255 ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Chameleon_oweni-228-P4150726-black.jpg/650px-Chameleon_oweni-228-P4150726-black.jpg> ; 
+	skos:definition	"""Species of reptile"""@en ;
+	skos:prefLabel	"Trioceros oweni"@en .
+
 boltz:Q25329 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Artiodactyla"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Aepyceros_melampus_-_001.jpg/650px-Aepyceros_melampus_-_001.jpg> ; 
@@ -1570,13 +1639,12 @@ boltz:Q1086983 a kgo:Taxon ;
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Red-bellied short-necked turtle"@en .
 
-boltz:Q2377830 a kgo:Taxon ; 
+boltz: a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q2710616 ; 
 	kgo:taxonName	"Emydura victoriae"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Emydura_australis_lateral.gif/650px-Emydura_australis_lateral.gif> ; 
-	skos:definition	"""Species of reptile"""@en ;
-	skos:prefLabel	"Emydura victoriae"@en .
+	skos:definition	""""""@en ;
+	skos:prefLabel	""@en .
 
 boltz:Q1929418 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q4722543 ; 
@@ -2912,7 +2980,7 @@ boltz:Q14566138 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q2962189 ; 
 	kgo:taxonName	"Chelus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
-	kgo:typeSpecies	"Chelus fimbriatus"@en ;
+	kgo:typeSpecies	boltz:Q106449044 ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/2009_Chelus_fimbriatus.JPG/650px-2009_Chelus_fimbriatus.JPG> ; 
 	skos:definition	"""Genus of south american turtles in the family chelidae"""@en ;
 	skos:prefLabel	"Chelus"@en .
@@ -2921,6 +2989,7 @@ boltz:Q106449044 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q14566138 ; 
 	kgo:taxonName	"Chelus fimbriata"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:typeSpeciesOf	boltz:Q14566138 ;
 	skos:definition	""""""@en ;
 	skos:prefLabel	"Chelus fimbriata"@en .
 
@@ -3302,7 +3371,7 @@ boltz:Q2080003 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q46360 ; 
 	kgo:taxonName	"Chelonoidis"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
-	kgo:typeSpecies	"Chelonoidis carbonarius"@en ;
+	kgo:typeSpecies	boltz:Q277794 ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Geochelone_denticulata_-_couple_Suriname.jpg/650px-Geochelone_denticulata_-_couple_Suriname.jpg> ; 
 	skos:definition	"""Genus of reptiles"""@en ;
 	skos:prefLabel	"Chelonoidis"@en .
@@ -3734,6 +3803,7 @@ boltz:Q277794 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q2080003 ; 
 	kgo:taxonName	"Chelonoidis carbonaria"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:typeSpeciesOf	boltz:Q2080003 ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Geochelone_carbonaria_1.jpg/650px-Geochelone_carbonaria_1.jpg> ; 
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Red-footed tortoise"@en .
@@ -4525,7 +4595,7 @@ boltz:Q187927 a kgo:Taxon ;
 	skos:prefLabel	"Markhor"@en .
 
 boltz:Q28425 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Chiroptera"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Big-eared-townsend-fledermaus.jpg/650px-Big-eared-townsend-fledermaus.jpg> ; 
@@ -4661,7 +4731,7 @@ boltz:Q201808 a kgo:Taxon ;
 	skos:prefLabel	"Minke whale"@en .
 
 boltz:Q25401 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Lagomorpha"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ochotona_princeps.jpg/650px-Ochotona_princeps.jpg> ; 
@@ -4691,6 +4761,32 @@ boltz:Q25851 a kgo:Taxon ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Oryctolagus_cuniculus_Tasmania_2.jpg/650px-Oryctolagus_cuniculus_Tasmania_2.jpg> ; 
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"European rabbit"@en .
+
+boltz:Q3082684 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q61882053 ; 
+	kgo:taxonName	"Varanidae"@en ; 
+	kgo:taxonRank	boltz:Q35409 ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Varanus_exanthematicus_(SqueakyMarmot).jpg/650px-Varanus_exanthematicus_(SqueakyMarmot).jpg> ; 
+	skos:definition	"""Family of reptiles"""@en ;
+	skos:prefLabel	"Varanidae"@en .
+
+boltz:Q81228 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q3082684 ; 
+	kgo:taxonName	"Varanus"@en ; 
+	kgo:taxonRank	boltz:Q34740 ; 
+	kgo:typeSpecies	boltz:Q924941 ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Licking_Monitor_Lizard.jpg/650px-Licking_Monitor_Lizard.jpg> ; 
+	skos:definition	"""Genus of reptiles"""@en ;
+	skos:prefLabel	"Varanus"@en .
+
+boltz:Q924941 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q81228 ; 
+	kgo:taxonName	"Varanus varius"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:typeSpeciesOf	boltz:Q81228 ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Goanna_head2.jpg/650px-Goanna_head2.jpg> ; 
+	skos:definition	"""Species of reptile"""@en ;
+	skos:prefLabel	"Varanus varius"@en .
 
 boltz:Q21659 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q5113 ; 
@@ -4796,7 +4892,7 @@ boltz:Q752436 a kgo:Taxon ;
 	skos:prefLabel	"Common wombat"@en .
 
 boltz:Q25306 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Carnivora"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Stud_327_with_Blesbuck.jpg/650px-Stud_327_with_Blesbuck.jpg> ; 
@@ -4855,7 +4951,7 @@ boltz:Q26187 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q733407 ; 
 	kgo:taxonName	"Amphisbaena"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
-	kgo:typeSpecies	"Amphisbaena fuliginosa"@en ;
+	kgo:typeSpecies	boltz:Q1766868 ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Amphisbaena_alba03.jpg/650px-Amphisbaena_alba03.jpg> ; 
 	skos:definition	"""Genus of reptiles"""@en ;
 	skos:prefLabel	"Amphisbaena"@en .
@@ -4915,6 +5011,30 @@ boltz:Q58697 a kgo:Taxon ;
 	skos:definition	"""Omnivore species of mammal"""@en ;
 	skos:prefLabel	"Sus scrofa"@en .
 
+boltz:Q4388882 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q272206 ; 
+	kgo:taxonName	"Scincinae"@en ; 
+	kgo:taxonRank	boltz:Q164280 ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Scincus_scincus,_male_01.jpg/650px-Scincus_scincus,_male_01.jpg> ; 
+	skos:definition	"""Subfamily of skinks"""@en ;
+	skos:prefLabel	"Scincinae"@en .
+
+boltz:Q2333513 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q4388882 ; 
+	kgo:taxonName	"Paracontias"@en ; 
+	kgo:taxonRank	boltz:Q34740 ; 
+	kgo:typeSpecies	boltz:Q6451873 ;
+	skos:definition	"""Genus of reptiles"""@en ;
+	skos:prefLabel	"Paracontias"@en .
+
+boltz:Q6451873 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q2333513 ; 
+	kgo:taxonName	"Paracontias brocchii"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:typeSpeciesOf	boltz:Q2333513 ;
+	skos:definition	"""Species of reptile"""@en ;
+	skos:prefLabel	"Paracontias brocchii"@en .
+
 boltz:Q28319 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q37140800 ; 
 	kgo:taxonName	"Lepidoptera"@en ; 
@@ -4971,14 +5091,6 @@ boltz:Q7186601 a kgo:Taxon ;
 	skos:definition	"""Species of insect"""@en ;
 	skos:prefLabel	"Phoberia atomaris"@en .
 
-boltz:Q661136 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q122422 ; 
-	kgo:taxonName	"Iguania"@en ; 
-	kgo:taxonRank	boltz:Q5867959 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Chamaeleo_zeylanicus.jpg/650px-Chamaeleo_zeylanicus.jpg> ; 
-	skos:definition	"""Suborder of reptiles"""@en ;
-	skos:prefLabel	"Iguania"@en .
-
 boltz:Q3011738 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q661136 ; 
 	kgo:taxonName	"Dactyloidae"@en ; 
@@ -5023,7 +5135,7 @@ boltz:Q1631828 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q135357 ; 
 	kgo:taxonName	"Sphaerodactylus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
-	kgo:typeSpecies	"Sphaerodactylus sputator"@en ;
+	kgo:typeSpecies	boltz:Q3011366 ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sphaerodactylus_macrolepis_(cropped).jpg/650px-Sphaerodactylus_macrolepis_(cropped).jpg> ; 
 	skos:definition	"""Genus of reptiles"""@en ;
 	skos:prefLabel	"Sphaerodactylus"@en .
@@ -5035,23 +5147,6 @@ boltz:Q2358459 a kgo:Taxon ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sphaerodactylus_macrolepis_(cropped).jpg/650px-Sphaerodactylus_macrolepis_(cropped).jpg> ; 
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Big-scaled least gecko"@en .
-
-boltz:Q15110830 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q272206 ; 
-	kgo:taxonName	"Eugongylinae"@en ; 
-	kgo:taxonRank	boltz:Q164280 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cryptoblepharus_boutonii_furcata.jpg/650px-Cryptoblepharus_boutonii_furcata.jpg> ; 
-	skos:definition	"""Subfamily of reptiles"""@en ;
-	skos:prefLabel	"Eugongylinae"@en .
-
-boltz:Q767155 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q15110830 ; 
-	kgo:taxonName	"Oligosoma"@en ; 
-	kgo:taxonRank	boltz:Q34740 ; 
-	kgo:typeSpecies	"Oligosoma zelandicum"@en ;
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Otago_skink.jpg/650px-Otago_skink.jpg> ; 
-	skos:definition	"""Genus of reptiles"""@en ;
-	skos:prefLabel	"Oligosoma"@en .
 
 boltz:Q3350571 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q767155 ; 
@@ -5086,7 +5181,7 @@ boltz:Q215250 a kgo:Taxon ;
 	skos:prefLabel	"Gray fox"@en .
 
 boltz:Q1242326 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Cingulata"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Cingulata2.jpg/650px-Cingulata2.jpg> ; 
@@ -5169,7 +5264,7 @@ boltz:Q39038 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q733407 ; 
 	kgo:taxonName	"Cynisca"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
-	kgo:typeSpecies	"Cynisca leucura"@en ;
+	kgo:typeSpecies	boltz:Q3008748 ;
 	skos:definition	"""Genus of reptiles"""@en ;
 	skos:prefLabel	"Cynisca"@en .
 
@@ -5475,7 +5570,7 @@ boltz:Q74363 a kgo:Taxon ;
 	skos:prefLabel	"Hippocampus"@en .
 
 boltz:Q7380 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Primates"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Olive_baboon.jpg/650px-Olive_baboon.jpg> ; 
@@ -6323,6 +6418,15 @@ boltz:Q140 a kgo:Taxon ;
 	skos:definition	"""Species of big cat"""@en ;
 	skos:prefLabel	"Lion"@en .
 
+boltz:Q1766868 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q26187 ; 
+	kgo:taxonName	"Amphisbaena fuliginosa"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:typeSpeciesOf	boltz:Q26187 ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Amphisbaena_fuliginosa.jpg/650px-Amphisbaena_fuliginosa.jpg> ; 
+	skos:definition	"""Species of the genus amphisbaena"""@en ;
+	skos:prefLabel	"Amphisbaena fuliginosa"@en .
+
 boltz:Q2292156 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q27414 ; 
 	kgo:taxonName	"Odobenidae"@en ; 
@@ -6672,7 +6776,7 @@ boltz:Q430653 a kgo:Taxon ;
 	skos:prefLabel	"Maned owl"@en .
 
 boltz:Q25431 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Sirenia"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/FL_fig04.jpg/650px-FL_fig04.jpg> ; 
@@ -6792,7 +6896,7 @@ boltz:Q20744349 a kgo:Taxon ;
 	skos:prefLabel	"African golden wolf"@en .
 
 boltz:Q25374 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Perissodactyla"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/00296_zebra.jpg/650px-00296_zebra.jpg> ; 
@@ -6829,31 +6933,6 @@ boltz:Q243213 a kgo:Taxon ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Equus_zebra_-_Disney's_Animal_Kingdom_Lodge,_Orlando,_Florida,_USA_-_20100119.jpg/650px-Equus_zebra_-_Disney's_Animal_Kingdom_Lodge,_Orlando,_Florida,_USA_-_20100119.jpg> ; 
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Mountain zebra"@en .
-
-boltz:Q37686 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q661136 ; 
-	kgo:taxonName	"Chamaeleonidae"@en ; 
-	kgo:taxonRank	boltz:Q35409 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bradypodion_pumilum_Cape_chameleon_female_IMG_1767_(cropped).jpg/650px-Bradypodion_pumilum_Cape_chameleon_female_IMG_1767_(cropped).jpg> ; 
-	skos:definition	"""Family of reptiles"""@en ;
-	skos:prefLabel	"Chamaeleonidae"@en .
-
-boltz:Q2491068 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q37686 ; 
-	kgo:taxonName	"Chamaeleoninae"@en ; 
-	kgo:taxonRank	boltz:Q164280 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Calumma_gastrotaenia.jpg/650px-Calumma_gastrotaenia.jpg> ; 
-	skos:definition	"""Subfamily of reptiles"""@en ;
-	skos:prefLabel	"Chamaeleoninae"@en .
-
-boltz:Q1758255 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2491068 ; 
-	kgo:taxonName	"Trioceros"@en ; 
-	kgo:taxonRank	boltz:Q34740 ; 
-	kgo:typeSpecies	"Trioceros oweni"@en ;
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Jackson's_Chameleon444.jpg/650px-Jackson's_Chameleon444.jpg> ; 
-	skos:definition	"""Genus of reptiles"""@en ;
-	skos:prefLabel	"Trioceros"@en .
 
 boltz:Q3539417 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1758255 ; 
@@ -6983,6 +7062,15 @@ boltz:Q3204576 a kgo:Taxon ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Thysanoteuthis_rhombus_(Merculiano).jpg/650px-Thysanoteuthis_rhombus_(Merculiano).jpg> ; 
 	skos:definition	"""Species of mollusc"""@en ;
 	skos:prefLabel	"Thysanoteuthis rhombus"@en .
+
+boltz:Q3011366 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1631828 ; 
+	kgo:taxonName	"Sphaerodactylus sputator"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:typeSpeciesOf	boltz:Q1631828 ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Sphaerodactylus_pictus_01-Barbour_1921.jpg/650px-Sphaerodactylus_pictus_01-Barbour_1921.jpg> ; 
+	skos:definition	"""Species of reptile"""@en ;
+	skos:prefLabel	"Island least gecko"@en .
 
 boltz:Q82265 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q7380 ; 
@@ -11969,23 +12057,6 @@ boltz:Q15083 a kgo:Taxon ;
 	skos:definition	"""Umbrella species of giraffa"""@en ;
 	skos:prefLabel	"Giraffe"@en .
 
-boltz:Q3082684 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q61882053 ; 
-	kgo:taxonName	"Varanidae"@en ; 
-	kgo:taxonRank	boltz:Q35409 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Varanus_exanthematicus_(SqueakyMarmot).jpg/650px-Varanus_exanthematicus_(SqueakyMarmot).jpg> ; 
-	skos:definition	"""Family of reptiles"""@en ;
-	skos:prefLabel	"Varanidae"@en .
-
-boltz:Q81228 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q3082684 ; 
-	kgo:taxonName	"Varanus"@en ; 
-	kgo:taxonRank	boltz:Q34740 ; 
-	kgo:typeSpecies	"Varanus varius"@en ;
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Licking_Monitor_Lizard.jpg/650px-Licking_Monitor_Lizard.jpg> ; 
-	skos:definition	"""Genus of reptiles"""@en ;
-	skos:prefLabel	"Varanus"@en .
-
 boltz:Q4504 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q81228 ; 
 	kgo:taxonName	"Varanus komodoensis"@en ; 
@@ -12184,22 +12255,6 @@ boltz:Q1874254 a kgo:Taxon ;
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Fraser island sand skink"@en .
 
-boltz:Q4388882 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q272206 ; 
-	kgo:taxonName	"Scincinae"@en ; 
-	kgo:taxonRank	boltz:Q164280 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Scincus_scincus,_male_01.jpg/650px-Scincus_scincus,_male_01.jpg> ; 
-	skos:definition	"""Subfamily of skinks"""@en ;
-	skos:prefLabel	"Scincinae"@en .
-
-boltz:Q2333513 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q4388882 ; 
-	kgo:taxonName	"Paracontias"@en ; 
-	kgo:taxonRank	boltz:Q34740 ; 
-	kgo:typeSpecies	"Paracontias brocchii"@en ;
-	skos:definition	"""Genus of reptiles"""@en ;
-	skos:prefLabel	"Paracontias"@en .
-
 boltz:Q3363204 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q2333513 ; 
 	kgo:taxonName	"Paracontias minimus"@en ; 
@@ -12287,7 +12342,7 @@ boltz:Q23907 a kgo:Taxon ;
 	skos:prefLabel	"Cheetah"@en .
 
 boltz:Q20667040 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Proboscidea"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	skos:definition	"""Genus of annelids"""@en ;
@@ -12404,6 +12459,24 @@ boltz:Q317220 a kgo:Taxon ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Phoenicopterus_chilensis_-Tavares,_Rio_Grande_do_Sul,_Brazil_-flying-8.jpg/650px-Phoenicopterus_chilensis_-Tavares,_Rio_Grande_do_Sul,_Brazil_-flying-8.jpg> ; 
 	skos:definition	"""Species of flamingo"""@en ;
 	skos:prefLabel	"Chilean flamingo"@en .
+
+boltz:Q1758486 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q15127891 ; 
+	kgo:taxonName	"Sphenomorphus"@en ; 
+	kgo:taxonRank	boltz:Q34740 ; 
+	kgo:typeSpecies	boltz:Q3493287 ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hinulia_nigrolabris.jpg/650px-Hinulia_nigrolabris.jpg> ; 
+	skos:definition	"""Genus of reptiles"""@en ;
+	skos:prefLabel	"Sphenomorphus"@en .
+
+boltz:Q3493287 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q1758486 ; 
+	kgo:taxonName	"Sphenomorphus melanopogon"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:typeSpeciesOf	boltz:Q1758486 ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flores_Forest_Skink_Sphenomorphus_florensis_(7881497536).jpg/650px-Flores_Forest_Skink_Sphenomorphus_florensis_(7881497536).jpg> ; 
+	skos:definition	"""Species of reptile"""@en ;
+	skos:prefLabel	"Sphenomorphus melanopogon"@en .
 
 boltz:Q25312 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q37140800 ; 
@@ -12549,6 +12622,14 @@ boltz:Q2984350 a kgo:Taxon ;
 	skos:definition	"""Species of reptile"""@en ;
 	skos:prefLabel	"Colopus wahlbergii"@en .
 
+boltz:Q3008748 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q39038 ; 
+	kgo:taxonName	"Cynisca leucura"@en ; 
+	kgo:taxonRank	boltz:Q7432 ; 
+	kgo:typeSpeciesOf	boltz:Q39038 ;
+	skos:definition	"""Species of reptile"""@en ;
+	skos:prefLabel	"Cynisca leucura"@en .
+
 boltz:Q725271 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q25497 ; 
 	kgo:taxonName	"Hippotraginae"@en ; 
@@ -12574,7 +12655,7 @@ boltz:Q190154 a kgo:Taxon ;
 	skos:prefLabel	"Addax nasomaculatus"@en .
 
 boltz:Q85307516 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q2156282 ; 
+	kgo:subTaxonOf	boltz:Q17092469 ; 
 	kgo:taxonName	"Pholidota"@en ; 
 	kgo:taxonRank	boltz:Q36602 ; 
 	skos:definition	"""Suborder"""@en ;
@@ -12738,15 +12819,6 @@ boltz:Q267996 a kgo:Taxon ;
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/American-cockroach.jpg/650px-American-cockroach.jpg> ; 
 	skos:definition	"""Species of insect"""@en ;
 	skos:prefLabel	"Periplaneta americana"@en .
-
-boltz:Q1758486 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q272206 ; 
-	kgo:taxonName	"Sphenomorphus"@en ; 
-	kgo:taxonRank	boltz:Q34740 ; 
-	kgo:typeSpecies	"Sphenomorphus melanopogon"@en ;
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hinulia_nigrolabris.jpg/650px-Hinulia_nigrolabris.jpg> ; 
-	skos:definition	"""Genus of reptiles"""@en ;
-	skos:prefLabel	"Sphenomorphus"@en .
 
 boltz:Q5125411 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q1758486 ; 
