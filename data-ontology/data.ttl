@@ -3824,12 +3824,12 @@ boltz:Q1121991 a kgo:Taxon ;
 	skos:definition	"""Genus of reptiles"""@en ;
 	skos:prefLabel	"Pelusios"@en .
 
-boltz:Q5089990 a kgo:Taxon ; 
+boltz:Q532358 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q2962214 ; 
 	kgo:taxonName	"Chelodina"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
 	kgo:typeSpecies	boltz:Q221080 ;
-	skos:definition	"""Extinct suborder of molluscs"""@en ;
+	skos:definition	"""Genus of reptiles"""@en ;
 	skos:prefLabel	"Chelodina"@en .
 
 boltz:Q21441495 a kgo:Taxon ; 
@@ -4316,11 +4316,12 @@ boltz:Q16965558 a kgo:Taxon ;
 	skos:definition	"""Genus of reptiles"""@en ;
 	skos:prefLabel	"Flaviemys"@en .
 
-boltz:Q5089990 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q5089990 ; 
+boltz:Q21440282 a kgo:Taxon ; 
+	kgo:subTaxonOf	boltz:Q532358 ; 
 	kgo:taxonName	"Chelodina"@en ; 
 	kgo:taxonRank	boltz:Q3238261 ; 
-	skos:definition	"""Extinct suborder of molluscs"""@en ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/3/34/Australsnturtle2.jpg> ; 
+	skos:definition	"""Subgenus of reptiles"""@en ;
 	skos:prefLabel	"Chelodina"@en .
 
 boltz:Q43934438 a kgo:Taxon ; 
@@ -5531,12 +5532,11 @@ boltz:Q736473 a kgo:Taxon ;
 	skos:definition	"""Genus of mammals"""@en ;
 	skos:prefLabel	"Eptesicus"@en .
 
-boltz:Q736473 a kgo:Taxon ; 
+boltz:Q5834970 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q736473 ; 
 	kgo:taxonName	"Eptesicus"@en ; 
 	kgo:taxonRank	boltz:Q3238261 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Eptesicus_nilssoni.jpg/650px-Eptesicus_nilssoni.jpg> ; 
-	skos:definition	"""Genus of mammals"""@en ;
+	skos:definition	"""Subgenus of mammals"""@en ;
 	skos:prefLabel	"Eptesicus"@en .
 
 boltz:Q301930 a kgo:Taxon ; 
@@ -7792,11 +7792,12 @@ boltz:Q165115 a kgo:Taxon ;
 	skos:definition	"""Family of mammals"""@en ;
 	skos:prefLabel	"Equidae"@en .
 
-boltz:Q111287972 a kgo:Taxon ; 
+boltz:Q27022 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q165115 ; 
 	kgo:taxonName	"Equus"@en ; 
 	kgo:taxonRank	boltz:Q34740 ; 
-	skos:definition	"""Taxon, (linnaeus, 1758) subgenus of equus"""@en ;
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/e/e3/Plains_Zebra_Equus_quagga.jpg/650px-Plains_Zebra_Equus_quagga.jpg> ;
+	skos:definition	"""Genus of mammals"""@en ;
 	skos:prefLabel	"Equus"@en .
 
 boltz:Q32789 a kgo:Taxon ; 
@@ -8525,7 +8526,7 @@ boltz:Q1209803 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q834470 ; 
 	kgo:taxonName	"Lepilemur hubbardi"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:Lepilemur_hubbardorum.jpg> ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Lepilemur_hubbardorum.jpg/650px-Lepilemur_hubbardorum.jpg> ; 
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Lepilemur hubbardi"@en .
 
@@ -8992,7 +8993,7 @@ boltz:Q3427090 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q1340206 ; 
 	kgo:taxonName	"Mico chrysoleucos"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:Mico_chrysoleucus_Kenny_Ross_1.jpg> ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Mico_chrysoleucus_Kenny_Ross_1.jpg/650px-Mico_chrysoleucus_Kenny_Ross_1.jpg> ; 
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Mico chrysoleucos"@en .
 
@@ -11633,7 +11634,7 @@ boltz:Q737104 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q177601 ; 
 	kgo:taxonName	"Macaca maura"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:M%C3%A2le_macaque_maure_(Macaca_maura).jpg> ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/M_C3_A2le_macaque_maure_%28Macaca_maura%29.jpg> ; 
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Ollala Brothers' titi"@en .
 
@@ -12597,7 +12598,7 @@ boltz:Q20721823 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q25386240 ; 
 	kgo:taxonName	"Plecturocebus toppini"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:Callicebus_cupreus_Tambopata_Research_Center.jpg> ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Callicebus_cupreus_Tambopata_Research_Center.jpg/650px-Callicebus_cupreus_Tambopata_Research_Center.jpg> ; 
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Plecturocebus toppini"@en .
 
@@ -12683,7 +12684,7 @@ boltz:Q1075064 a kgo:Taxon ;
 	kgo:subTaxonOf	boltz:Q1061088 ; 
 	kgo:taxonName	"Chlorocebus dryas"@en ; 
 	kgo:taxonRank	boltz:Q7432 ; 
-	kgo:taxonImage	<https://commons.wikimedia.org/wiki/File:Chlorocebus_dryas_still-frame.png> ; 
+	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Chlorocebus_dryas_still-frame.png/650px-Chlorocebus_dryas_still-frame.png> ; 
 	skos:definition	"""Species of mammal"""@en ;
 	skos:prefLabel	"Dryas monkey"@en .
 
@@ -13825,16 +13826,15 @@ boltz:Q27027 a kgo:Taxon ;
 	skos:definition	"""Species of marine mammal"""@en ;
 	skos:prefLabel	"Harbour porpoise"@en .
 
-boltz:Q25371 a kgo:Taxon ; 
+boltz:Q500000012 a kgo:Taxon ; 
 	kgo:subTaxonOf	boltz:Q26214 ; 
 	kgo:taxonName	"Chondrichthyes"@en ; 
 	kgo:taxonRank	boltz:Q3504061 ; 
-	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/650px-White_shark.jpg> ; 
-	skos:definition	"""Class of fishes"""@en ;
+	skos:definition	"""Superclass of fishes"""@en ;
 	skos:prefLabel	"Chondrichthyes"@en .
 
 boltz:Q25371 a kgo:Taxon ; 
-	kgo:subTaxonOf	boltz:Q25371 ; 
+	kgo:subTaxonOf	boltz:Q500000012 ; 
 	kgo:taxonName	"Chondrichthyes"@en ; 
 	kgo:taxonRank	boltz:Q37517 ; 
 	kgo:taxonImage	<https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/650px-White_shark.jpg> ; 
